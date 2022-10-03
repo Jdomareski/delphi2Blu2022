@@ -1,0 +1,44 @@
+unit Ex_08;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    frmLB_Titulo: TLabel;
+    frmLB_Cotacao: TLabel;
+    frmLBQtd: TLabel;
+    frm_EDT_Cotação: TButton;
+    frm_EDT_Qtd: TButton;
+    frm_LB_Real: TLabel;
+    frm_BT_Converter: TButton;
+    procedure frm_BT_ConverterClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.frm_BT_ConverterClick(Sender: TObject);
+var
+  xCotacao : currency;
+  xQuantidade : double;
+
+begin
+ xcotacao := StrToFloat(frm_EDT_Cotação.text);
+
+
+
+end;
+
+end.
