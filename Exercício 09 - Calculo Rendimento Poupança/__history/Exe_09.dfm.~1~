@@ -1,0 +1,89 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 216
+  ClientWidth = 418
+  Color = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Titulo: TLabel
+    Left = 32
+    Top = 8
+    Width = 318
+    Height = 29
+    Caption = 'C'#225'lculo Rendimento Poupan'#231'a'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object frm_LB_deposito: TLabel
+    Left = 40
+    Top = 64
+    Width = 151
+    Height = 19
+    Caption = 'Valor Depositado R$:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object frm_LB_Mes: TLabel
+    Left = 16
+    Top = 89
+    Width = 175
+    Height = 19
+    Caption = 'Meses Mantido Aplicado:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object frm_LB_Taxa: TLabel
+    Left = 98
+    Top = 114
+    Width = 93
+    Height = 19
+    Caption = 'Taxa Mensal:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object frm_LB_Corr: TLabel
+    Left = 53
+    Top = 177
+    Width = 138
+    Height = 19
+    Caption = 'Valor Corrigido R$:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object frm_BT_Calcular: TButton
+    Left = 248
+    Top = 136
+    Width = 102
+    Height = 25
+    Caption = 'Capitalizar'
+    TabOrder = 0
+  end
+end
