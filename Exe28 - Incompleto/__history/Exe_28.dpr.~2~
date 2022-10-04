@@ -1,0 +1,20 @@
+program Exe_28;
+
+uses
+  Vcl.Forms,
+  Exe28 in 'Exe28.pas' {Form1},
+  frmdados in 'frmdados.pas' {Form_Dados},
+  frmcalcular in 'frmcalcular.pas' {frm_Calc},
+  frmExibir in 'frmExibir.pas' {Form_ex};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TForm_Dados, Form_Dados);
+  Application.CreateForm(Tfrm_Calc, frm_Calc);
+  Application.CreateForm(TForm_ex, Form_ex);
+  Application.Run;
+end.

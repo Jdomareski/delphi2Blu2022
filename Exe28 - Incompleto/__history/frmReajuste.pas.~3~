@@ -1,0 +1,24 @@
+unit frmReajuste;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
+
+type
+  Tfrm_reajuste = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frm_reajuste: Tfrm_reajuste;
+
+implementation
+
+{$R *.dfm}
+
+end.

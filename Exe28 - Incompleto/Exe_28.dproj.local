@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/09/20 20:21:55.000.189,=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/09/23 20:30:50.000.133,=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/09/30 20:29:09.000.079,=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/09/30 20:30:36.000.265,C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\Exe28.dfm</Transaction>
+    <Transaction>2022/09/30 20:30:36.000.265,C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\Exe28.pas</Transaction>
+    <Transaction>2022/09/30 20:30:42.000.074,C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Project2.dproj=C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\Exe_28.dproj</Transaction>
+    <Transaction>2022/09/30 20:33:48.000.995,=C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\Unit2.pas</Transaction>
+    <Transaction>2022/09/30 20:34:09.000.834,C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\Unit2.dfm=C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\frmdados.dfm</Transaction>
+    <Transaction>2022/09/30 20:34:09.000.834,C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\Unit2.pas=C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\frmdados.pas</Transaction>
+    <Transaction>2022/09/30 20:35:31.000.053,=C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\Unit2.pas</Transaction>
+    <Transaction>2022/09/30 20:35:40.000.809,C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\Unit2.dfm=C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\frmcalcular.dfm</Transaction>
+    <Transaction>2022/09/30 20:35:40.000.809,C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\Unit2.pas=C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\frmcalcular.pas</Transaction>
+    <Transaction>2022/09/30 20:36:30.000.027,=C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\Unit2.pas</Transaction>
+    <Transaction>2022/09/30 20:36:41.000.001,C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\Unit2.dfm=C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\frmExibir.dfm</Transaction>
+    <Transaction>2022/09/30 20:36:41.000.001,C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\Unit2.pas=C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\frmExibir.pas</Transaction>
+    <Transaction>2022/09/30 20:43:39.000.707,C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\frmcalcular.dfm=C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\frmReajuste.dfm</Transaction>
+    <Transaction>2022/09/30 20:43:39.000.707,C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\frmcalcular.pas=C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\frmReajuste.pas</Transaction>
+    <Transaction>2022/09/30 20:44:36.000.738,C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\frmdados.dfm=C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\frmMes.dfm</Transaction>
+    <Transaction>2022/09/30 20:44:36.000.738,C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\frmdados.pas=C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\frmMes.pas</Transaction>
+    <Transaction>2022/09/30 20:45:07.000.547,C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\frmExibir.dfm=C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\frmClassificar.dfm</Transaction>
+    <Transaction>2022/09/30 20:45:07.000.547,C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\frmExibir.pas=C:\Users\jdomareski\Desktop\Jefferson\Exercício 28\frmClassificar.pas</Transaction>
+  </Transactions>
+</BorlandProject>
