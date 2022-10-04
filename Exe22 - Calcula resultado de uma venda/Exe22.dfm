@@ -1,0 +1,89 @@
+﻿object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 298
+  ClientWidth = 721
+  Color = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesigned
+  PixelsPerInch = 96
+  TextHeight = 16
+  object LB_TCusto: TLabel
+    Left = 28
+    Top = 261
+    Width = 5
+    Height = 19
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object LB_TValor: TLabel
+    Left = 28
+    Top = 228
+    Width = 5
+    Height = 19
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object LB_TQtd: TLabel
+    Left = 28
+    Top = 196
+    Width = 5
+    Height = 19
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Título: TLabel
+    Left = 28
+    Top = 8
+    Width = 162
+    Height = 23
+    Caption = 'Registro de Vendas'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object BT_registrar: TButton
+    Left = 568
+    Top = 196
+    Width = 137
+    Height = 33
+    Caption = 'Registrar'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    OnClick = BT_registrarClick
+  end
+  object MMBreg: TMemo
+    Left = 28
+    Top = 37
+    Width = 677
+    Height = 153
+    ScrollBars = ssVertical
+    TabOrder = 1
+  end
+end
