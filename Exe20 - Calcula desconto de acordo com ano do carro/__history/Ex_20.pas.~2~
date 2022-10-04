@@ -1,0 +1,57 @@
+unit Ex_20;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    LB_Texto: TLabel;
+    EDT_Qtd: TEdit;
+    BT_Reg: TButton;
+    procedure BT_RegClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.BT_RegClick(Sender: TObject);
+ var
+  xQtd, I, x2000, x2001 : integer;
+  xValor, xdesconto : Currency;
+  xAno : Integer;
+
+  begin
+  x2000 := 0;
+  x2001 := 0;
+
+  repeat
+    xQtd := strToInt(edt_qtd.Text);
+    xvalor := strToCurr(inputbox('Valor do carro' ,'Insira o Valor do Carro', '' ));
+    xAno :=   strToInt(inputbox('Ano do Carro' ,'Insira o Ano do Carro', '' ));
+    if xAno <= 2000  then
+      xDesconto := (xValor * 0.88);
+      x2000 := x2000+1;
+
+    else
+      xDesconto := (xValor * 0.93);
+      x2001 := x2001+1;
+
+  until  MessageDlg('Quer Adicionar Outro veículo?', mtConfirmation, [mbYes, mbNo], 0) = mrNo
+
+
+
+
+  end;
+
+end.
