@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
 
 type
-  TEnumNivel = (stResidencial, stComercial, stIndustria);
+  TEnumNivel = (stResidencial, stComercial, stIndustria, stFazenda);
   TForm1 = class(TForm)
     Titulo: TLabel;
     LB_Ins: TLabel;
@@ -31,23 +31,42 @@ implementation
 {$R *.dfm}
 
 procedure TForm1.TBt_CalcularClick(Sender: TObject);
-var
-  xCons : double;
-  xValr : currency;
-    begin
+  var
+    xCons : double;
+    xValr : currency;
+    xDesconto: double;
+  begin
     xcons :=  strToInt(EDT_Cons.Text);
+  xDesconto := 0;
+  Repeat
+    if not (TryStrToFloat(InputBox('Informe',
+    'Possui algum desconto? Informe o montante: ', '0'), xDesconto))
+    or (xDesconto < 0) then
+      begin
+        ShowMessage('Informe invalor válido!');
+      end
+    else
+      begin
+          break;
+      end;
+  Until xDesconto > 0;
 
-      case TEnumNivel(rg_Tp.ItemIndex) of
-        stResidencial:
-          xvalr := (xCons * 0.60);
-        stComercial:
-          xvalr := (xCons * 0.48);
-        stIndustria:
-          xvalr := (xCons * 1.29);
+  case TEnumNivel(rg_Tp.ItemIndex) of
+    stResidencial:
+      xvalr := (xCons * 0.60) - xDesconto;
 
-    end;
-    LB_Saida.Caption := ('A conta de luz é de R$ ' + FormatCurr('#,###.00', xValr));
+    stComercial:
+      xvalr := (xCons * 0.48) - xDesconto;
 
-    end;
+    stIndustria:
+      xvalr := (xCons * 1.29) - xDesconto;
+
+    stFazenda:
+      xvalr := (xCons * 2.18) - xDesconto;
+  end;
+
+  LB_Saida.Caption := ('A conta de luz é de R$ ' + FormatCurr('#,###.00', xValr));
+
+  end;
 
 end.

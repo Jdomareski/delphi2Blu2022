@@ -91,7 +91,8 @@ object Form1: TForm1
     Items.Strings = (
       'Resid'#234'ncial'
       'Com'#233'rcio'
-      'Ind'#250'stria')
+      'Ind'#250'stria'
+      'Fazenda')
     ParentBackground = False
     ParentColor = False
     ParentFont = False
