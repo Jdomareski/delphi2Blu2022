@@ -53,16 +53,16 @@ procedure TForm1.TBt_CalcularClick(Sender: TObject);
 
   case TEnumNivel(rg_Tp.ItemIndex) of
     stResidencial:
-      xvalr := (xCons * 0.80) - xDesconto;
+      xvalr := (xCons * 0.60) - xDesconto;
 
     stComercial:
-      xvalr := (xCons * 0.68) - xDesconto;
+      xvalr := (xCons * 0.48) - xDesconto;
 
     stIndustria:
-      xvalr := (xCons * 1.49) - xDesconto;
+      xvalr := (xCons * 1.29) - xDesconto;
 
     stFazenda:
-      xvalr := (xCons * 3.18) - xDesconto;
+      xvalr := (xCons * 2.18) - xDesconto;
   end;
 
   LB_Saida.Caption := ('A conta de luz é de R$ ' + FormatCurr('#,###.00', xValr));
