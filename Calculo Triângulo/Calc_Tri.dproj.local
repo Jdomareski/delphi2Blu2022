@@ -4,12 +4,13 @@
     <Transaction>2022/09/20 20:21:55.000.189,=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2022/09/23 20:30:50.000.133,=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2022/10/05 19:43:53.000.805,=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/10/05 20:27:32.000.007,C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Calculo Triângulo\Unit1.dfm</Transaction>
-    <Transaction>2022/10/05 20:27:32.000.007,C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Calculo Triângulo\Unit1.pas</Transaction>
-    <Transaction>2022/10/05 20:27:34.000.112,C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Project2.dproj=C:\Users\jdomareski\Documents\delphi2Blu2022\Calculo Triângulo\Project2.dproj</Transaction>
-    <Transaction>2022/10/05 20:28:00.000.625,C:\Users\jdomareski\Documents\delphi2Blu2022\Calculo Triângulo\Project2.dproj=C:\Users\jdomareski\Documents\delphi2Blu2022\Calculo Triângulo\Calc_Tri.dproj</Transaction>
+    <Transaction>2022/10/05 20:27:32.000.007,C:\Users\jdomareski\Documents\delphi2Blu2022\Calculo Triângulo\Unit1.dfm=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/10/05 20:27:32.000.007,C:\Users\jdomareski\Documents\delphi2Blu2022\Calculo Triângulo\Unit1.pas=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/10/05 20:27:34.000.112,C:\Users\jdomareski\Documents\delphi2Blu2022\Calculo Triângulo\Project2.dproj=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+    <Transaction>2022/10/05 20:28:00.000.625,C:\Users\jdomareski\Documents\delphi2Blu2022\Calculo Triângulo\Calc_Tri.dproj=C:\Users\jdomareski\Documents\delphi2Blu2022\Calculo Triângulo\Project2.dproj</Transaction>
     <Transaction>2022/10/05 20:28:10.000.909,C:\Users\jdomareski\Documents\delphi2Blu2022\Calculo Triângulo\Calc_Tri.dproj=C:\Users\jdomareski\Documents\delphi2Blu2022\Calculo Triângulo\Calc_Tri.dproj</Transaction>
-    <Transaction>2022/10/05 20:28:29.000.825,C:\Users\jdomareski\Documents\delphi2Blu2022\Calculo Triângulo\Unit1.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Calculo Triângulo\Calc_Tria.dfm</Transaction>
-    <Transaction>2022/10/05 20:28:29.000.825,C:\Users\jdomareski\Documents\delphi2Blu2022\Calculo Triângulo\Unit1.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Calculo Triângulo\Calc_Tria.pas</Transaction>
+    <Transaction>2022/10/05 20:28:29.000.825,C:\Users\jdomareski\Documents\delphi2Blu2022\Calculo Triângulo\Calc_Tria.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Calculo Triângulo\Unit1.pas</Transaction>
+    <Transaction>2022/10/05 20:28:29.000.825,C:\Users\jdomareski\Documents\delphi2Blu2022\Calculo Triângulo\Calc_Tria.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Calculo Triângulo\Unit1.dfm</Transaction>
+    <Transaction>2022/10/05 21:30:52.875,=C:\Users\jdomareski\Documents\delphi2Blu2022\Calculo Triângulo\UTriangulo.pas</Transaction>
   </Transactions>
 </BorlandProject>

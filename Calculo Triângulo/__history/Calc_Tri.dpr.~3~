@@ -2,8 +2,7 @@ program Calc_Tri;
 
 uses
   Vcl.Forms,
-  Calc_Tria in 'Calc_Tria.pas' {Form1},
-  UTriangulo in 'UTriangulo.pas';
+  Calc_Tria in 'Calc_Tria.pas' {Form1};
 
 {$R *.res}
 

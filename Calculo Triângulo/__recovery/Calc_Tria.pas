@@ -30,6 +30,7 @@ type
     LB_TySaida: TLabel;
     LB_Saida: TLabel;
     procedure BT_001Click(Sender: TObject);
+    procedure BT_002Click(Sender: TObject);
   private
  Procedure Calcular;
   public
@@ -68,14 +69,19 @@ var
     LB_TySaida.caption := formatFloat('0.00', xA_y);
 
           if (xA_x > xA_y)  then
-            LB_Saida.caption := ('A ·rea do tri‚ngulo "x" È maior')
+            LB_Saida.caption := ('A √°rea do tri√¢ngulo "x" √© maior')
 
           else
-            LB_Saida.caption := ('A ·rea do tri‚ngulo "y" È maior');
+            LB_Saida.caption := ('A √°rea do tri√¢ngulo "y" √© maior');
 
   end;
 
 
+
+procedure TForm1.BT_002Click(Sender: TObject);
+begin
+
+end;
 
 procedure TForm1.Calcular;
 var
@@ -103,13 +109,13 @@ xTrianguloy := TTriangulo.Create;
 
    xAreaY := xTrianguloy.Area;
 
-   LB_TxSaida.caption := 'Triangulo X ¡rea : ' + Formatfloat('0.00', xAreaX);
-   LB_TySaida.caption := 'Triangulo Y ¡rea : ' + Formatfloat('0.00', xAreaY);
+   LB_TxSaida.caption := 'Triangulo X √Årea : ' + Formatfloat('0.00', xAreaX);
+   LB_TySaida.caption := 'Triangulo Y √Årea : ' + Formatfloat('0.00', xAreaY);
 
    if (xAreaX > xareaY) then
-    LB_Saida.Caption := 'A ·rea do tri‚ngulo X È maior'
+    LB_Saida.Caption := 'A √°rea do tri√¢ngulo X √© maior'
     else
-    LB_Saida.Caption := 'A ·rea do tri‚ngulo Y È maior';
+    LB_Saida.Caption := 'A √°rea do tri√¢ngulo Y √© maior';
 
   finally
     FreeAndNil (xTriangulox);

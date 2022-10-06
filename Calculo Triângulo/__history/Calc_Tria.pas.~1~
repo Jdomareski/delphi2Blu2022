@@ -31,7 +31,7 @@ type
     LB_Saida: TLabel;
     procedure BT_001Click(Sender: TObject);
   private
- Procedure Calcular;
+    { Private declarations }
   public
     { Public declarations }
   end;
@@ -40,9 +40,6 @@ var
   Form1: TForm1;
 
 implementation
-
-uses
-  UTriangulo;
 
 {$R *.dfm}
 
@@ -76,46 +73,5 @@ var
   end;
 
 
-
-procedure TForm1.Calcular;
-var
-xtriangulox: TTriangulo;
-xTrianguloy: TTriangulo;
-
-xAreaX: Double;
-xareaY: Double;
-
-begin
-
-xTriangulox := TTriangulo.Create;
-xTrianguloy := TTriangulo.Create;
-
-  try
-    xtrianguloX.a := strToFloatdef(EDT_Xa.Text, 0);
-    xtrianguloX.b := strToFloatdef(EDT_Xb.Text, 0);
-    xtrianguloX.c := strToFloatdef(EDT_Xc.Text, 0);
-
-    xAreaX := xTrianguloX.Area;
-
-    xtrianguloy.a := strToFloatdef(EDT_ya.Text, 0);
-    xtrianguloy.b := strToFloatdef(EDT_yb.Text, 0);
-    xtrianguloy.c := strToFloatdef(EDT_yc.Text, 0);
-
-   xAreaY := xTrianguloy.Area;
-
-   LB_TxSaida.caption := 'Triangulo X Área : ' + Formatfloat('0.00', xAreaX);
-   LB_TySaida.caption := 'Triangulo Y Área : ' + Formatfloat('0.00', xAreaY);
-
-   if (xAreaX > xareaY) then
-    LB_Saida.Caption := 'A área do triângulo X é maior'
-    else
-    LB_Saida.Caption := 'A área do triângulo Y é maior';
-
-  finally
-    FreeAndNil (xTriangulox);
-    FreeAndNil (xTrianguloy);
-  end;
-
-end;
 
 end.
