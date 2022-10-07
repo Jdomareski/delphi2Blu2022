@@ -30,6 +30,7 @@ type
     LB_TySaida: TLabel;
     LB_Saida: TLabel;
     procedure BT_001Click(Sender: TObject);
+    procedure BT_002Click(Sender: TObject);
   private
  Procedure Calcular;
   public
@@ -77,6 +78,11 @@ var
 
 
 
+procedure TForm1.BT_002Click(Sender: TObject);
+begin
+  Calcular;
+end;
+
 procedure TForm1.Calcular;
 var
 xtriangulox: TTriangulo;
@@ -103,8 +109,8 @@ xTrianguloy := TTriangulo.Create;
 
    xAreaY := xTrianguloy.Area;
 
-   LB_TxSaida.caption := 'Triangulo X Área : ' + Formatfloat('0.00', xAreaX);
-   LB_TySaida.caption := 'Triangulo Y Área : ' + Formatfloat('0.00', xAreaY);
+   LB_TxSaida.caption := Formatfloat('0.00', xAreaX);
+   LB_TySaida.caption := Formatfloat('0.00', xAreaY);
 
    if (xAreaX > xareaY) then
     LB_Saida.Caption := 'A área do triângulo X é maior'

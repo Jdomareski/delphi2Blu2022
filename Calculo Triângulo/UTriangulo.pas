@@ -4,12 +4,24 @@ interface
 
 type
   TTriangulo = class
-    public
-    a: Double;
-    b: Double;
-    c: Double;
+    Private
+      Fa: Double;
+      Fb: Double;
+      Fc: Double;
 
+        function GetA: Double;
+        procedure SetA(const Value: Double);
+        function GetB: Double;
+        procedure SetB(const Value: Double);
+        function GetC: Double;
+        procedure SetC(const Value: Double);
+
+    public
       function Area : Double;
+
+        Property A: Double read GetA write SetA;
+        Property B: Double read GetB write SetB;
+        Property C: Double read GetC write SetC;
   end;
 
 implementation
@@ -20,8 +32,38 @@ function TTriangulo.Area: Double;
 var
   xP : Double;
 begin
-  xP  := (a + b + c) /2;
-  result := sqrt(xP*(xP - a) * (xP - b) * (xP - c));
+  xP  := (Fa + Fb + Fc) /2;
+  result := sqrt(xP*(xP - Fa) * (xP - Fb) * (xP - Fc));
+end;
+
+function TTriangulo.GetA: Double;
+begin
+  result := Fa
+end;
+
+function TTriangulo.GetB: Double;
+begin
+  result := Fb
+end;
+
+function TTriangulo.GetC: Double;
+begin
+  result := Fc
+end;
+
+procedure TTriangulo.SetA(const Value: Double);
+begin
+Fa := Value;
+end;
+
+procedure TTriangulo.SetB(const Value: Double);
+begin
+Fb := Value;
+end;
+
+procedure TTriangulo.SetC(const Value: Double);
+begin
+ Fc := Value;
 end;
 
 end.
