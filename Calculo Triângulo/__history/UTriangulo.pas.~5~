@@ -8,22 +8,20 @@ type
       Fa: Double;
       Fb: Double;
       Fc: Double;
-      Fd: Double;
 
-        function GetA: Double;
-        procedure SetA(const Value: Double);
-        function GetB: Double;
-        procedure SetB(const Value: Double);
-        function GetC: Double;
-        procedure SetC(const Value: Double);
+      function GetA: Double;
+      procedure SetA(const Value: Double);
+    function GetB: Double;
+    procedure SetB(const Value: Double);
+    function GetC: Double;
+    procedure SetC(const Value: Double);
 
     public
       function Area : Double;
 
-        Property A: Double read GetA write SetA;
-        Property B: Double read GetB write SetB;
-        Property C: Double read GetC write SetC;
-        Property D: Double read GetD //property somente leitura
+      Property A: Double read GetA write SetA;
+      Property B: Double read GetB write SetB;
+      Property C: Double read GetC write SetC;
   end;
 
 implementation
