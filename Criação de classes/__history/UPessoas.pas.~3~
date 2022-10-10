@@ -18,7 +18,7 @@ type
       procedure SetNome(const Value: String);
 
    Public
-      Function CalcIdade: Double;
+      Function CalcIdade : Double;
 
       Property Nome : String read GetNome write SetNome;
       Property Data : TDate read GetData write Setdata;

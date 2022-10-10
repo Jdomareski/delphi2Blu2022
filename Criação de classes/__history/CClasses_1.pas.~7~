@@ -45,14 +45,11 @@ var
 
   begin
     try
-      MMB_saida.lines.Clear;
-      xPessoa := nil;
       xPessoa := TPessoa.Create;
-
       xPessoa.Nome := inputbox('Nome do indivíduo', 'Digite Seu Nome','0');
       xPessoa.Data := strToDate(inputbox('Data de Nascimento do indivíduo',
        'Digite Seu Data de Nascimento','0'));
-      xPessoa.Altura := StrTofloat(inputbox('Altura do indivíduo',
+      xPessoa.Altura := StrToInt(inputbox('Altura do indivíduo',
        'Digite Sua Altura','0'));
 
        MMB_saida.lines.add(xPessoa.Nome);
