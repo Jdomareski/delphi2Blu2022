@@ -1,0 +1,59 @@
+unit UConta;
+
+
+interface
+
+type
+  TConta = Class
+  private
+    FNum : Integer;
+    FNome : String;
+    FSaldo : Double;
+    function getConta: Integer;
+    function getNome: String;
+    function getSaldo: Double;
+    procedure setConta(const Value: Integer);
+    procedure setNome(const Value: String);
+    procedure setSaldo(const Value: Double);
+  public
+    Property Conta: Integer read getConta write setConta;
+    Property Nome: String read getNome write setNome;
+    Property Saldo: Double read getSaldo write setSaldo;
+
+  End;
+
+implementation
+
+{ TConta }
+
+function TConta.getConta: Integer;
+begin
+   result := FNum;
+end;
+
+function TConta.getNome: String;
+begin
+   result := FNome;
+end;
+
+function TConta.getSaldo: Double;
+begin
+   result := FSaldo;
+end;
+
+procedure TConta.setConta(const Value: Integer);
+begin
+ FNum := Value;
+end;
+
+procedure TConta.setNome(const Value: String);
+begin
+ FNome := Value;
+end;
+
+procedure TConta.setSaldo(const Value: Double);
+begin
+ Fsaldo := Value;
+end;
+
+end.

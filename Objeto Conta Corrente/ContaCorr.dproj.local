@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/09/20 20:21:55.000.189,=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/09/23 20:30:50.000.133,=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/10/10 20:15:47.000.787,=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/10/10 20:16:31.000.884,C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Objeto Conta Corrente\ContaCorrente.dfm</Transaction>
+    <Transaction>2022/10/10 20:16:31.000.884,C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Objeto Conta Corrente\ContaCorrente.pas</Transaction>
+    <Transaction>2022/10/10 20:16:41.000.194,C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Project2.dproj=C:\Users\jdomareski\Documents\delphi2Blu2022\Objeto Conta Corrente\ContaCorr.dproj</Transaction>
+    <Transaction>2022/10/10 20:16:52.000.759,=C:\Users\jdomareski\Documents\delphi2Blu2022\Objeto Conta Corrente\Unit1.pas</Transaction>
+    <Transaction>2022/10/10 20:17:07.000.451,C:\Users\jdomareski\Documents\delphi2Blu2022\Objeto Conta Corrente\Unit1.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Objeto Conta Corrente\UConta.pas</Transaction>
+  </Transactions>
+</BorlandProject>

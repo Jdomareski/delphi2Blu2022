@@ -1,0 +1,43 @@
+unit ContaCorrente;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    EDT_NConat: TEdit;
+    EDT_Nome: TEdit;
+    EDT_Saldo: TEdit;
+    BT_AltNome: TButton;
+    BT_Ins: TButton;
+    LB_NunConta: TLabel;
+    LB_Nome: TLabel;
+    LB_Saldo: TLabel;
+    BT_dep: TButton;
+    BT_Saque: TButton;
+  private
+    Procedure Cadastrar;
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+{ TForm1 }
+
+procedure TForm1.Cadastrar;
+begin
+
+end;
+//     inputbox('Alterar Nome do Titular', 'insira o nome' , '0');
+// strTocurr(inputbox('Depósito', 'Insira o Valor que quer depositar', '0'));
+//strTocurr(inputbox('Saque', 'Insira o Valor que quer sacar', '0'));
+end.

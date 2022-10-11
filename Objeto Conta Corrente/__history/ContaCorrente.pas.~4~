@@ -1,0 +1,63 @@
+unit ContaCorrente;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, UConta;
+
+type
+  TForm1 = class(TForm)
+    EDT_NConat: TEdit;
+    EDT_Nome: TEdit;
+    EDT_Saldo: TEdit;
+    BT_AltNome: TButton;
+    BT_Ins: TButton;
+    LB_NunConta: TLabel;
+    LB_Nome: TLabel;
+    LB_Saldo: TLabel;
+    BT_dep: TButton;
+    BT_Saque: TButton;
+    procedure BT_InsClick(Sender: TObject);
+  private
+    fConta : TConta;
+    Procedure Cadastrar;
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+{ TForm1 }
+
+procedure TForm1.BT_InsClick(Sender: TObject);
+begin
+ Cadastrar;
+end;
+
+procedure TForm1.Cadastrar;
+var
+anum : Integer;
+anome : string;
+asaldo : Currency;
+
+  begin
+  anum := strToint(EDT_NConat.Text);
+  anome := (EDT_Nome.Text);
+  asaldo := strToCurr(EDT_Saldo.Text);
+
+  fconta := Tconta.create(anum, anome, asaldo);
+
+  LB_NunConta.caption := ('Conta Número:  ') + IntToStr(anum);
+  LB_Nome.caption := ('Nome do Titular:  ' + anome);
+  LB_Saldo.caption := ('Saldo da Conta: R$ ') + CurrToStr(asaldo);
+  end;
+//     inputbox('Alterar Nome do Titular', 'insira o nome' , '0');
+// strTocurr(inputbox('Depósito', 'Insira o Valor que quer depositar', '0'));
+//strTocurr(inputbox('Saque', 'Insira o Valor que quer sacar', '0'));
+end.
