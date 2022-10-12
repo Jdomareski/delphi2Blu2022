@@ -1,0 +1,143 @@
+unit UPessoa;
+
+interface
+
+type
+
+TPessoa = Class
+  Fnome, fEndereco : String;
+
+  private
+    function getEndereco: String;
+    function getNome: String;
+    procedure setendereco(const Value: String);
+    procedure setNome(const Value: String);
+
+
+  public
+    property Nome: String read getNome write setNome;
+    property Endereco: String read getEndereco write setendereco;
+
+end;
+
+
+TPessoaFisica = Class (TPessoa)
+  FCPF : String;
+  FIdade : Byte;
+
+  Private
+      function getCPF: String;
+      function getIdade: Byte;
+      procedure setCPF(const Value: String);
+      procedure setIdade(const Value: Byte);
+
+
+  Public
+
+    Property CPF : String read getCPF write setCPF;
+    Property Idade : Byte read getIdade write setIdade;
+
+
+End;
+
+TPessoaJuridica = Class (TPessoa)
+  FCNPJ, FIE : String;
+
+  Private
+
+    function getCNPJ: String;
+    function getFIE: String;
+    procedure setCNPJ(const Value: String);
+    procedure setFIE(const Value: String);
+    function getIE: String;
+    procedure setIE(const Value: String);
+
+  Public
+
+    Property CNPJ : String read getCNPJ write setCNPJ;
+    Property IE : String read getIE write setIE;
+
+
+End;
+
+
+implementation
+
+{ TPessoa }
+
+function TPessoa.getEndereco: String;
+begin
+
+end;
+
+function TPessoa.getNome: String;
+begin
+
+end;
+
+procedure TPessoa.setendereco(const Value: String);
+begin
+
+end;
+
+procedure TPessoa.setNome(const Value: String);
+begin
+
+end;
+
+{ TPessoaFisica }
+
+function TPessoaFisica.getCPF: String;
+begin
+
+end;
+
+function TPessoaFisica.getIdade: Byte;
+begin
+
+end;
+
+procedure TPessoaFisica.setCPF(const Value: String);
+begin
+
+end;
+
+procedure TPessoaFisica.setIdade(const Value: Byte);
+begin
+
+end;
+
+{ TPessoaJuridica }
+
+
+function TPessoaJuridica.getCNPJ: String;
+begin
+
+end;
+
+function TPessoaJuridica.getFIE: String;
+begin
+
+end;
+
+function TPessoaJuridica.getIE: String;
+begin
+
+end;
+
+procedure TPessoaJuridica.setCNPJ(const Value: String);
+begin
+
+end;
+
+procedure TPessoaJuridica.setFIE(const Value: String);
+begin
+
+end;
+
+procedure TPessoaJuridica.setIE(const Value: String);
+begin
+
+end;
+
+end.
