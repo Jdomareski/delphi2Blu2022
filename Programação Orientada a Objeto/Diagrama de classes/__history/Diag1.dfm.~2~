@@ -2,8 +2,8 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 262
-  ClientWidth = 943
+  ClientHeight = 254
+  ClientWidth = 485
   Color = clWhite
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -52,30 +52,6 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
   end
-  object Result1: TLabel
-    Left = 40
-    Top = 205
-    Width = 3
-    Height = 13
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
-  object Result2: TLabel
-    Left = 353
-    Top = 205
-    Width = 3
-    Height = 13
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
   object EDT_Nome: TEdit
     Left = 14
     Top = 48
@@ -118,7 +94,7 @@ object Form1: TForm1
     TabOrder = 2
     TextHint = 'Insira o CPF'
   end
-  object CNPJ: TEdit
+  object EDT_CNPJ: TEdit
     Left = 291
     Top = 145
     Width = 187
@@ -162,7 +138,7 @@ object Form1: TForm1
   end
   object BT_01: TButton
     Left = 152
-    Top = 229
+    Top = 221
     Width = 187
     Height = 25
     Caption = 'Cadastrar Dados'
@@ -174,13 +150,5 @@ object Form1: TForm1
     ParentFont = False
     TabOrder = 6
     OnClick = BT_01Click
-  end
-  object MMBox: TMemo
-    Left = 552
-    Top = 32
-    Width = 369
-    Height = 193
-    TabOrder = 7
-    Visible = False
   end
 end

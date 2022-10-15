@@ -59,6 +59,7 @@ begin
       MMBox.lines.Add('Idade do Indivíduo   ' + tpessoafisica(xpessoa).Idade.ToString);
       xPessoa.Gravar(xPessoa);
       Result1.Caption := imprimeCPF(CPF.Text);
+      xPessoa.Gravar(xPessoa);
       Result2.Caption := 'Erro: CNPJ inválido !!!';
       MMbox.Visible:= true;
     end

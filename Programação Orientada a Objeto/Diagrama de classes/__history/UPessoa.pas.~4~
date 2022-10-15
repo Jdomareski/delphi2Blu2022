@@ -17,7 +17,7 @@ TPessoa = Class
   public
     property Nome: String read getNome write setNome;
     property Endereco: String read getEndereco write setendereco;
-    procedure Gravar(aPessoa: TPessoa); virtual; abstract;
+
 end;
 
 
@@ -36,7 +36,7 @@ TPessoaFisica = Class (TPessoa)
 
     Property CPF : String read getCPF write setCPF;
     Property Idade : Byte read getIdade write setIdade;
-    procedure Gravar(aPessoa: TPessoa); override;
+
 
 End;
 
@@ -54,15 +54,12 @@ TPessoaJuridica = Class (TPessoa)
 
     Property CNPJ : String read getCNPJ write setCNPJ;
     Property IE : String read getIE write setIE;
-    procedure Gravar(aPessoa: TPessoa); override;
+
 
 End;
 
 
 implementation
-
-uses
-  Vcl.Dialogs, System.SysUtils;
 
 { TPessoa }
 
@@ -98,11 +95,6 @@ begin
 Result := FIdade;
 end;
 
-procedure TPessoaFisica.Gravar(aPessoa: TPessoa);
-begin
-   showmessage(apessoa.nome + #13#10 + apessoa.nome + #13#10 + TPessoaFisica(apessoa).CPF + #13#10 + IntToStr(TPessoaFisica(apessoa).Idade));
-end;
-
 procedure TPessoaFisica.setCPF(const Value: String);
 begin
  FCPF := value;
@@ -124,11 +116,6 @@ end;
 function TPessoaJuridica.getIE: String;
 begin
 Result := FIE;
-end;
-
-procedure TPessoaJuridica.Gravar(aPessoa: TPessoa);
-begin
-
 end;
 
 procedure TPessoaJuridica.setCNPJ(const Value: String);

@@ -49,35 +49,19 @@ begin
   else if isCPF(CPF.Text) then
     begin
       xpessoa := tpessoafisica.Create;
-      xpessoa.Nome := EDT_Nome.Text;
-      MMBox.lines.Add('Nome  ' + xpessoa.Nome);
-      xpessoa.Endereco := EDT_End.text;
-      MMBox.lines.Add('Endereço  ' + xpessoa.endereco);
-      tpessoafisica(xpessoa).CPF := CPF.text;
-      MMBox.lines.Add('CPF  ' + tpessoafisica(xpessoa).CPF);
-      tpessoafisica(xpessoa).Idade := strToInt(EDT_Idade.text);
-      MMBox.lines.Add('Idade do Indivíduo   ' + tpessoafisica(xpessoa).Idade.ToString);
-      xPessoa.Gravar(xPessoa);
+
       Result1.Caption := imprimeCPF(CPF.Text);
+      xPessoa.Gravar(xPessoa);
       Result2.Caption := 'Erro: CNPJ inválido !!!';
-      MMbox.Visible:= true;
     end
 
   else if isCNPJ(CNPJ.Text) then
     begin
       xpessoa := tpessoajuridica.Create;
-      xpessoa.Nome := EDT_Nome.Text;
-      MMBox.lines.Add('Nome da Empresa  ' + xpessoa.Nome);
-      xpessoa.Endereco := EDT_End.text;
-      MMBox.lines.Add('Endereço  ' + xpessoa.endereco);
-      tpessoajuridica(xpessoa).CNPJ := CNPJ.text;
-      MMBox.lines.Add('CNPJ  ' + tpessoajuridica(xpessoa).CNPJ);
-      tpessoajuridica(xpessoa).IE :=  EDT_IE.text;
-      MMBox.lines.Add('Inscrição Estadual  ' + tpessoajuridica(xpessoa).IE);
+
       xPessoa.Gravar(xPessoa);
       Result1.Caption := 'Erro: CPF inválido !!!';
-      Result2.Caption := imprimeCNPJ(CNPJ.Text);
-      MMbox.Visible:= true;
+      Result2.Caption := imprimeCNPJ(CNPJ.Text)
     end
 
   else

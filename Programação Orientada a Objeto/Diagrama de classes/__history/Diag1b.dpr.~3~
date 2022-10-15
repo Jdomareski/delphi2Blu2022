@@ -4,8 +4,7 @@ uses
   Vcl.Forms,
   Diag1 in 'Diag1.pas' {Form1},
   UPessoa in 'UPessoa.pas',
-  ValidaCPF in 'ValidaCPF.pas',
-  ValidaCNPJ in 'ValidaCNPJ.pas';
+  ValidaCPF in 'ValidaCPF.pas';
 
 {$R *.res}
 

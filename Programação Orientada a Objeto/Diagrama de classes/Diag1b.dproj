@@ -103,6 +103,8 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="UPessoa.pas"/>
+        <DCCReference Include="ValidaCPF.pas"/>
+        <DCCReference Include="ValidaCNPJ.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

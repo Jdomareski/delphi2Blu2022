@@ -1,0 +1,45 @@
+unit Diag1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    LB_Titulo: TLabel;
+    EDT_Nome: TEdit;
+    EDT_End: TEdit;
+    LB_PF: TLabel;
+    LB_PJ: TLabel;
+    EDT_CNPJ: TEdit;
+    EDT_Idade: TEdit;
+    EDT_IE: TEdit;
+    BT_01: TButton;
+    procedure BT_01Click(Sender: TObject);
+  private
+    { Private declarations }
+
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+uses ValidaCPF;
+
+
+procedure TForm1.BT_01Click(Sender: TObject);
+begin
+if isCPF(CPF.Text)
+   then Result.Caption := imprimeCPF(CPF.Text)
+else Result.Caption := 'Erro: CPF inválido !!!';
+end;
+
+end.

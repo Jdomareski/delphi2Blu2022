@@ -61,9 +61,6 @@ End;
 
 implementation
 
-uses
-  Vcl.Dialogs, System.SysUtils;
-
 { TPessoa }
 
 function TPessoa.getEndereco: String;
@@ -100,7 +97,7 @@ end;
 
 procedure TPessoaFisica.Gravar(aPessoa: TPessoa);
 begin
-   showmessage(apessoa.nome + #13#10 + apessoa.nome + #13#10 + TPessoaFisica(apessoa).CPF + #13#10 + IntToStr(TPessoaFisica(apessoa).Idade));
+
 end;
 
 procedure TPessoaFisica.setCPF(const Value: String);
