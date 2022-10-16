@@ -1,0 +1,16 @@
+unit UPessoas;
+
+interface
+type
+Tpessoa = Class
+  FNome, FEnd : String;
+Private
+
+Public
+
+
+End;
+
+implementation
+
+end.

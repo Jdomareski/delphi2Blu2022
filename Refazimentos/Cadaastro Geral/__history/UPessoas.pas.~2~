@@ -1,0 +1,120 @@
+unit UPessoas;
+
+interface
+type
+Tpessoa = Class
+  FNome, FEndereco : String;
+    Private
+        function getendereco: string;
+        function getNome: string;
+        procedure setEndereco(const Value: string);
+        procedure setNome(const Value: string);
+    Public
+        Property Nome: string read getNome write setNome;
+        Property Endereco: string read getendereco write setEndereco;
+        Procedure Gravar (aPessoa : Tpessoa); virtual; abstract;
+    End;
+
+TPessoafisica = Class (TPessoa)
+  FCPF, FIdade : String;
+    Private
+        function getCpf: String;
+        function getIdade: String;
+        procedure setCpf(const Value: String);
+        procedure setIdade(const Value: String);
+
+    Public
+        Property CPF: String read getCpf write setCpf;
+        Property Idade: String read getIdade write setIdade;
+        procedure Gravar (aPessoa : Tpessoa); override;
+    end;
+
+TPessoajuridica = class (TPessoa)
+  FCNPJ, FIE: string;
+
+  private
+    function getCNPJ: string;
+    function getIE: string;
+    procedure setCNPJ(const Value: string);
+    procedure setIE(const Value: string);
+  public
+      Property CNPJ : string read getCNPJ write setCNPJ;
+      property IE : string read getIE write setIE;
+      procedure Gravar (aPessoa : Tpessoa); override;
+
+
+End;
+
+implementation
+uses
+Vcl.Dialogs, System.SysUtils;
+
+{$REGION 'TPESSOA'}
+{ Tpessoa }
+  function Tpessoa.getendereco: string;
+    begin
+     Result := FEndereco;
+    end;
+   procedure Tpessoa.setEndereco(const Value: string);
+    begin
+     FEndereco := value;
+    end;
+
+  function Tpessoa.getNome: string;
+    begin
+     Result := FNome;
+    end;
+   procedure Tpessoa.setNome(const Value: string);
+    begin
+     FNome := value;
+    end;
+
+{$ENDREGION}
+
+{$REGION 'TPESSOA FISICA'}
+  function TPessoafisica.getCpf: String;
+    begin
+    Result := FCPF;
+    end;
+  procedure TPessoafisica.setCpf(const Value: String);
+    begin
+    FCPF := Value;
+    end;
+  function TPessoafisica.getIdade: String;
+    begin
+    Result := FIdade;
+    end;
+  procedure TPessoafisica.setIdade(const Value: String);
+    begin
+    FIdade := Value;
+    end;
+  procedure TPessoafisica.Gravar(aPessoa: Tpessoa);
+    begin
+    showmessage(apessoa.nome + #13#10 + apessoa.nome + #13#10 + TPessoaFisica(apessoa).CPF + #13#10 + IntToStr(TPessoaFisica(apessoa).Idade));
+    end;
+{$ENDREGION}
+
+{$REGION 'TPESSOA JURIDICA'}
+  function TPessoajuridica.getCNPJ: string;
+    begin
+      Result := FCNPJ
+    end;
+  procedure TPessoajuridica.setCNPJ(const Value: string);
+    begin
+      FCNPJ := Value;
+    end;
+  function TPessoajuridica.getIE: string;
+    begin
+      Result := FIE;
+    end;
+  procedure TPessoajuridica.setIE(const Value: string);
+    begin
+      FIE := Value;
+    end;
+
+  procedure TPessoajuridica.Gravar(aPessoa: Tpessoa);
+    begin
+
+    end;
+{$ENDREGION}
+end.

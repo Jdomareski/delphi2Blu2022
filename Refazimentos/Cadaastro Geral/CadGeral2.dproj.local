@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2022/10/15 18:38:50.347,=D:\Clouds\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/10/15 18:43:59.143,D:\Clouds\OneDrive\Documentos\Server\GitHub\DevsBlue\Refazimentos\Cadaastro Geral\CadGeral.pas=D:\Clouds\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/10/15 18:43:59.143,D:\Clouds\OneDrive\Documentos\Server\GitHub\DevsBlue\Refazimentos\Cadaastro Geral\CadGeral.dfm=D:\Clouds\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/10/15 18:44:06.222,D:\Clouds\OneDrive\Documentos\Server\GitHub\DevsBlue\Refazimentos\Cadaastro Geral\CadGeral2.dproj=D:\Clouds\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/10/15 18:56:18.625,=D:\Clouds\OneDrive\Documentos\Server\GitHub\DevsBlue\Refazimentos\Cadaastro Geral\Unit1.pas</Transaction>
+    <Transaction>2022/10/15 18:56:30.858,D:\Clouds\OneDrive\Documentos\Server\GitHub\DevsBlue\Refazimentos\Cadaastro Geral\UPessoas.pas=D:\Clouds\OneDrive\Documentos\Server\GitHub\DevsBlue\Refazimentos\Cadaastro Geral\Unit1.pas</Transaction>
+  </Transactions>
+  <ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="CadGeral.pas"/>
+    <File Path="CadGeral.dfm"/>
+    <File Path="UPessoas.pas"/>
+  </ProjectSortOrder>
+</BorlandProject>
