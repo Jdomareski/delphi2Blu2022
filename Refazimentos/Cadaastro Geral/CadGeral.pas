@@ -16,8 +16,6 @@ type
     CNPJ: TEdit;
     E_IE: TEdit;
     Button1: TButton;
-    Result1: TLabel;
-    Result2: TLabel;
     procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
@@ -40,7 +38,7 @@ var
 begin
   if (CPF.text <> '') and (CNPJ.text <> '') then
     showmessage('Prencha apenas CPF ou CNPJ')
-  else if isCPF(CPF.Text) then
+  else if tpessoafisica(xpessoa).isCPF(CPF.Text) then
     begin
       xpessoa := tpessoafisica.Create;
       xpessoa.Nome := E_Nome.Text;
@@ -48,11 +46,11 @@ begin
       tpessoafisica(xpessoa).CPF := CPF.text;
       tpessoafisica(xpessoa).Idade := E_Idade.text;
       xPessoa.Gravar(xPessoa);
-      Result1.Caption := imprimeCPF(CPF.Text);
+      Result1.Caption := tpessoafisica(xpessoa).imprimeCPF(CPF.Text);
       Result2.Caption := 'Erro: CNPJ inválido !!!';
     end
 
-  else if isCNPJ(CNPJ.Text) then
+  else if tpessoajuridica(xPessoa).isCNPJ(CNPJ.Text) then
     begin
       xpessoa := tpessoajuridica.Create;
       xpessoa.Nome := E_Nome.Text;
@@ -61,7 +59,7 @@ begin
       tpessoajuridica(xpessoa).IE :=  E_IE.text;
       xPessoa.Gravar(xPessoa);
       Result1.Caption := 'Erro: CPF inválido !!!';
-      Result2.Caption := imprimeCNPJ(CNPJ.Text);
+      Result2.Caption := tpessoajuridica(xPessoa).imprimeCNPJ(CNPJ.Text);
     end
 
   else
@@ -69,5 +67,5 @@ begin
       Result1.Caption := 'Erro: CPF inválido !!!';
       Result2.Caption := 'Erro: CNPJ inválido !!!';
     end;
-
+      freeandNil (xPessoa)
 end

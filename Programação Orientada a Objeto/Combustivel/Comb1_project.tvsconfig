@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<TgConfig Version="3" SubLevelDisabled="False">
+  <Option Name="namespaceFolder.Combustivel" Type="System.String" Value="" Category="General" IsBrowsable="False" />
+  <Option Name="namespaceFolder.Comb1" Type="System.String" Value="Comb1" Category="General" IsBrowsable="False" />
+  <Option Name="namespaceFolder.TobjComb" Type="System.String" Value="" Category="General" IsBrowsable="False" />
+</TgConfig>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="ux29qyj64hs_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="design:view:::kj7lsptq9tj_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="460,260,200,220" />
+      <property name="hideModule" value="False" />
+      <property name="location_set_by_user" value="True" />
+      <property name="bounds_setted_by_user" value="True" />
+      <reference referencedUin="delphi:e_class:src:Comb1:TobjComb.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:Comb1:TobjComb.TBombaCombustivel" />
+      <reference referencedUin="delphi:e_class:src:Comb1:TobjComb.tTipo" />
+    </reference>
+    <reference referencedUin="design:view:::pb8z1fbnuvm_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="180,120,180,180" />
+      <property name="location_set_by_user" value="True" />
+      <property name="bounds_setted_by_user" value="True" />
+      <reference referencedUin="delphi:e_class:src:Comb1:Combustivel.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:Comb1:Combustivel.TForm2" />
+    </reference>
+    <reference referencedUin="design:view:::6n3cle5s5qk_v">
+      <property name="$hidden" value="True" />
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="340,400,220,260" />
+      <property name="location_set_by_user" value="True" />
+      <property name="bounds_setted_by_user" value="True" />
+      <reference referencedUin="delphi:e_class:src:Comb1:Comb1.@unitclass" />
+    </reference>
+  </view>
+</nodeSet>

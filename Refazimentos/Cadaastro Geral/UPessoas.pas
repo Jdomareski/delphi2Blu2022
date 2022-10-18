@@ -27,7 +27,7 @@ TPessoafisica = Class (TPessoa)
 
 
     Public
-        function isCPF(CPF: string): boolean;
+        class function isCPF(CPF: string): boolean;
         function imprimeCPF(CPF: string): string;
         Property CPF: String read getCpf write setCpf;
         Property Idade: String read getIdade write setIdade;
@@ -42,7 +42,7 @@ TPessoajuridica = class (TPessoa)
         procedure setCNPJ(const Value: string);
         procedure setIE(const Value: string);
   public
-        function isCNPJ(CNPJ: string): boolean;
+        class function isCNPJ(CNPJ: string): boolean;
         function imprimeCNPJ(CNPJ: string): string;
         Property CNPJ : string read getCNPJ write setCNPJ;
         Property IE : string read getIE write setIE;
@@ -105,7 +105,7 @@ begin
  copy(CPF, 7, 3) + '-' + copy(CPF, 10, 2);
 end;
 
-function TPessoafisica.isCPF(CPF: string): boolean;
+class function TPessoafisica.isCPF(CPF: string): boolean;
  var  dig10, dig11: string;
       s, i, r, peso: integer;
   begin
@@ -190,7 +190,7 @@ procedure TPessoajuridica.setIE(const Value: string);
 
 
 
-function TPessoajuridica.isCNPJ(CNPJ: string): boolean;
+class function TPessoajuridica.isCNPJ(CNPJ: string): boolean;
 var
 dig13, dig14: string;
  sm, i, r, peso: integer;

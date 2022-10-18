@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="kj7lsptq9tj_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:Comb1:TobjComb.@unitclass">
+      <property name="$shortcutReference" value="true" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Comb1:TobjComb.tTipo">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_field:src:Comb1:TobjComb.tTipo.tpAlcool" />
+      <reference referencedUin="delphi:e_field:src:Comb1:TobjComb.tTipo.tpDiesel" />
+      <reference referencedUin="delphi:e_field:src:Comb1:TobjComb.tTipo.tpGasolina" />
+      <reference referencedUin="delphi:e_field:src:Comb1:TobjComb.tTipo.tpGasolinaAditivada" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Comb1:TobjComb.TBombaCombustivel">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_field:src:Comb1:TobjComb.TBombaCombustivel.fPrecoPLts" />
+      <reference referencedUin="delphi:e_method:src:Comb1:TobjComb.TBombaCombustivel.getPrecoPLts()" />
+      <reference referencedUin="delphi:e_method:src:Comb1:TobjComb.TBombaCombustivel.setPrecoPLts(System.Currency)" />
+      <reference referencedUin="delphi:e_method:src:Comb1:TobjComb.TBombaCombustivel.abastPorValor(System.Currency)" />
+      <reference referencedUin="delphi:e_method:src:Comb1:TobjComb.TBombaCombustivel.abastPorLitro(System.Double)" />
+      <reference referencedUin="delphi:e_method:src:Comb1:TobjComb.TBombaCombustivel.alterarCombustivel(System.string)" />
+      <reference referencedUin="delphi:e_property:src:Comb1:TobjComb.TBombaCombustivel.PrecoPLts" />
+      <reference referencedUin="delphi:e_field:src:Comb1:TobjComb.TBombaCombustivel.FCombustivel" />
+      <reference referencedUin="delphi:e_field:src:Comb1:TobjComb.TBombaCombustivel.FQuantidade" />
+      <reference referencedUin="delphi:e_field:src:Comb1:TobjComb.TBombaCombustivel.Fvalor" />
+      <reference referencedUin="delphi:e_method:src:Comb1:TobjComb.TBombaCombustivel.alterarQuantidade()" />
+      <reference referencedUin="delphi:e_method:src:Comb1:TobjComb.TBombaCombustivel.alterarValor()" />
+      <reference referencedUin="delphi:e_method:src:Comb1:TobjComb.TBombaCombustivel.getCombustivel()" />
+      <reference referencedUin="delphi:e_method:src:Comb1:TobjComb.TBombaCombustivel.getQuantidade()" />
+      <reference referencedUin="delphi:e_method:src:Comb1:TobjComb.TBombaCombustivel.getvalor()" />
+      <reference referencedUin="delphi:e_method:src:Comb1:TobjComb.TBombaCombustivel.setCombustivel(System.string)" />
+      <reference referencedUin="delphi:e_method:src:Comb1:TobjComb.TBombaCombustivel.setQuantidade(System.Double)" />
+      <reference referencedUin="delphi:e_method:src:Comb1:TobjComb.TBombaCombustivel.setvalor(System.Currency)" />
+      <reference referencedUin="delphi:e_property:src:Comb1:TobjComb.TBombaCombustivel.Combustivel" />
+      <reference referencedUin="delphi:e_property:src:Comb1:TobjComb.TBombaCombustivel.Quantidade" />
+      <reference referencedUin="delphi:e_property:src:Comb1:TobjComb.TBombaCombustivel.Valor" />
+      <reference referencedUin="delphi:l_ast:src:Comb1:TobjComb.TBombaCombustivel.FCombustivel" />
+    </reference>
+  </view>
+</nodeSet>
