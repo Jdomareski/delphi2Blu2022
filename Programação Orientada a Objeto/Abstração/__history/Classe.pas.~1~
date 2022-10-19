@@ -1,0 +1,18 @@
+unit Classe;
+
+interface
+
+Type
+
+TAviao = Class
+
+
+Private
+
+Public
+
+End;
+
+implementation
+
+end.
