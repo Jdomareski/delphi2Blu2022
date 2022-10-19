@@ -4,5 +4,35 @@
     <property name="$defaultDiagram" value="true" />
     <property name="$metaclass" value="Package Diagram" />
     <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:Comb1:Combustivel.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_field:src:Comb1:Combustivel.@unitclass.Form2" />
+      <reference referencedUin="delphi:l_ast:src:Comb1:Combustivel.@unitclass.Form2" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Comb1:Combustivel.TForm2">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,187,400" />
+      <reference referencedUin="delphi:e_field:src:Comb1:Combustivel.TForm2.RG_TComb" />
+      <reference referencedUin="delphi:e_field:src:Comb1:Combustivel.TForm2.LB_Tit1" />
+      <reference referencedUin="delphi:e_field:src:Comb1:Combustivel.TForm2.LB_Tit2" />
+      <reference referencedUin="delphi:e_field:src:Comb1:Combustivel.TForm2.EDT_Vlr" />
+      <reference referencedUin="delphi:e_field:src:Comb1:Combustivel.TForm2.EDT_Lts" />
+      <reference referencedUin="delphi:e_field:src:Comb1:Combustivel.TForm2.LB_Tit3" />
+      <reference referencedUin="delphi:e_field:src:Comb1:Combustivel.TForm2.BT_AbstVlr" />
+      <reference referencedUin="delphi:e_field:src:Comb1:Combustivel.TForm2.BT_AbstLts" />
+      <reference referencedUin="delphi:e_field:src:Comb1:Combustivel.TForm2.BT_AltPrecoCB" />
+      <reference referencedUin="delphi:e_field:src:Comb1:Combustivel.TForm2.Edit1" />
+      <reference referencedUin="delphi:e_field:src:Comb1:Combustivel.TForm2.BT_RPRC" />
+      <reference referencedUin="delphi:e_field:src:Comb1:Combustivel.TForm2.ED_QtdBmb" />
+      <reference referencedUin="delphi:e_field:src:Comb1:Combustivel.TForm2.LB_Titulo" />
+      <reference referencedUin="delphi:e_field:src:Comb1:Combustivel.TForm2.LB_Saida" />
+      <reference referencedUin="delphi:e_method:src:Comb1:Combustivel.TForm2.FormCreate(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:Comb1:Combustivel.TForm2.BT_AbstVlrClick(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:Comb1:Combustivel.TForm2.BT_RPRCClick(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:Comb1:Combustivel.TForm2.BT_AbstLtsClick(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:Comb1:Combustivel.TForm2.RG_TCombClick(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:Comb1:Combustivel.TForm2.Edit1Change(System.TObject)" />
+      <reference referencedUin="delphi:e_field:src:Comb1:Combustivel.TForm2.xBomba" />
+    </reference>
   </view>
 </nodeSet>

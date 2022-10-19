@@ -7,6 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, TobjComb;
 
 type
+  tTipo = (tpAlcool, tpGasolina, tpGasolinaAditivada, tpDiesel);
   TForm2 = class(TForm)
     RG_TComb: TRadioGroup;
     LB_Tit1: TLabel;
