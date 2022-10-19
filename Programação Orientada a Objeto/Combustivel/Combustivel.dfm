@@ -35,126 +35,6 @@ object Form2: TForm2
     Height = 13
     Caption = 'Ou'
   end
-  object LBS_1NMX: TLabel
-    Left = 16
-    Top = 249
-    Width = 211
-    Height = 19
-    Caption = 'Litros Dispon'#237'veis na Bomba: '
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    Visible = False
-  end
-  object LBS_2MX: TLabel
-    Left = 367
-    Top = 249
-    Width = 5
-    Height = 19
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
-  object LBS_3NMX: TLabel
-    Left = 415
-    Top = 249
-    Width = 39
-    Height = 19
-    Caption = 'Litros'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    Visible = False
-  end
-  object LBS_4NMX: TLabel
-    Left = 16
-    Top = 274
-    Width = 162
-    Height = 19
-    Caption = 'Quantidade Abastecida'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    Visible = False
-  end
-  object LBS_5MX: TLabel
-    Left = 368
-    Top = 274
-    Width = 5
-    Height = 19
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
-  object LBS_6NMX: TLabel
-    Left = 415
-    Top = 274
-    Width = 39
-    Height = 19
-    Caption = 'Litros'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    Visible = False
-  end
-  object LBS_7NMX: TLabel
-    Left = 16
-    Top = 299
-    Width = 119
-    Height = 19
-    Caption = 'Valor Abastecido'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    Visible = False
-  end
-  object LB_8MX: TLabel
-    Left = 368
-    Top = 299
-    Width = 5
-    Height = 19
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
-  object LBS_9NMX: TLabel
-    Left = 431
-    Top = 299
-    Width = 37
-    Height = 19
-    Caption = 'Reais'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    Visible = False
-  end
   object LB_Titulo: TLabel
     Left = 124
     Top = 8
@@ -168,6 +48,20 @@ object Form2: TForm2
     Font.Style = []
     ParentFont = False
   end
+  object LB_Saida: TLabel
+    Left = 8
+    Top = 248
+    Width = 51
+    Height = 25
+    Caption = 'Saida'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    Visible = False
+  end
   object RG_TComb: TRadioGroup
     Left = 8
     Top = 57
@@ -180,6 +74,7 @@ object Form2: TForm2
       'Gasolna Aditivada'
       'Diesel')
     TabOrder = 0
+    OnClick = RG_TCombClick
   end
   object EDT_Vlr: TEdit
     Left = 350
@@ -195,51 +90,54 @@ object Form2: TForm2
     Height = 21
     TabOrder = 2
   end
-  object BT_Vlr: TButton
+  object BT_AbstVlr: TButton
     Left = 312
     Top = 168
     Width = 161
     Height = 25
     Caption = 'Abastecer em Reais'
     TabOrder = 3
+    OnClick = BT_AbstVlrClick
   end
-  object BT_Lts: TButton
+  object BT_AbstLts: TButton
     Left = 312
     Top = 199
     Width = 161
     Height = 25
     Caption = 'Abastecer em Litros'
     TabOrder = 4
+    OnClick = BT_AbstLtsClick
   end
-  object BT_CB: TButton
-    Left = 16
+  object BT_AltPrecoCB: TButton
+    Left = 8
     Top = 168
     Width = 177
     Height = 25
     Caption = 'Pre'#231'o Combut'#237'vel'
     TabOrder = 5
-    OnClick = BT_CBClick
   end
   object Edit1: TEdit
     Left = 208
     Top = 168
     Width = 87
-    Height = 25
+    Height = 21
     TabOrder = 6
+    OnChange = Edit1Change
   end
   object BT_RPRC: TButton
-    Left = 16
+    Left = 8
     Top = 199
     Width = 177
     Height = 25
     Caption = 'Repor Combust'#237'vel'
     TabOrder = 7
+    OnClick = BT_RPRCClick
   end
-  object Edit2: TEdit
+  object ED_QtdBmb: TEdit
     Left = 208
     Top = 199
     Width = 87
-    Height = 25
+    Height = 21
     TabOrder = 8
   end
 end

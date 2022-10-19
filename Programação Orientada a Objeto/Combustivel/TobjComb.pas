@@ -2,6 +2,7 @@ unit TobjComb;
 
 interface
 
+
 type
 
 tTipo = (tpAlcool, tpGasolina, tpGasolinaAditivada, tpDiesel);
@@ -9,7 +10,7 @@ tTipo = (tpAlcool, tpGasolina, tpGasolinaAditivada, tpDiesel);
 TBombaCombustivel = Class
 
 Private
-    FCombustivel : TTipo;
+    FCombustivel : String;
     Fvalor, fPrecoPLts : Currency;
     FQuantidade : Double;
 
@@ -24,11 +25,11 @@ Private
 
 
 Public
-      procedure abastPorValor(Const avalor : Currency);
-      procedure abastPorLitro(Const aLitros: Double);
+      Function abastPorValor(Const aValor : String): String;
+      function abastPorLitro(Const aLitros: String): String;
       procedure alterarValor(Const aValor :String);
       procedure alterarCombustivel(Const aNome: String);
-      procedure alterarQuantidade;
+      procedure alterarQuantidade(Const aQtd : double);
       Property Combustivel: String read getCombustivel write setCombustivel;
       Property Valor: currency read getvalor write setvalor;
       Property Quantidade: double read getQuantidade write setQuantidade;
@@ -43,41 +44,51 @@ uses
 
 { TBombaCombustivel }
 
-procedure TBombaCombustivel.abastPorLitro(Const aLitros: Double);
-var
-xQtd : double;
+function TBombaCombustivel.abastPorLitro(Const aLitros: String): String;
+    var
+      xValor : Currency;
+      xLitros: Double;
+    begin
+      if not (TryStrToFloat(aLitros, xLitros) and (xLitros  <= quantidade)) then
+        raise Exception.Create('Não há Combustível Suficiente na Bomba');
+      xValor := xLitros * PrecoPLts;
+      FQuantidade := Fquantidade - xLitros;
+      Result := 'Abastecendo ' + FormatFloat('0.##', xLitros) + ' litro(s), ' +
+                'o total a pagar será de R$' + FormatFloat('0.##', xValor) +
+                #13#10 + 'Restando ' + Quantidade.ToString + ' litro(s) na bomba.';
+    end;
 
+
+Function TBombaCombustivel.abastPorValor(Const aValor : String): String;
+  var
+    xQtd : Double;
+    xValor: Currency;
   begin
-    xqtd := aLitros;
-
-    if xqtd > quantidade then
-    raise Exception.Create('Não há Combustível Suficiente na Bomba');
-
-    FQuantidade := Fquantidade - xQtd;
+    if TryStrToCurr(aValor, xValor) and (xValor > 0) then
+      begin
+        xqtd := xValor / PrecoPLts;
+        if (xqtd > quantidade) and (xqtd > 0) then
+          raise Exception.Create('Não há Combustível Suficiente na Bomba');
+        FQuantidade := Fquantidade - xQtd;
+        Result := 'Pagando R$' + FormatFloat('0.##', xValor) + ', ' +
+                  'o total abastecendo será de ' + FormatFloat('0.##', xqtd) +
+                  ' litro(s).' + #13#10 + 'Restando ' + Quantidade.ToString +
+                  ' litro(s) na bomba.';
+      end
+    else
+      raise Exception.Create('Erro de Covnersão!');
   end;
 
-procedure TBombaCombustivel.abastPorValor(Const aValor : Currency);
-var
-xQtd : double;
+
+procedure TBombaCombustivel.alterarCombustivel(Const aNome: string);
 
   begin
-    xqtd := aValor / PrecoPLts;
-
-    if xqtd > quantidade then
-    raise Exception.Create('Não há Combustível Suficiente na Bomba');
-
-    FQuantidade := Fquantidade - xQtd;
+  Fcombustivel := aNome;
   end;
 
-procedure TBombaCombustivel.alterarCombustivel(Const aNome: String);
-
+procedure TBombaCombustivel.alterarQuantidade(Const aQtd : double);
   begin
-
-  end;
-
-procedure TBombaCombustivel.alterarQuantidade;
-  begin
-
+    FQuantidade := aQtd;
   end;
 
 procedure TBombaCombustivel.alterarValor(Const aValor :String);
@@ -85,9 +96,9 @@ procedure TBombaCombustivel.alterarValor(Const aValor :String);
     xValor : Currency;
   begin
     if TryStrToCurr(aValor, xValor) then
-      FValor := xValor
+      FPrecoPLTS := xValor
     else
-      ShowMessage('Erro');
+      ShowMessage('Insira o valor corretamente');
   end;
 
 function TBombaCombustivel.getCombustivel: String;
@@ -97,17 +108,17 @@ function TBombaCombustivel.getCombustivel: String;
 
 function TBombaCombustivel.getPrecoPLts: currency;
   begin
-    Result := PrecoPLts
+    Result := FPrecoPLts
   end;
 
 function TBombaCombustivel.getQuantidade: double;
   begin
-    Result := Quantidade
+    Result := FQuantidade
   end;
 
 function TBombaCombustivel.getvalor: currency;
 begin
-    Result := valor
+    Result := FValor
 end;
 
 procedure TBombaCombustivel.setCombustivel(const Value: String);
