@@ -1,0 +1,23 @@
+unit Time;
+
+interface
+
+Type
+
+Time = Class
+
+  Private
+    nomeTime: String;
+    tecnico: String;
+
+  Public
+
+
+  Published
+    anoFundacao: Date;
+
+  End;
+
+implementation
+
+end.

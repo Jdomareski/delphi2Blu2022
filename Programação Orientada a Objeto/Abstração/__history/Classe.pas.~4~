@@ -20,7 +20,7 @@ Private
 
 
 Public
-      Procedure Ligar;
+
      Property Cor: String read getcor write SetCor;
      Property Marca: string read getMarca write SetMarca;
      property Peso: Double read getPeso write SetPeso;
@@ -55,11 +55,6 @@ end;
 function TAviao.getPeso: Double;
 begin
 Result := Fpeso
-end;
-
-procedure TAviao.Ligar;
-begin
-ShowMessage('Vruuumm Vruumm');
 end;
 
 procedure TAviao.SetCapacidade(const Value: integer);

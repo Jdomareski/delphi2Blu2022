@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2022/10/19 19:41:45.513,=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/10/19 19:41:58.055,C:\Users\jdomareski\Documents\delphi2Blu2022\Agregação\Agregacao.dfm=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2022/10/19 19:41:58.055,C:\Users\jdomareski\Documents\delphi2Blu2022\Agregação\Agregacao.pas=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/10/19 19:42:05.021,C:\Users\jdomareski\Documents\delphi2Blu2022\Agregação\Project3.dproj=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Project3.dproj</Transaction>
+    <Transaction>2022/10/19 19:42:10.962,=C:\Users\jdomareski\Documents\delphi2Blu2022\Agregação\Unit1.pas</Transaction>
+    <Transaction>2022/10/19 19:42:25.487,C:\Users\jdomareski\Documents\delphi2Blu2022\Agregação\UObjetos.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Agregação\Unit1.pas</Transaction>
+    <Transaction>2022/10/19 19:43:55.685,=C:\Users\jdomareski\Documents\delphi2Blu2022\Agregação\ModelSupport_Project3\default.txvpck</Transaction>
+    <Transaction>2022/10/19 19:43:58.095,=C:\Users\jdomareski\Documents\delphi2Blu2022\Agregação\ModelSupport_Project3\Agregacao\default.txvpck</Transaction>
+    <Transaction>2022/10/19 19:43:58.137,=C:\Users\jdomareski\Documents\delphi2Blu2022\Agregação\ModelSupport_Project3\Project3\default.txvpck</Transaction>
+    <Transaction>2022/10/19 19:43:58.166,=C:\Users\jdomareski\Documents\delphi2Blu2022\Agregação\ModelSupport_Project3\UObjetos\default.txvpck</Transaction>
+    <Transaction>2022/10/19 19:44:53.700,=C:\Users\jdomareski\Documents\delphi2Blu2022\Agregação\ModelSupport_Project3\UObjetos\default.txaPackage</Transaction>
+    <Transaction>2022/10/19 19:44:53.811,C:\Users\jdomareski\Documents\delphi2Blu2022\Agregação\Time.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Agregação\UObjetos.pas</Transaction>
+    <Transaction>2022/10/19 19:44:53.832,c:\users\jdomareski\documents\delphi2blu2022\agregação\modelsupport_project3\uobjetos\default.txapackage=</Transaction>
+    <Transaction>2022/10/19 19:44:53.872,=C:\Users\jdomareski\Documents\delphi2Blu2022\Agregação\ModelSupport_Project3\Time\default.txaPackage</Transaction>
+    <Transaction>2022/10/19 19:44:53.874,c:\users\jdomareski\documents\delphi2blu2022\agregação\modelsupport_project3\uobjetos\default.txvpck=</Transaction>
+    <Transaction>2022/10/19 19:44:53.912,=C:\Users\jdomareski\Documents\delphi2Blu2022\Agregação\ModelSupport_Project3\Time\default.txvpck</Transaction>
+    <Transaction>2022/10/19 19:49:09.136,=C:\Users\jdomareski\Documents\delphi2Blu2022\Agregação\Unit1.pas</Transaction>
+    <Transaction>2022/10/19 19:49:20.676,C:\Users\jdomareski\Documents\delphi2Blu2022\Agregação\Jogador.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Agregação\Unit1.pas</Transaction>
+    <Transaction>2022/10/19 19:49:29.277,C:\Users\jdomareski\Documents\delphi2Blu2022\Agregação\Agregacao.pas=</Transaction>
+    <Transaction>2022/10/19 19:49:29.364,=C:\Users\jdomareski\Documents\delphi2Blu2022\Agregação\ModelSupport_Project3\Jogador\default.txvpck</Transaction>
+    <Transaction>2022/10/19 19:49:29.405,=C:\Users\jdomareski\Documents\delphi2Blu2022\Agregação\ModelSupport_Project3\Jogador\default.txaPackage</Transaction>
+  </Transactions>
+</BorlandProject>

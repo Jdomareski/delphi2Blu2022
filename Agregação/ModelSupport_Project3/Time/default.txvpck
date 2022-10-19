@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="lnv5uhetxcf9p1oxt_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:Project3:Time.@unitclass">
+      <property name="$shortcutReference" value="true" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project3:Time.TTime">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="20,20,144,253" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="delphi:e_field:src:Project3:Time.TTime.FnomeTime" />
+      <reference referencedUin="delphi:e_field:src:Project3:Time.TTime.Ftecnico" />
+      <reference referencedUin="delphi:e_field:src:Project3:Time.TTime.FanoFundacao" />
+      <reference referencedUin="delphi:e_method:src:Project3:Time.TTime.getanoFundacao()" />
+      <reference referencedUin="delphi:e_method:src:Project3:Time.TTime.getnomeTime()" />
+      <reference referencedUin="delphi:e_method:src:Project3:Time.TTime.gettecnico()" />
+      <reference referencedUin="delphi:e_method:src:Project3:Time.TTime.setanoFundacao(System.TDate)" />
+      <reference referencedUin="delphi:e_method:src:Project3:Time.TTime.setnomeTime(System.string)" />
+      <reference referencedUin="delphi:e_method:src:Project3:Time.TTime.settecnico(System.string)" />
+      <reference referencedUin="delphi:e_property:src:Project3:Time.TTime.Nome" />
+      <reference referencedUin="delphi:e_property:src:Project3:Time.TTime.Tecnico" />
+      <reference referencedUin="delphi:e_property:src:Project3:Time.TTime.Ano" />
+    </reference>
+  </view>
+</nodeSet>

@@ -1,0 +1,22 @@
+unit Jogador;
+
+interface
+
+Type
+TJogador = Class
+
+  Private
+    FNome: String;
+    FIdade: Integer;
+    FPosicao: String;
+  Public
+
+
+  Published
+
+
+  End;
+
+implementation
+
+end.

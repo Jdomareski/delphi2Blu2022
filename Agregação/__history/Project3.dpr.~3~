@@ -1,0 +1,15 @@
+program Project3;
+
+uses
+  Vcl.Forms,
+  Agregacao in 'Agregacao.pas' {Form2},
+  Time in 'Time.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm2, Form2);
+  Application.Run;
+end.

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="h9ordmmoe72fo2yqs_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:Project3:Jogador.@unitclass">
+      <property name="$shortcutReference" value="true" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project3:Jogador.TJogador">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,100,114" />
+      <reference referencedUin="delphi:e_field:src:Project3:Jogador.TJogador.FNome" />
+      <reference referencedUin="delphi:e_field:src:Project3:Jogador.TJogador.FIdade" />
+      <reference referencedUin="delphi:e_field:src:Project3:Jogador.TJogador.FPosicao" />
+    </reference>
+  </view>
+</nodeSet>

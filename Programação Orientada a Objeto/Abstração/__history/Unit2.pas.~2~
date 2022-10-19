@@ -38,7 +38,7 @@ end;
 
 procedure TForm2.LigarClick(Sender: TObject);
 begin
-xAviao.Ligar;
+ tAviao.
 end;
 
 end.

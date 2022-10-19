@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2022/10/18 21:37:23.975,=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
-    <Transaction>2022/10/18 21:37:37.573,=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
-    <Transaction>2022/10/18 21:38:15.679,C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Classe.pas=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
-    <Transaction>2022/10/18 21:40:47.825,C:\Users\jdomareski\Documents\delphi2Blu2022\Programação Orientada a Objeto\Abstração\Classe.pas=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Classe.pas</Transaction>
-    <Transaction>2022/10/18 21:40:49.616,C:\Users\jdomareski\Documents\delphi2Blu2022\Programação Orientada a Objeto\Abstração\Unit2.pas=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
-    <Transaction>2022/10/18 21:40:49.616,C:\Users\jdomareski\Documents\delphi2Blu2022\Programação Orientada a Objeto\Abstração\Unit2.dfm=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
-    <Transaction>2022/10/18 21:40:51.705,C:\Users\jdomareski\Documents\delphi2Blu2022\Programação Orientada a Objeto\Abstração\Project3.dproj=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Project3.dproj</Transaction>
-    <Transaction>2022/10/18 21:41:07.271,=C:\Users\jdomareski\Documents\delphi2Blu2022\Programação Orientada a Objeto\Abstração\ModelSupport_Project3\default.txaPackage</Transaction>
+	<Transactions>
+    <Transaction>2022/10/18 21:37:23.000.975,=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/10/18 21:37:37.000.573,=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2022/10/18 21:38:15.000.679,C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit3.pas=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Classe.pas</Transaction>
+    <Transaction>2022/10/18 21:40:47.000.825,C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Classe.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Programação Orientada a Objeto\Abstração\Classe.pas</Transaction>
+    <Transaction>2022/10/18 21:40:49.000.616,C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit2.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Programação Orientada a Objeto\Abstração\Unit2.pas</Transaction>
+    <Transaction>2022/10/18 21:40:49.000.616,C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit2.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Programação Orientada a Objeto\Abstração\Unit2.dfm</Transaction>
+    <Transaction>2022/10/18 21:40:51.000.705,C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Project3.dproj=C:\Users\jdomareski\Documents\delphi2Blu2022\Programação Orientada a Objeto\Abstração\Project3.dproj</Transaction>
+    <Transaction>2022/10/18 21:41:07.000.271,=C:\Users\jdomareski\Documents\delphi2Blu2022\Programação Orientada a Objeto\Abstração\ModelSupport_Project3\default.txaPackage</Transaction>
   </Transactions>
 </BorlandProject>

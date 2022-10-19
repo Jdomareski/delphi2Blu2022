@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="t70anqyhpwn_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="design:view:::nxfvif5bd4t_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,115,151" />
+    </reference>
+    <reference referencedUin="design:view:::mmzey3og4df_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="144,1,101,134" />
+      <reference referencedUin="delphi:e_class:src:Project3:Project3.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::lnv5uhetxcf9p1oxt_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="@__package_fqn" value="Time" />
+      <property name="bounds" value="144,154,107,151" />
+      <reference referencedUin="delphi:e_class:src:Project3:Time.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:Project3:Time.TTime" />
+    </reference>
+    <reference referencedUin="design:view:::h9ordmmoe72fo2yqs_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:Project3:Jogador.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:Project3:Jogador.TJogador" />
+    </reference>
+  </view>
+</nodeSet>

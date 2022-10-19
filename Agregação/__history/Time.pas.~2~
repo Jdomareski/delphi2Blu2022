@@ -1,0 +1,23 @@
+unit Time;
+
+interface
+
+Type
+
+TTime = Class
+
+  Private
+    FnomeTime: String;
+    Ftecnico: String;
+    FanoFundacao: TDate;
+  Public
+
+
+  Published
+
+
+  End;
+
+implementation
+
+end.
