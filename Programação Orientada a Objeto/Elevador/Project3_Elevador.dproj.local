@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/10/19 20:59:18.000.026,=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/10/19 20:59:35.352,=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/10/19 20:59:58.461,C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Principa.dfm=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2022/10/19 20:59:58.461,C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Principa.pas=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/10/19 21:00:06.472,=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/10/19 21:00:16.456,C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Elevador.pas=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/10/19 21:13:22.062,C:\Users\jdomareski\Documents\delphi2Blu2022\Programação Orientada a Objeto\Elevador\Elevador.pas=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Elevador.pas</Transaction>
+    <Transaction>2022/10/19 21:13:27.999,C:\Users\jdomareski\Documents\delphi2Blu2022\Programação Orientada a Objeto\Elevador\Principa.pas=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Principa.pas</Transaction>
+    <Transaction>2022/10/19 21:13:27.999,C:\Users\jdomareski\Documents\delphi2Blu2022\Programação Orientada a Objeto\Elevador\Principa.dfm=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Principa.dfm</Transaction>
+    <Transaction>2022/10/19 21:13:36.407,C:\Users\jdomareski\Documents\delphi2Blu2022\Programação Orientada a Objeto\Elevador\Project3_Elevador.dproj=C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Project3.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
