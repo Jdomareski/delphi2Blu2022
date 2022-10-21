@@ -1,0 +1,51 @@
+unit Principa;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, elevador;
+
+type
+  TForm2 = class(TForm)
+    TBSobe: TButton;
+    BTDesce: TButton;
+    BTEntrar: TButton;
+    BTSair: TButton;
+    LBAndares: TLabel;
+    LBCapacidade: TLabel;
+    LBAndarAtual: TLabel;
+    LBPessoasNoElevador: TLabel;
+    procedure FormCreate(Sender: TObject);
+    procedure TBSobeClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+  xelevador : Televador
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+
+
+{$R *.dfm}
+
+procedure TForm2.FormCreate(Sender: TObject);
+begin
+xelevador := televador.create(10, 6);
+LBAndares.Caption := ('Este Prédio tem  ' +  xelevador.AndarTot.ToString + ' Andares');
+LBandares.Visible := true;
+LBCapacidade.Caption := ('Elevador Comporta  ' + xelevador.Capacidade.toString + ' Pessoas');
+LBCapacidade.Visible := true;
+end;
+
+procedure TForm2.TBSobeClick(Sender: TObject);
+begin
+
+xelevador.sobe(strToint(InputBox('Subir', 'Quantos Andares Subir?', '0')));
+end;
+
+end.

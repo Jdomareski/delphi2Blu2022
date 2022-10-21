@@ -1,7 +1,6 @@
 unit Elevador;
 
 interface
-
 type
 
 
@@ -38,9 +37,6 @@ end;
 
 implementation
 
-uses
-  Vcl.Dialogs, System.SysUtils;
-
 { Televador }
 
 constructor Televador.create(const Cap, Totalandares: Integer);
@@ -52,21 +48,16 @@ fPessoas := 0;
 end;
 
 procedure Televador.Desce(const Value: Integer);
-  begin
-    if (Andar > 0) and ((Andar - Value) >= 0) then
-      Andar := Andar - value
-    else
-      showMessage('impossível descer abaixo do térreo');
-  end;
+begin
+if (Andar > 0) and ((Andar - Value) >= 0) then
+Andar
+
+end;
 
 procedure Televador.entra(const value: Integer);
-  begin
-    if (pessoas < Fcap) and (Pessoas + value <= Fcap) then
-      Pessoas := pessoas + value
-    else
-    ShowMessage('Não ha capacidade para estas pessoas');
+begin
 
-  end;
+end;
 
 function Televador.getAndarAtual: Integer;
 begin
@@ -90,12 +81,9 @@ Result := fTotalAndares
 end;
 
 procedure Televador.sai(const Value: Integer);
-  begin
-    if (pessoas > 0) and (pessoas - value >=0)  then
-      pessoas := Pessoas - value
-    else
-      showMessage ('Não tem tanta gente assim para sair')
-  end;
+begin
+
+end;
 
 procedure Televador.setAndarAtual(const Value: Integer);
 begin
@@ -118,12 +106,8 @@ ftotalAndares := value
 end;
 
 procedure Televador.sobe(const value: Integer);
-  begin
-    if (andar < andarTot) and (andar + value <= andartot) then
-      andar := andar + value
-    else
-      showmessage('impossível passar do último andar');
+begin
 
-  end;
+end;
 
 end.

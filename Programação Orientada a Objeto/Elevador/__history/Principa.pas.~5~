@@ -18,9 +18,6 @@ type
     LBPessoasNoElevador: TLabel;
     procedure FormCreate(Sender: TObject);
     procedure TBSobeClick(Sender: TObject);
-    procedure BTDesceClick(Sender: TObject);
-    procedure BTEntrarClick(Sender: TObject);
-    procedure BTSairClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -36,24 +33,6 @@ implementation
 
 {$R *.dfm}
 
-procedure TForm2.BTDesceClick(Sender: TObject);
-  begin
-    xelevador.Desce(strToint(InputBox('Descer', 'Quantos Andares Descer?', '0')));
-    LBAndarAtual.Caption := ('Você está no Andar   ' + xelevador.andar.toString);
-  end;
-
-procedure TForm2.BTEntrarClick(Sender: TObject);
-  begin
-    xelevador.entra(strToint(InputBox('Entrar', 'Quantas Pessoas Vão Entrar?', '0')));
-    LBPessoasNoElevador.Caption := ('Total de Pessoas   ' + xelevador.Pessoas.toString);
-  end;
-
-procedure TForm2.BTSairClick(Sender: TObject);
-  begin
-    xelevador.sai(strToint(InputBox('Sair', 'Quantas Pessoas Vão Sair?', '0')));
-    LBPessoasNoElevador.Caption := ('Total de Pessoas   ' + xelevador.Pessoas.toString);
-  end;
-
 procedure TForm2.FormCreate(Sender: TObject);
 begin
 xelevador := televador.create(10, 6);
@@ -65,15 +44,12 @@ LBAndarAtual.Caption := ('Você está no Andar   ' + xelevador.andar.toString);
 LBPessoasNoElevador.Caption := ('Total de Pessoas   ' + xelevador.Pessoas.toString);
 LBandares.Visible := true;
 LBCapacidade.Visible := true;
-LBAndarAtual.Visible := true;
-LBPessoasNoElevador.Visible := true;
 end;
 
 procedure TForm2.TBSobeClick(Sender: TObject);
-  begin
-    xelevador.sobe(strToint(InputBox('Subir', 'Quantos Andares Subir?', '0')));
-    LBAndarAtual.Caption := ('Você está no Andar   ' + xelevador.andar.toString);
-  end;
+begin
 
+xelevador.sobe(strToint(InputBox('Subir', 'Quantos Andares Subir?', '0')));
+end;
 
 end.

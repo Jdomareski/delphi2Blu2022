@@ -20,7 +20,6 @@ type
     procedure TBSobeClick(Sender: TObject);
     procedure BTDesceClick(Sender: TObject);
     procedure BTEntrarClick(Sender: TObject);
-    procedure BTSairClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -43,16 +42,10 @@ procedure TForm2.BTDesceClick(Sender: TObject);
   end;
 
 procedure TForm2.BTEntrarClick(Sender: TObject);
-  begin
-    xelevador.entra(strToint(InputBox('Entrar', 'Quantas Pessoas Vão Entrar?', '0')));
-    LBPessoasNoElevador.Caption := ('Total de Pessoas   ' + xelevador.Pessoas.toString);
-  end;
-
-procedure TForm2.BTSairClick(Sender: TObject);
-  begin
-    xelevador.sai(strToint(InputBox('Sair', 'Quantas Pessoas Vão Sair?', '0')));
-    LBPessoasNoElevador.Caption := ('Total de Pessoas   ' + xelevador.Pessoas.toString);
-  end;
+begin
+xelevador.entra(strToint(InputBox('Entrar', 'Quantas Pessoas Vão Entrar?', '0')));
+LBPessoasNoElevador.Caption := ('Total de Pessoas   ' + xelevador.Pessoas.toString);
+end;
 
 procedure TForm2.FormCreate(Sender: TObject);
 begin

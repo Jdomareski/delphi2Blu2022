@@ -1,0 +1,73 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Elevador Misterioso'
+  ClientHeight = 162
+  ClientWidth = 198
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object TBSobe: TButton
+    Left = 40
+    Top = 24
+    Width = 121
+    Height = 25
+    Caption = 'Subir'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+  end
+  object BTDesce: TButton
+    Left = 40
+    Top = 55
+    Width = 121
+    Height = 25
+    Caption = 'Descer'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+  end
+  object BTEntrar: TButton
+    Left = 40
+    Top = 86
+    Width = 121
+    Height = 25
+    Caption = 'Entrar'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+  end
+  object BTSair: TButton
+    Left = 40
+    Top = 117
+    Width = 121
+    Height = 25
+    Caption = 'Sair'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+  end
+end

@@ -100,7 +100,6 @@ object Form2: TForm2
     Font.Style = []
     ParentFont = False
     TabOrder = 1
-    OnClick = BTDesceClick
   end
   object BTEntrar: TButton
     Left = 40
@@ -115,7 +114,6 @@ object Form2: TForm2
     Font.Style = []
     ParentFont = False
     TabOrder = 2
-    OnClick = BTEntrarClick
   end
   object BTSair: TButton
     Left = 40
@@ -130,6 +128,5 @@ object Form2: TForm2
     Font.Style = []
     ParentFont = False
     TabOrder = 3
-    OnClick = BTSairClick
   end
 end

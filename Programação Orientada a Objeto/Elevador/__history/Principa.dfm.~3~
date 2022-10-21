@@ -2,8 +2,8 @@ object Form2: TForm2
   Left = 0
   Top = 0
   Caption = 'Elevador Misterioso'
-  ClientHeight = 174
-  ClientWidth = 457
+  ClientHeight = 154
+  ClientWidth = 449
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -15,8 +15,8 @@ object Form2: TForm2
   PixelsPerInch = 96
   TextHeight = 13
   object LBAndares: TLabel
-    Left = 216
-    Top = 27
+    Left = 280
+    Top = 8
     Width = 161
     Height = 16
     Caption = 'Esse Pr'#233'dio tem 10 Andares'
@@ -29,8 +29,8 @@ object Form2: TForm2
     Visible = False
   end
   object LBCapacidade: TLabel
-    Left = 216
-    Top = 49
+    Left = 271
+    Top = 30
     Width = 170
     Height = 16
     Caption = 'Elevador Comporta 6 Pessoas'
@@ -40,36 +40,6 @@ object Form2: TForm2
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    Visible = False
-  end
-  object LBAndarAtual: TLabel
-    Left = 216
-    Top = 98
-    Width = 129
-    Height = 16
-    Caption = 'Voc'#234' Esta no andar 10'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -13
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    Transparent = False
-    Visible = False
-  end
-  object LBPessoasNoElevador: TLabel
-    Left = 216
-    Top = 120
-    Width = 186
-    Height = 16
-    Caption = 'Total de Pessoas no elevador 10'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -13
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    Transparent = False
     Visible = False
   end
   object TBSobe: TButton
@@ -100,7 +70,6 @@ object Form2: TForm2
     Font.Style = []
     ParentFont = False
     TabOrder = 1
-    OnClick = BTDesceClick
   end
   object BTEntrar: TButton
     Left = 40
@@ -115,7 +84,6 @@ object Form2: TForm2
     Font.Style = []
     ParentFont = False
     TabOrder = 2
-    OnClick = BTEntrarClick
   end
   object BTSair: TButton
     Left = 40
@@ -130,6 +98,5 @@ object Form2: TForm2
     Font.Style = []
     ParentFont = False
     TabOrder = 3
-    OnClick = BTSairClick
   end
 end

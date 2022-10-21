@@ -61,8 +61,8 @@ procedure Televador.Desce(const Value: Integer);
 
 procedure Televador.entra(const value: Integer);
   begin
-    if (pessoas < Fcap) and (Pessoas + value <= Fcap) then
-      Pessoas := pessoas + value
+    if (Capacidade < Fcap) and (capacidade + value <Fcap) then
+      Capacidade := capacidade + value
     else
     ShowMessage('Não ha capacidade para estas pessoas');
 
@@ -91,8 +91,11 @@ end;
 
 procedure Televador.sai(const Value: Integer);
   begin
-    if (pessoas > 0) and (pessoas - value >=0)  then
-      pessoas := Pessoas - value
+    if (Capacidade > 0) and (capacidade - value >0)  then
+     begin
+      capacidade := capacidade - value;
+      showmessage('existem ' + intToStr(capacidade) + ' pessoas no elevador');
+     end
     else
       showMessage ('Não tem tanta gente assim para sair')
   end;
@@ -119,7 +122,7 @@ end;
 
 procedure Televador.sobe(const value: Integer);
   begin
-    if (andar < andarTot) and (andar + value <= andartot) then
+    if (andar < andarTot) and (andar + value < andartot) then
       andar := andar + value
     else
       showmessage('impossível passar do último andar');
