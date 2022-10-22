@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/10/16 22:14:37.000.685,=E:\Arquivos\Clouds\Onedrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/10/22 15:18:45.772,=E:\Arquivos\Clouds\Onedrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/10/22 15:19:41.922,E:\Arquivos\Clouds\Onedrive\Documentos\Embarcadero\Studio\Projects\Principal.dfm=E:\Arquivos\Clouds\Onedrive\Documentos\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2022/10/22 15:19:41.922,E:\Arquivos\Clouds\Onedrive\Documentos\Embarcadero\Studio\Projects\Principal.pas=E:\Arquivos\Clouds\Onedrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/10/22 15:19:47.730,=E:\Arquivos\Clouds\Onedrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/10/22 15:19:57.642,E:\Arquivos\Clouds\Onedrive\Documentos\Embarcadero\Studio\Projects\Aluno.pas=E:\Arquivos\Clouds\Onedrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/10/22 15:20:04.691,=E:\Arquivos\Clouds\Onedrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/10/22 15:20:12.740,E:\Arquivos\Clouds\Onedrive\Documentos\Embarcadero\Studio\Projects\Disciplina.pas=E:\Arquivos\Clouds\Onedrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/10/22 15:47:42.602,D:\Source\Programação Orientada a Objeto\Aluno &amp; Disciplina\Disciplina.pas=E:\Arquivos\Clouds\Onedrive\Documentos\Embarcadero\Studio\Projects\Disciplina.pas</Transaction>
+    <Transaction>2022/10/22 15:48:23.472,D:\Source\Programação Orientada a Objeto\Aluno &amp; Disciplina\Aluno_Disciplina.dfm=E:\Arquivos\Clouds\Onedrive\Documentos\Embarcadero\Studio\Projects\Principal.dfm</Transaction>
+    <Transaction>2022/10/22 15:48:23.472,D:\Source\Programação Orientada a Objeto\Aluno &amp; Disciplina\Aluno_Disciplina.pas=E:\Arquivos\Clouds\Onedrive\Documentos\Embarcadero\Studio\Projects\Principal.pas</Transaction>
+    <Transaction>2022/10/22 15:48:55.530,D:\Source\Programação Orientada a Objeto\Aluno &amp; Disciplina\Aluno_Disc.dproj=E:\Arquivos\Clouds\Onedrive\Documentos\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
