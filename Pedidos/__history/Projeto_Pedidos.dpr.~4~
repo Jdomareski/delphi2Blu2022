@@ -1,0 +1,18 @@
+program Projeto_Pedidos;
+
+uses
+  Vcl.Forms,
+  Principal in 'Principal.pas' {Form2},
+  udmPedidos in 'udmPedidos.pas' {dmPedidos: TDataModule},
+  ufrmComprador in 'ufrmComprador.pas' {Form3};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TdmPedidos, dmPedidos);
+  Application.CreateForm(TForm2, Form2);
+  Application.CreateForm(TForm3, Form3);
+  Application.Run;
+end.
