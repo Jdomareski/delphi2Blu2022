@@ -12,25 +12,26 @@
     <Transaction>2022/10/31 21:25:59.000.734,=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
     <Transaction>2022/10/31 21:26:20.000.847,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmComprador.pas</Transaction>
     <Transaction>2022/10/31 21:26:20.000.847,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmComprador.dfm</Transaction>
-    <Transaction>2022/11/01 18:41:26.113,=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
-    <Transaction>2022/11/01 18:43:18.670,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmFornecedores.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
-    <Transaction>2022/11/01 18:43:18.670,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmFornecedores.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.dfm</Transaction>
-    <Transaction>2022/11/01 18:43:27.277,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmFornecedor.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmFornecedores.dfm</Transaction>
-    <Transaction>2022/11/01 18:43:27.277,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmFornecedor.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmFornecedores.pas</Transaction>
-    <Transaction>2022/11/01 19:22:48.482,=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
-    <Transaction>2022/11/01 19:23:14.143,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmProdutos.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.dfm</Transaction>
-    <Transaction>2022/11/01 19:23:14.143,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmProdutos.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
-    <Transaction>2022/11/01 19:59:42.608,=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
-    <Transaction>2022/11/01 20:00:00.197,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmUnidadeMedida.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.dfm</Transaction>
-    <Transaction>2022/11/01 20:00:00.197,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmUnidadeMedida.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
-    <Transaction>2022/11/01 20:24:57.668,=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
-    <Transaction>2022/11/01 20:25:13.481,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmPedido.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
-    <Transaction>2022/11/01 20:25:13.481,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmPedido.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.dfm</Transaction>
-    <Transaction>2022/11/01 20:28:21.091,=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
-    <Transaction>2022/11/01 20:33:44.003,=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
-    <Transaction>2022/11/01 20:33:55.090,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmPedidos.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.dfm</Transaction>
-    <Transaction>2022/11/01 20:33:55.090,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmPedidos.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
-  </Transactions>  <ProjectSortOrder AutoSort="0" SortType="0">
+    <Transaction>2022/11/01 18:41:26.000.113,=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
+    <Transaction>2022/11/01 18:43:18.000.670,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmFornecedores.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
+    <Transaction>2022/11/01 18:43:18.000.670,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmFornecedores.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.dfm</Transaction>
+    <Transaction>2022/11/01 18:43:27.000.277,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmFornecedor.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmFornecedores.dfm</Transaction>
+    <Transaction>2022/11/01 18:43:27.000.277,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmFornecedor.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmFornecedores.pas</Transaction>
+    <Transaction>2022/11/01 19:22:48.000.482,=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
+    <Transaction>2022/11/01 19:23:14.000.143,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmProdutos.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.dfm</Transaction>
+    <Transaction>2022/11/01 19:23:14.000.143,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmProdutos.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
+    <Transaction>2022/11/01 19:59:42.000.608,=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
+    <Transaction>2022/11/01 20:00:00.000.197,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmUnidadeMedida.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.dfm</Transaction>
+    <Transaction>2022/11/01 20:00:00.000.197,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmUnidadeMedida.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
+    <Transaction>2022/11/01 20:24:57.000.668,=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
+    <Transaction>2022/11/01 20:25:13.000.481,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmPedido.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
+    <Transaction>2022/11/01 20:25:13.000.481,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmPedido.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.dfm</Transaction>
+    <Transaction>2022/11/01 20:28:21.000.091,=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
+    <Transaction>2022/11/01 20:33:44.000.003,=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
+    <Transaction>2022/11/01 20:33:55.000.090,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmPedidos.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.dfm</Transaction>
+    <Transaction>2022/11/01 20:33:55.000.090,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmPedidos.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
     <File Path="Principal.pas"/>
     <File Path="Principal.dfm"/>
     <File Path="udmPedidos.pas"/>

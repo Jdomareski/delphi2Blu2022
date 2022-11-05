@@ -1,7 +1,7 @@
 object frmPedidos: TfrmPedidos
   Left = 0
   Top = 0
-  Caption = 'Pedidos'
+  Caption = 'Form3'
   ClientHeight = 460
   ClientWidth = 740
   Color = clBtnFace
@@ -101,7 +101,7 @@ object frmPedidos: TfrmPedidos
     Top = 8
     Width = 240
     Height = 25
-    DataSource = DtsPedidodeCompra
+    DataSource = DataSource1
     TabOrder = 0
   end
   object DBEdit1: TDBEdit
@@ -110,7 +110,7 @@ object frmPedidos: TfrmPedidos
     Width = 100
     Height = 24
     DataField = 'Id'
-    DataSource = DtsPedidodeCompra
+    DataSource = DataSource1
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -125,7 +125,7 @@ object frmPedidos: TfrmPedidos
     Width = 100
     Height = 24
     DataField = 'Numero'
-    DataSource = DtsPedidodeCompra
+    DataSource = DataSource1
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -140,7 +140,7 @@ object frmPedidos: TfrmPedidos
     Width = 100
     Height = 24
     DataField = 'DataPedido'
-    DataSource = DtsPedidodeCompra
+    DataSource = DataSource1
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -155,7 +155,7 @@ object frmPedidos: TfrmPedidos
     Width = 310
     Height = 24
     DataField = 'idComprador'
-    DataSource = DtsPedidodeCompra
+    DataSource = DataSource1
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -163,7 +163,7 @@ object frmPedidos: TfrmPedidos
     Font.Style = []
     KeyField = 'Id'
     ListField = 'Nome'
-    ListSource = LookUpComprador
+    ListSource = DataSource2
     ParentFont = False
     TabOrder = 4
   end
@@ -173,7 +173,7 @@ object frmPedidos: TfrmPedidos
     Width = 310
     Height = 24
     DataField = 'idFornecedor'
-    DataSource = DtsPedidodeCompra
+    DataSource = DataSource1
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -181,7 +181,7 @@ object frmPedidos: TfrmPedidos
     Font.Style = []
     KeyField = 'Id'
     ListField = 'Nome'
-    ListSource = DBLookUpFornecedor
+    ListSource = DataSource3
     ParentFont = False
     TabOrder = 5
   end
@@ -190,7 +190,7 @@ object frmPedidos: TfrmPedidos
     Top = 288
     Width = 312
     Height = 164
-    DataSource = DBItensCompra
+    DataSource = DataSource4
     TabOrder = 6
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -224,86 +224,84 @@ object frmPedidos: TfrmPedidos
     Top = 288
     Width = 25
     Height = 160
-    DataSource = DBItensCompra
+    DataSource = DataSource4
     VisibleButtons = [nbInsert, nbDelete, nbEdit, nbPost, nbCancel]
     Kind = dbnVertical
     TabOrder = 7
   end
-  object DtsPedidodeCompra: TDataSource
-    DataSet = PedidoCompra
+  object DataSource1: TDataSource
+    DataSet = FDTable1
     Left = 424
     Top = 16
   end
-  object PedidoCompra: TFDTable
+  object FDTable1: TFDTable
     IndexFieldNames = 'Id'
     Connection = dmPedidos.FDConexao
     TableName = 'devs2blu.pedidocompra'
     Left = 560
     Top = 8
-    object PedidoCompraId: TFDAutoIncField
+    object FDTable1Id: TFDAutoIncField
       FieldName = 'Id'
       Origin = 'Id'
       ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = True
     end
-    object PedidoCompraNumero: TLongWordField
+    object FDTable1Numero: TLongWordField
       FieldName = 'Numero'
       Origin = 'Numero'
       Required = True
     end
-    object PedidoCompraDataPedido: TDateField
+    object FDTable1DataPedido: TDateField
       AutoGenerateValue = arDefault
       FieldName = 'DataPedido'
       Origin = 'DataPedido'
     end
-    object PedidoCompraidComprador: TLongWordField
+    object FDTable1idComprador: TLongWordField
       AutoGenerateValue = arDefault
       FieldName = 'idComprador'
       Origin = 'idComprador'
     end
-    object PedidoCompraidFornecedor: TLongWordField
+    object FDTable1idFornecedor: TLongWordField
       AutoGenerateValue = arDefault
       FieldName = 'idFornecedor'
       Origin = 'idFornecedor'
     end
   end
-  object LookUpComprador: TDataSource
-    DataSet = FDTLookUpComprador
+  object DataSource2: TDataSource
+    DataSet = FDTablelookupComprador
     Left = 424
     Top = 88
   end
-  object FDTLookUpComprador: TFDTable
+  object FDTablelookupComprador: TFDTable
     IndexFieldNames = 'Id'
     Connection = dmPedidos.FDConexao
     TableName = 'devs2blu.comprador'
     Left = 568
     Top = 80
-    object FDTLookUpCompradorId: TFDAutoIncField
+    object FDTablelookupCompradorId: TFDAutoIncField
       FieldName = 'Id'
       Origin = 'Id'
       ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = True
     end
-    object FDTLookUpCompradorNome: TStringField
+    object FDTablelookupCompradorNome: TStringField
       FieldName = 'Nome'
       Origin = 'Nome'
       Required = True
       Size = 250
     end
-    object FDTLookUpCompradorCargo: TStringField
+    object FDTablelookupCompradorCargo: TStringField
       FieldName = 'Cargo'
       Origin = 'Cargo'
       Required = True
       Size = 50
     end
   end
-  object DBLookUpFornecedor: TDataSource
+  object DataSource3: TDataSource
     DataSet = FDtableLookupFornecedor
     Left = 424
     Top = 168
   end
-  object DBItensCompra: TDataSource
-    DataSet = FDTItemCompra
+  object DataSource4: TDataSource
+    DataSet = FDTable2
     Left = 424
     Top = 256
   end
@@ -317,7 +315,6 @@ object frmPedidos: TfrmPedidos
       FieldName = 'Id'
       Origin = 'Id'
       ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = True
     end
     object FDtableLookupFornecedorCNPJ: TStringField
       AutoGenerateValue = arDefault
@@ -332,40 +329,39 @@ object frmPedidos: TfrmPedidos
       Size = 250
     end
   end
-  object FDTItemCompra: TFDTable
-    BeforePost = FDTItemCompraBeforePost
-    IndexFieldNames = 'idPedidoCompra'
-    MasterSource = DtsPedidodeCompra
+  object FDTable2: TFDTable
+    BeforePost = FDTable2BeforePost
+    IndexFieldNames = 'Id'
+    MasterSource = DataSource1
     MasterFields = 'Id'
     Connection = dmPedidos.FDConexao
     TableName = 'devs2blu.itemcompra'
     Left = 560
     Top = 248
-    object FDTItemCompraId: TFDAutoIncField
+    object FDTable2Id: TFDAutoIncField
       FieldName = 'Id'
       Origin = 'Id'
       ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = True
     end
-    object FDTItemCompraQuantidade: TFloatField
+    object FDTable2Quantidade: TFloatField
       FieldName = 'Quantidade'
       Origin = 'Quantidade'
       Required = True
     end
-    object FDTItemCompraidPedidoCompra: TLongWordField
+    object FDTable2idPedidoCompra: TLongWordField
       FieldName = 'idPedidoCompra'
       Origin = 'idPedidoCompra'
       Required = True
     end
-    object FDTItemCompraidProduto: TLongWordField
+    object FDTable2idProduto: TLongWordField
       FieldName = 'idProduto'
       Origin = 'idProduto'
       Required = True
     end
-    object FDTItemCompraLookupProdutos: TStringField
+    object FDTable2LookupProdutos: TStringField
       FieldKind = fkLookup
       FieldName = 'LookupProdutos'
-      LookupDataSet = FDTProdutos
+      LookupDataSet = FDTable3
       LookupKeyFields = 'Id'
       LookupResultField = 'Descricao'
       KeyFields = 'idProduto'
@@ -373,7 +369,7 @@ object frmPedidos: TfrmPedidos
       Lookup = True
     end
   end
-  object FDTProdutos: TFDTable
+  object FDTable3: TFDTable
     IndexFieldNames = 'Id'
     Connection = dmPedidos.FDConexao
     TableName = 'devs2blu.produto'
