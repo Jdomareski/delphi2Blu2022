@@ -1,0 +1,51 @@
+unit DiarioEscolar;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TForm2 = class(TForm)
+    Label1: TLabel;
+    EdtNome: TEdit;
+    Label2: TLabel;
+    Label3: TLabel;
+    edtPrimeiraNota: TEdit;
+    edtSegundaNota: TEdit;
+    btnGravar: TButton;
+    btnLer: TButton;
+    Memo1: TMemo;
+    procedure btnGravarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm2.btnGravarClick(Sender: TObject);
+begin
+if edtNome.Text <> '' and then
+(edtPrimeiraNota.text, <>'') and
+(edtSegundaNota.text, <> '') then
+
+begin
+  //Grava uma linha com os dados dos alunos por arquivo
+  Writeln(FArq, edtNome.Text, '|',
+                edtPrimeiraNota, '|',
+                edtSegundaNota, '|');
+  edtNome.clear;
+  edtPrimeiraNota.clear;
+  edtSegundaNota.clear;
+end;
+end;
+
+end.

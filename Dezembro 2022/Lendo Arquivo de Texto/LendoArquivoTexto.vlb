@@ -1,0 +1,13 @@
+﻿[Label1]
+Coordinates=207,10,53,58
+Visible=True
+
+[]
+Coordinates=133,10,64,58
+
+[EdtArquivo]
+Coordinates=79,10,44,58
+
+[btnLeitura]
+Coordinates=10,10,59,58
+

@@ -1,0 +1,64 @@
+unit CriandoArquivoTexto;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TForm2 = class(TForm)
+    Label1: TLabel;
+    edtNumero: TEdit;
+    BtnTsbuada: TButton;
+    procedure BtnTsbuadaClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm2.BtnTsbuadaClick(Sender: TObject);
+//Declarando a variavel 'xarq' do tipo arquivo texto
+var
+  xArq: TextFile;
+  i, n: Integer;
+
+begin
+  try
+    // Associa a variavel do programa 'xarq' ao arquivo externo
+    // 'tabuada.txt na unidade de disco 'd'
+    AssignFile(xArq, 'Tabuada.txt');
+    // Cria o arquivo 'tabuada.txt' na unidade de disco 'd'
+    Rewrite(xArq);
+
+    n := StrToIntDef(edtNumero.Text, 0);
+
+    // Grava uma linha no arquivo
+    Writeln(xArq, '+--Resultado--+');
+
+    for i := 1 to 10 do
+    begin
+    // Grava uma linha da tabuada neste arquivo
+      Writeln(xArq, '| ', i, ' x ', n, ' = ', (i * n), ' |');
+    end;
+    // Grava uma linha no arquivo
+    Writeln(xArq, '+-------------+');
+
+    showmessage('Tabuada gravada com sucesso');
+
+  finally
+    // Fecha o arquivo texto
+
+    closeFile(xArq);
+  end;
+end;
+
+end.
