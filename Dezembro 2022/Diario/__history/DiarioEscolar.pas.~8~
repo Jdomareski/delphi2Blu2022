@@ -94,7 +94,7 @@ begin
         mmdiario.Lines.Add('Média: ' + FloatToStr(xmedia));
 
         if (xmedia >= 7) then mmdiario.Lines.Add('Situação..........: Aprovado')
-      else mmdiario.Lines.Add('Situação...............: Reprovado');
+      else mmdiario.Lines.Add('Sitauação...............: Reprovado');
 
         mmdiario.Lines.Add('');
 
