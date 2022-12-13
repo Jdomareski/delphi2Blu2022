@@ -1,0 +1,50 @@
+unit UfrmPrincipal;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Objects,
+  FMX.Controls.Presentation, FMX.StdCtrls, FMX.Layouts, FMX.Ani, FMX.ListBox;
+
+type
+  TfrmPrincipal = class(TForm)
+    ImgCartaz: TImage;
+    Image1: TImage;
+    imgLogo: TImage;
+    lytGenero: TLayout;
+    Image2: TImage;
+    lblFiltro: TLabel;
+    Layout1: TLayout;
+    Image3: TImage;
+    Image4: TImage;
+    Label1: TLabel;
+    Image5: TImage;
+    Layout2: TLayout;
+    Image6: TImage;
+    Label2: TLabel;
+    Image7: TImage;
+    Layout3: TLayout;
+    Label3: TLabel;
+    LytMenu: TLayout;
+    Rectangle1: TRectangle;
+    lytFechar: TLayout;
+    Image8: TImage;
+    ListBox1: TListBox;
+    FloatAnimation1: TFloatAnimation;
+  private
+    { Private declarations }
+
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPrincipal: TfrmPrincipal;
+
+implementation
+
+{$R *.fmx}
+
+
+end.

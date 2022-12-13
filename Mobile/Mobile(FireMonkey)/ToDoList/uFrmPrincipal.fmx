@@ -25,6 +25,8 @@ object frmPrincipal: TfrmPrincipal
       Size.Height = 432.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
+      ItemAppearanceObjects.ItemObjects.Accessory.AccessoryType = Checkmark
+      ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
       StyleLookup = 'listviewstyle'
       OnDeleteItem = lstTarefasDeleteItem
     end
