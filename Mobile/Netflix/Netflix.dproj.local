@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2022/12/12 19:27:30.852,=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/12/12 19:33:59.609,C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Mobile\Netflix\UfrmPrincipal.pas=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/12/12 19:33:59.609,C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Mobile\Netflix\UfrmPrincipal.fmx=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
-    <Transaction>2022/12/12 20:08:47.496,C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Mobile\Netflix\Netflix.dproj=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+	<Transactions>
+    <Transaction>2022/12/12 19:27:30.000.852,=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/12/12 19:33:59.000.609,C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Mobile\Netflix\UfrmPrincipal.fmx</Transaction>
+    <Transaction>2022/12/12 19:33:59.000.609,C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Mobile\Netflix\UfrmPrincipal.pas</Transaction>
+    <Transaction>2022/12/12 20:08:47.000.496,C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Mobile\Netflix\Netflix.dproj</Transaction>
   </Transactions>
-  <ActiveMobileDevice>   <NoProfile iOSSimulator="iPhone5"/>
-  </ActiveMobileDevice>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
 </BorlandProject>

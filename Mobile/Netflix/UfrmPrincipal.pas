@@ -3,7 +3,8 @@ unit UfrmPrincipal;
 interface
 
 uses
-  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  System.SysUtils, System.Types, System.UITypes, System.Classes,
+  System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Objects,
   FMX.Controls.Presentation, FMX.StdCtrls, FMX.Layouts, FMX.Ani, FMX.ListBox;
 
@@ -32,10 +33,20 @@ type
     Image8: TImage;
     ListBox1: TListBox;
     FloatAnimation1: TFloatAnimation;
+    {$IFDEF MSWINDOWS}
+    procedure MenuClick(Sender : TObject);
+    {$ELSE}
+    procedure MenuTap(Sender : TObject; Const Point: TPointF);
+    {$ENDIF}
+    procedure FormCreate(Sender: TObject);
+    procedure FloatAnimation1Finish(Sender: TObject);
+    procedure Image8Click(Sender: TObject);
+    procedure lytGeneroClick(Sender: TObject);
   private
     Procedure LoadMenu;
     Procedure OpenMenu(ind: Boolean);
-    Procedure SetupMenu(item: TListBoIntem; Texto: String);
+    Procedure SetupMenu(item: TListBoxItem; Texto: String);
+
 
   public
     { Public declarations }
@@ -47,57 +58,121 @@ var
 implementation
 
 {$R *.fmx}
-
-
 { TfrmPrincipal }
+
+procedure TfrmPrincipal.FloatAnimation1Finish(Sender: TObject);
+begin
+  if LytMenu.Tag = 0 then
+    LytMenu.visible := False;
+end;
+
+procedure TfrmPrincipal.FormCreate(Sender: TObject);
+begin
+  ImgCartaz.Position.X := 0;
+  ImgCartaz.Position.Y := 0;
+  ImgCartaz.width := 676;
+  ImgCartaz.Height := 450;
+
+  Self.LoadMenu;
+  Self.OpenMenu(False);
+
+end;
+
+procedure TfrmPrincipal.Image8Click(Sender: TObject);
+begin
+  Self.OpenMenu(False);
+end;
 
 procedure TfrmPrincipal.LoadMenu;
 begin
-ListBoz1.items.clear;
+  ListBox1.items.clear;
 
-Self.SetupMenu(TListboxItem.Create(ListBox1),  'Todos os Gêneros');
-Self.SetupMenu(TListboxItem.Create(ListBox1),  'Disponível para Download');
-Self.SetupMenu(TListboxItem.Create(ListBox1),  'Ação');
-Self.SetupMenu(TListboxItem.Create(ListBox1),  'Adolescente');
-Self.SetupMenu(TListboxItem.Create(ListBox1),  'Anime');
-Self.SetupMenu(TListboxItem.Create(ListBox1),  'Asiáticos');
-Self.SetupMenu(TListboxItem.Create(ListBox1),  'Brasileiros');
-Self.SetupMenu(TListboxItem.Create(ListBox1),  'Comédia');
-Self.SetupMenu(TListboxItem.Create(ListBox1),  'Drama');
-Self.SetupMenu(TListboxItem.Create(ListBox1),  'Esportes');
-Self.SetupMenu(TListboxItem.Create(ListBox1),  'Mistérios');
-Self.SetupMenu(TListboxItem.Create(ListBox1),  'Novelas');
-Self.SetupMenu(TListboxItem.Create(ListBox1),  'Suspense');
-Self.SetupMenu(TListboxItem.Create(ListBox1),  'Terror');
+  Self.SetupMenu(TListBoxItem.Create(ListBox1), 'Todos os Gêneros');
+  Self.SetupMenu(TListBoxItem.Create(ListBox1), 'Disponível para Download');
+  Self.SetupMenu(TListBoxItem.Create(ListBox1), 'Ação');
+  Self.SetupMenu(TListBoxItem.Create(ListBox1), 'Adolescente');
+  Self.SetupMenu(TListBoxItem.Create(ListBox1), 'Anime');
+  Self.SetupMenu(TListBoxItem.Create(ListBox1), 'Asiáticos');
+  Self.SetupMenu(TListBoxItem.Create(ListBox1), 'Brasileiros');
+  Self.SetupMenu(TListBoxItem.Create(ListBox1), 'Comédia');
+  Self.SetupMenu(TListBoxItem.Create(ListBox1), 'Drama');
+  Self.SetupMenu(TListBoxItem.Create(ListBox1), 'Esportes');
+  Self.SetupMenu(TListBoxItem.Create(ListBox1), 'Mistérios');
+  Self.SetupMenu(TListBoxItem.Create(ListBox1), 'Novelas');
+  Self.SetupMenu(TListBoxItem.Create(ListBox1), 'Suspense');
+  Self.SetupMenu(TListBoxItem.Create(ListBox1), 'Terror');
 end;
+
+procedure TfrmPrincipal.lytGeneroClick(Sender: TObject);
+begin
+  Self.OpenMenu(True);
+end;
+
+{$IFDEF MSWINDOWS}
+procedure TfrmPrincipal.MenuClick(Sender: TObject);
+begin
+lblFiltro.Text := TListBoxItem(sender).Text;
+self.OpenMenu(False);
+end;
+{$ElSE}
+procedure TfrmPrincipal.MenuTap(Sender: TObject; const Point: TPointF);
+begin
+lblFiltro.Text := TListBoxItem(Sender).Text;
+Self.OpenMenu(False);
+end;
+{$ENDIF}
 
 procedure TfrmPrincipal.OpenMenu(ind: Boolean);
 begin
-//Esconde o item selecionado
-ListBox1.ItemIndex := -1;
-// Volta a listagem para o inicio
-ListBox1.ScrollToItem(LitBox1.ItemByIndex(0));
+  // Esconde o item selecionado
+  ListBox1.ItemIndex := -1;
+  // Volta a listagem para o inicio
+  ListBox1.ScrollToItem(ListBox1.ItemByIndex(0));
 
-if ind then
-begin
-  lytMenu.Visible := True;
-  lytMenu.Tag := 1;
-  lytGenero.AnimateFloat('Opacity', 0, 0.2)
-  FloatAnimation1.Inverse := True;
-end;
-else
-begin
-  lytMenu.Tag := 0
-  lytGenero.AnimateFloat('Opacity', 1,0.4);
-  floatAnimation1.Inverse := True;
+  if ind then
+  begin
+    LytMenu.visible := True;
+    LytMenu.Tag := 1;
+    lytGenero.AnimateFloat('Opacity', 0, 0.2);
+    FloatAnimation1.Inverse := false;
+  end
+  else
+  begin
+    LytMenu.Tag := 0;
+    lytGenero.AnimateFloat('Opacity', 1, 0.4);
+    FloatAnimation1.Inverse := True;
 
-end;
+  end;
   FloatAnimation1.Start;
 end;
 
-procedure TfrmPrincipal.SetupMenu(item: TListBoIntem; Texto: String);
+procedure TfrmPrincipal.SetupMenu(item: TListBoxItem; Texto: String);
 begin
+  item.text := Texto;
+  item.StyledSettings := item.StyledSettings - [TStyledSetting.Size,
+    TStyledSetting.FontColor, TStyledSetting.other];
+  item.TextSettings.HorzAlign := TTextAlign.Center;
+  item.HitTest := True;
+{$IFDEF MSWINDOWS}
+  item.onclick := Self.MenuClick;
+{$ELSE}
+  item.OnTap := Self.MenuTap;
+{$ENDIF}
+  if ListBox1.items.Count > 0 then
+  begin
+    item.FontColor := $FFC3C3C3;
+    item.Font.Size := 20;
+    item.Height := 80;
+  end
 
+  else
+  begin
+    item.FontColor := $FFFFFFFF;
+    item.Font.Size := 25;
+    item.Height := 110;
+  end;
+
+  ListBox1.AddObject(item);
 end;
 
 end.
