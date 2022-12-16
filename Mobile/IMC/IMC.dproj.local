@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/12/13 20:28:52.000.896,=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/12/13 21:44:52.000.966,C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Mobile\mercado_livre\MercadoLivre.fmx=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2022/12/13 21:44:52.000.966,C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Mobile\mercado_livre\MercadoLivre.pas=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/12/13 21:45:02.000.003,C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Mobile\mercado_livre\MercadoLivree.dproj=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/12/16 18:46:29.654,C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Mobile\IMC\IMC.dproj=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Mobile\mercado_livre\MercadoLivree.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>
