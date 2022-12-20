@@ -1,0 +1,14 @@
+program Jogo_da_Velha;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  JogodaVelha in 'JogodaVelha.pas' {Form1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

@@ -1,0 +1,106 @@
+unit JogodaVelha;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Effects,
+  FMX.Layouts, FMX.Objects, FMX.TabControl;
+
+type
+  TForm1 = class(TForm)
+    TabControl1: TTabControl;
+    TabItem1: TTabItem;
+    TabItem2: TTabItem;
+    Layout1: TLayout;
+    rect_fundo_tab1: TRectangle;
+    lyt_tab1: TLayout;
+    Image1: TImage;
+    lyt_Jogadores: TLayout;
+    rect_morango: TRectangle;
+    FlowLayout1: TFlowLayout;
+    rect_banana: TRectangle;
+    Image2: TImage;
+    Image3: TImage;
+    Layout2: TLayout;
+    rect_deu_velha: TRectangle;
+    rect_game_over: TRectangle;
+    rect_parabens: TRectangle;
+    rect_fundo_tab2: TRectangle;
+    Layout4: TLayout;
+    lyt_tab2: TLayout;
+    img_capa_2: TImage;
+    FlowLayout2: TFlowLayout;
+    rect_1_1: TRectangle;
+    img_1_1: TImage;
+    rect_1_2: TRectangle;
+    img_1_2: TImage;
+    rect_1_3: TRectangle;
+    img_1_3: TImage;
+    rect_2_1: TRectangle;
+    img_2_1: TImage;
+    rect_2_2: TRectangle;
+    img_2_2: TImage;
+    rect_2_3: TRectangle;
+    img_2_3: TImage;
+    rect_3_1: TRectangle;
+    img_3_1: TImage;
+    rect_3_2: TRectangle;
+    img_3_2: TImage;
+    rect_3_3: TRectangle;
+    img_3_3: TImage;
+    ShadowEffect1: TShadowEffect;
+    img_computador: TImage;
+    img_jogador: TImage;
+    rect_fim_jogo: TRectangle;
+    rect_progresso: TRectangle;
+    procedure onClickSelecioneJogador(Sender : TObject);
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+procedure TfrmPrincipal.formshow(Sender: Tobject);
+begin
+  Tabcontrol1.tabposition := Ttabposition.None;
+  Tabcontrol1.Activetab := TabItem1;
+end;
+
+procedure TfrmPrincipal.onClickSelecioneJogador(Sender : TObject);
+var
+xPosicao : IUnteger;
+xRetangulo, xJogador : String;
+
+begin
+  TabControl1.ActiveTab := TabItem2;
+
+  xRetangulo := (Sender as TRectangle). name;
+  xPosicao := Pos('_', xRetangulo, xPosicao +1, lenght(xRetangulo);
+
+  if xJogador = 'morango' then then
+  begin
+    img_jogador.Bitmap := img_morango.Bitmap;
+    img_computador.Bitmap := img_banana.Botmap;
+
+  end;
+
+  else
+
+  begin
+    img_jogador.Bitmap := img_banana.Bitmap;
+    img_computador.Bitmap := img_morango.Botmap;
+
+  end;
+
+end;
+
+
+{$R *.fmx}
+
+end.
