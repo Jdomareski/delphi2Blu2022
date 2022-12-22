@@ -1,0 +1,140 @@
+object Formulario1: TFormulario1
+  Left = 0
+  Top = 0
+  ClientHeight = 687
+  ClientWidth = 355
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object lytMenus: TLayout
+    Align = Top
+    Size.Width = 355.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ToolBar1: TToolBar
+      Align = Client
+      Margins.Left = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Size.Width = 335.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object rect_Img_Menu: TRectangle
+        Align = Left
+        Fill.Kind = None
+        Size.Width = 50.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object ImgMenu: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Align = Client
+          Size.Width = 50.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object rect_Img_Cesta: TRectangle
+        Align = Right
+        Fill.Kind = None
+        Position.X = 285.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object imgCesta: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Align = Right
+          Size.Width = 50.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+    end
+  end
+  object lytSearch: TLayout
+    Align = Top
+    Margins.Left = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 50.000000000000000000
+    Size.Width = 335.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Lbl_Coffee: TLabel
+      Align = Left
+      StyledSettings = [Family, Style]
+      Size.Width = 57.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.FontColor = claChocolate
+      TextSettings.VertAlign = Trailing
+      Text = 'Coffee'
+      TabOrder = 1
+      object Line1: TLine
+        Align = Bottom
+        LineType = Bottom
+        Margins.Right = 35.000000000000000000
+        Position.Y = 49.000000000000000000
+        Size.Width = 22.000000000000000000
+        Size.Height = 1.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFFFDAD57
+        Stroke.Thickness = 3.000000000000000000
+      end
+    end
+    object LblNonCaffe: TLabel
+      Align = Left
+      StyledSettings = [Family, Style]
+      Position.X = 57.000000000000000000
+      Size.Width = 82.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.FontColor = claGray
+      TextSettings.VertAlign = Trailing
+      Text = 'Non Coffee'
+      TabOrder = 0
+    end
+  end
+  object lytlabelMenu: TLayout
+    Align = Top
+    Margins.Left = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 100.000000000000000000
+    Size.Width = 335.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+  end
+  object lytLabel: TLayout
+    Align = Top
+    Margins.Left = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 150.000000000000000000
+    Size.Width = 335.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+  end
+  object lytpics: TLayout
+    Align = Client
+    Margins.Left = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Size.Width = 335.000000000000000000
+    Size.Height = 487.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+  end
+end

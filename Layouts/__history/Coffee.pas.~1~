@@ -1,0 +1,38 @@
+unit Coffee;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Layouts,
+  FMX.Objects, FMX.StdCtrls, FMX.Controls.Presentation;
+
+type
+  TFormulario1 = class(TForm)
+    lytMenus: TLayout;
+    lytSearch: TLayout;
+    lytlabelMenu: TLayout;
+    lytLabel: TLayout;
+    lytpics: TLayout;
+    ToolBar1: TToolBar;
+    rect_Img_Menu: TRectangle;
+    ImgMenu: TImage;
+    imgCesta: TImage;
+    rect_Img_Cesta: TRectangle;
+    Lbl_Coffee: TLabel;
+    LblNonCaffe: TLabel;
+    Line1: TLine;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Formulario1: TFormulario1;
+
+implementation
+
+{$R *.fmx}
+
+end.
