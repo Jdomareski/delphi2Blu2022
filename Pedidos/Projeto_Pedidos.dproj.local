@@ -7,29 +7,38 @@
     <Transaction>2022/10/31 20:15:16.000.693,C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Unit2.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Principal.pas</Transaction>
     <Transaction>2022/10/31 20:15:27.000.688,C:\Users\jdomareski\Documents\Embarcadero\Studio\Projects\Project3.dproj=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Projeto_Pedidos.dproj</Transaction>
     <Transaction>2022/10/31 21:05:18.000.920,=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit1.pas</Transaction>
-    <Transaction>2022/10/31 21:05:52.000.362,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit1.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\udmPedidos.pas</Transaction>
     <Transaction>2022/10/31 21:05:52.000.362,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit1.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\udmPedidos.dfm</Transaction>
+    <Transaction>2022/10/31 21:05:52.000.362,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit1.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\udmPedidos.pas</Transaction>
     <Transaction>2022/10/31 21:25:59.000.734,=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
-    <Transaction>2022/10/31 21:26:20.000.847,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmComprador.pas</Transaction>
     <Transaction>2022/10/31 21:26:20.000.847,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmComprador.dfm</Transaction>
+    <Transaction>2022/10/31 21:26:20.000.847,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmComprador.pas</Transaction>
     <Transaction>2022/11/01 18:41:26.000.113,=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
-    <Transaction>2022/11/01 18:43:18.000.670,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmFornecedores.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
     <Transaction>2022/11/01 18:43:18.000.670,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmFornecedores.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.dfm</Transaction>
-    <Transaction>2022/11/01 18:43:27.000.277,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmFornecedor.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmFornecedores.dfm</Transaction>
+    <Transaction>2022/11/01 18:43:18.000.670,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmFornecedores.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
     <Transaction>2022/11/01 18:43:27.000.277,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmFornecedor.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmFornecedores.pas</Transaction>
+    <Transaction>2022/11/01 18:43:27.000.277,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmFornecedor.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmFornecedores.dfm</Transaction>
     <Transaction>2022/11/01 19:22:48.000.482,=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
-    <Transaction>2022/11/01 19:23:14.000.143,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmProdutos.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.dfm</Transaction>
     <Transaction>2022/11/01 19:23:14.000.143,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmProdutos.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
+    <Transaction>2022/11/01 19:23:14.000.143,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmProdutos.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.dfm</Transaction>
     <Transaction>2022/11/01 19:59:42.000.608,=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
-    <Transaction>2022/11/01 20:00:00.000.197,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmUnidadeMedida.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.dfm</Transaction>
     <Transaction>2022/11/01 20:00:00.000.197,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmUnidadeMedida.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
+    <Transaction>2022/11/01 20:00:00.000.197,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmUnidadeMedida.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.dfm</Transaction>
     <Transaction>2022/11/01 20:24:57.000.668,=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
-    <Transaction>2022/11/01 20:25:13.000.481,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmPedido.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
     <Transaction>2022/11/01 20:25:13.000.481,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmPedido.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.dfm</Transaction>
+    <Transaction>2022/11/01 20:25:13.000.481,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmPedido.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
     <Transaction>2022/11/01 20:28:21.000.091,=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
     <Transaction>2022/11/01 20:33:44.000.003,=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
-    <Transaction>2022/11/01 20:33:55.000.090,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmPedidos.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.dfm</Transaction>
     <Transaction>2022/11/01 20:33:55.000.090,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmPedidos.pas=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.pas</Transaction>
+    <Transaction>2022/11/01 20:33:55.000.090,C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\ufrmPedidos.dfm=C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\Unit3.dfm</Transaction>
+    <Transaction>2023/01/11 18:59:00.153,=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Pedidos\Unit3.pas</Transaction>
+    <Transaction>2023/01/11 19:08:14.824,C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Pedidos\UfrmRelUnidadeMedida.pas=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Pedidos\Unit3.pas</Transaction>
+    <Transaction>2023/01/11 19:08:14.824,C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Pedidos\UfrmRelUnidadeMedida.dfm=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Pedidos\Unit3.dfm</Transaction>
+    <Transaction>2023/01/11 21:05:36.916,=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Pedidos\Unit3.pas</Transaction>
+    <Transaction>2023/01/11 21:06:14.446,C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Pedidos\UfrmRelProdutos.dfm=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Pedidos\Unit3.dfm</Transaction>
+    <Transaction>2023/01/11 21:06:14.446,C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Pedidos\UfrmRelProdutos.pas=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Pedidos\Unit3.pas</Transaction>
+    <Transaction>2023/01/11 21:34:56.790,=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Pedidos\Unit3.pas</Transaction>
+    <Transaction>2023/01/11 21:35:11.803,C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Pedidos\UfrmCompradores.dfm=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Pedidos\Unit3.dfm</Transaction>
+    <Transaction>2023/01/11 21:35:11.803,C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Pedidos\UfrmCompradores.pas=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Pedidos\Unit3.pas</Transaction>
   </Transactions>
 	<ProjectSortOrder AutoSort="0" SortType="0">
     <File Path="Principal.pas"/>
@@ -46,5 +55,11 @@
     <File Path="ufrmUnidadeMedida.dfm"/>
     <File Path="ufrmPedidos.pas"/>
     <File Path="ufrmPedidos.dfm"/>
+    <File Path="UfrmRelUnidadeMedida.pas"/>
+    <File Path="UfrmRelUnidadeMedida.dfm"/>
+    <File Path="UfrmRelProdutos.pas"/>
+    <File Path="UfrmRelProdutos.dfm"/>
+    <File Path="UfrmCompradores.pas"/>
+    <File Path="UfrmCompradores.dfm"/>
   </ProjectSortOrder>
 </BorlandProject>

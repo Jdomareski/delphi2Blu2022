@@ -2,8 +2,8 @@ object dmPedidos: TdmPedidos
   OldCreateOrder = False
   OnCreate = DataModuleCreate
   OnDestroy = DataModuleDestroy
-  Height = 245
-  Width = 223
+  Height = 250
+  Width = 518
   object FDConexao: TFDConnection
     Params.Strings = (
       'Database=devs2blu'
@@ -20,7 +20,7 @@ object dmPedidos: TdmPedidos
     VendorLib = 
       'C:\Users\jdomareski\Documents\delphi2Blu2022\Pedidos\libmysql.dl' +
       'l'
-    Left = 152
-    Top = 176
+    Left = 168
+    Top = 80
   end
 end

@@ -8,7 +8,10 @@ uses
   ufrmFornecedor in 'ufrmFornecedor.pas' {frmFornecedores},
   ufrmProdutos in 'ufrmProdutos.pas' {frmProdutos},
   ufrmUnidadeMedida in 'ufrmUnidadeMedida.pas' {frmUnidadeMedida},
-  ufrmPedidos in 'ufrmPedidos.pas' {frmPedidos};
+  ufrmPedidos in 'ufrmPedidos.pas' {frmPedidos},
+  UfrmRelUnidadeMedida in 'UfrmRelUnidadeMedida.pas' {frmRelUnidadeMedida},
+  UfrmRelProdutos in 'UfrmRelProdutos.pas' {frmRelProdutos},
+  UfrmCompradores in 'UfrmCompradores.pas' {FrmRelCompradores};
 
 {$R *.res}
 
@@ -17,7 +20,5 @@ begin
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TdmPedidos, dmPedidos);
   Application.CreateForm(TForm2, Form2);
-  Application.CreateForm(TfrmUnidadeMedida, frmUnidadeMedida);
-  Application.CreateForm(TfrmPedidos, frmPedidos);
   Application.Run;
 end.
