@@ -2,8 +2,8 @@ object frmRelProdutos: TfrmRelProdutos
   Left = 0
   Top = 0
   Caption = 'Relat'#243'rio Produtos'
-  ClientHeight = 212
-  ClientWidth = 418
+  ClientHeight = 261
+  ClientWidth = 669
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -14,11 +14,24 @@ object frmRelProdutos: TfrmRelProdutos
   OnClose = FormClose
   PixelsPerInch = 96
   TextHeight = 13
+  object Label1: TLabel
+    Left = 24
+    Top = 33
+    Width = 55
+    Height = 16
+    Caption = 'Descri'#231#227'o'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
   object GroupBox1: TGroupBox
     Left = 8
     Top = 8
-    Width = 402
-    Height = 137
+    Width = 601
+    Height = 145
     TabOrder = 0
     object LblFiltros: TLabel
       Left = 3
@@ -33,12 +46,12 @@ object frmRelProdutos: TfrmRelProdutos
       Font.Style = []
       ParentFont = False
     end
-    object LblDesc: TLabel
-      Left = 16
+    object LblUnidMedida: TLabel
+      Left = 424
       Top = 25
-      Width = 55
+      Width = 91
       Height = 16
-      Caption = 'Descri'#231#227'o'
+      Caption = 'Unidade Medida'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -89,18 +102,41 @@ object frmRelProdutos: TfrmRelProdutos
       TabOrder = 2
       OnClick = BtVisualizarClick
     end
+    object EdtUnidadeMedida: TEdit
+      Left = 424
+      Top = 47
+      Width = 121
+      Height = 24
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 3
+    end
   end
   object FDQuery1: TFDQuery
+    Active = True
     Connection = dmPedidos.FDConexao
     SQL.Strings = (
       
-        'SELECT ID, DESCRICAO FROM PRODUTO WHERE (DESCRICAO LIKE :DESCRIC' +
-        'AO) OR (COALESCE(:DESCRICAO,'#39#39')='#39#39')')
-    Left = 352
-    Top = 16
+        'SELECT PRODUTO.ID, PRODUTO.DESCRICAO, UNIDADEMEDIDA.DESCRICAO UN' +
+        'DMEDIDA FROM PRODUTO LEFT JOIN UNIDADEMEDIDA ON PRODUTO.IDUNIDAD' +
+        'EMEDIDA = UNIDADEMEDIDA.ID WHERE (PRODUTO.DESCRICAO LIKE :DESCRI' +
+        'CAO) OR (COALESCE(:DESCRICAO,'#39#39')='#39#39')AND (UNIDADEMEDIDA.DESCRICAO' +
+        ' LIKE :UNDMEDIDA) OR (COALESCE(:UNDMEDIDA,'#39#39')='#39#39')')
+    Left = 296
+    Top = 160
     ParamData = <
       item
         Name = 'DESCRICAO'
+        DataType = ftString
+        ParamType = ptInput
+        Value = Null
+      end
+      item
+        Name = 'UNDMEDIDA'
         DataType = ftString
         ParamType = ptInput
         Value = Null
@@ -111,8 +147,8 @@ object frmRelProdutos: TfrmRelProdutos
     CloseDataSource = False
     DataSet = FDQuery1
     BCDToCurrency = False
-    Left = 144
-    Top = 152
+    Left = 216
+    Top = 160
   end
   object frxPDFExport1: TfrxPDFExport
     UseFileCache = True
@@ -138,8 +174,8 @@ object frmRelProdutos: TfrmRelProdutos
     PdfA = False
     PDFStandard = psNone
     PDFVersion = pv17
-    Left = 64
-    Top = 168
+    Left = 136
+    Top = 160
   end
   object frxReport1: TfrxReport
     Version = '6.7'
@@ -150,14 +186,14 @@ object frmRelProdutos: TfrmRelProdutos
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 44937.883960868100000000
-    ReportOptions.LastChange = 44937.887640995400000000
+    ReportOptions.LastChange = 44938.804970949100000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
       ''
       'end.')
-    Left = 16
-    Top = 120
+    Left = 8
+    Top = 152
     Datasets = <
       item
         DataSet = frxDBDataset1
@@ -225,7 +261,8 @@ object frmRelProdutos: TfrmRelProdutos
         end
         object Memo3: TfrxMemoView
           AllowVectorExport = True
-          Left = 62.362245000000000000
+          Left = 115.275665000000000000
+          Top = 3.779530000000000000
           Width = 94.488250000000000000
           Height = 18.897650000000000000
           Font.Charset = DEFAULT_CHARSET
@@ -238,11 +275,27 @@ object frmRelProdutos: TfrmRelProdutos
             'Produto')
           ParentFont = False
         end
+        object Memo4: TfrxMemoView
+          AllowVectorExport = True
+          Left = 419.527830000000000000
+          Top = 3.779530000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = []
+          Memo.UTF8W = (
+            'Unidade Medida')
+          ParentFont = False
+        end
       end
       object MasterData1: TfrxMasterData
         FillType = ftBrush
         Frame.Typ = []
-        Height = 22.677180000000000000
+        Height = 37.795300000000000000
         Top = 177.637910000000000000
         Width = 718.110700000000000000
         DataSet = frxDBDataset1
@@ -251,6 +304,7 @@ object frmRelProdutos: TfrmRelProdutos
         object frxDBDataset1ID: TfrxMemoView
           IndexTag = 1
           AllowVectorExport = True
+          Left = 7.559060000000000000
           Top = 3.779530000000000000
           Width = 79.370130000000000000
           Height = 18.897650000000000000
@@ -264,9 +318,9 @@ object frmRelProdutos: TfrmRelProdutos
         object frxDBDataset1DESCRICAO: TfrxMemoView
           IndexTag = 1
           AllowVectorExport = True
-          Left = 86.929190000000000000
+          Left = 113.385900000000000000
           Top = 3.779530000000000000
-          Width = 400.630180000000000000
+          Width = 222.992270000000000000
           Height = 18.897650000000000000
           DataField = 'DESCRICAO'
           DataSet = frxDBDataset1
@@ -274,6 +328,20 @@ object frmRelProdutos: TfrmRelProdutos
           Frame.Typ = []
           Memo.UTF8W = (
             '[frxDBDataset1."DESCRICAO"]')
+        end
+        object frxDBDataset1UNDMEDIDA: TfrxMemoView
+          IndexTag = 1
+          AllowVectorExport = True
+          Left = 419.527830000000000000
+          Top = 11.338590000000000000
+          Width = 400.630180000000000000
+          Height = 18.897650000000000000
+          DataField = 'UNDMEDIDA'
+          DataSet = frxDBDataset1
+          DataSetName = 'frxDBDataset1'
+          Frame.Typ = []
+          Memo.UTF8W = (
+            '[frxDBDataset1."UNDMEDIDA"]')
         end
       end
     end

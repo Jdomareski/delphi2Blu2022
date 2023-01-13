@@ -91,6 +91,7 @@ object frmRelUnidadeMedida: TfrmRelUnidadeMedida
     end
   end
   object FRX: TFDQuery
+    Active = True
     Connection = dmPedidos.FDConexao
     SQL.Strings = (
       

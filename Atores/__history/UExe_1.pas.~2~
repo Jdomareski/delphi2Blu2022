@@ -1,0 +1,30 @@
+unit UExe_1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmRelNomeAtor = class(TForm)
+    LBFiltros: TLabel;
+    LblNome: TLabel;
+    EdtNomeAtor: TEdit;
+    GroupBox1: TGroupBox;
+    BtExportar: TButton;
+    BtVisualizar: TButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmRelNomeAtor: TfrmRelNomeAtor;
+
+implementation
+
+{$R *.dfm}
+
+end.

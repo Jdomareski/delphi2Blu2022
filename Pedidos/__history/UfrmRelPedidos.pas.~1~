@@ -1,0 +1,71 @@
+unit UfrmRelPedidos;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf,
+  FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, Data.DB,
+  FireDAC.Comp.DataSet, FireDAC.Comp.Client, Vcl.DBCtrls, Vcl.StdCtrls;
+
+type
+  TfrmRelPedidos = class(TForm)
+    LbFiltros: TLabel;
+    LblComprador: TLabel;
+    LblFornecedor: TLabel;
+    GroupBox1: TGroupBox;
+    BtnExportar: TButton;
+    BtnVisualizar: TButton;
+    DBLookupComboBox1: TDBLookupComboBox;
+    DBLookupComboBox2: TDBLookupComboBox;
+    DtsLookupComprador: TDataSource;
+    dtsLookupFornecedor: TDataSource;
+    LookupComprador: TFDTable;
+    LookupFornecedor: TFDTable;
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormCreate(Sender: TObject);
+  private
+Procedure PrepararFiltro;
+
+  public
+    { Public declarations }
+  end;
+
+var
+  frmRelPedidos: TfrmRelPedidos;
+
+implementation
+
+{$R *.dfm}
+
+uses udmPedidos;
+
+procedure TfrmRelPedidos.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+Action := caFree;
+// QryPedido.Close;
+// QryItemCompra;
+
+LookupComprador.Close;
+LookupFornecedor.Close;
+frmRelPedidos := nil;
+
+
+end;
+
+procedure TfrmRelPedidos.FormCreate(Sender: TObject);
+begin
+LookupComprador.open;
+LookupFornecedor.open;
+
+end;
+
+procedure TfrmRelPedidos.PrepararFiltro;
+begin
+// QryPedido.close;
+// QryPedido.paramByname('IDCOMPRADOR').AsInteger :=0;
+// QryPedido.paramByname('IDFORNECEDOR').AsInteger :=0;
+end;
+
+end.

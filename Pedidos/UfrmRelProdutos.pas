@@ -15,7 +15,7 @@ type
   TfrmRelProdutos = class(TForm)
     GroupBox1: TGroupBox;
     LblFiltros: TLabel;
-    LblDesc: TLabel;
+    LblUnidMedida: TLabel;
     edtDescricao: TEdit;
     FDQuery1: TFDQuery;
     frxDBDataset1: TfrxDBDataset;
@@ -23,6 +23,8 @@ type
     frxReport1: TfrxReport;
     BTExportar: TButton;
     BtVisualizar: TButton;
+    EdtUnidadeMedida: TEdit;
+    Label1: TLabel;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure BTExportarClick(Sender: TObject);
     procedure BtVisualizarClick(Sender: TObject);
@@ -82,8 +84,12 @@ begin
   FDQuery1.Parambyname('DESCRICAO').AsString := '';
 
   if Trim(edtDescricao.Text) <> EmptyStr then
-    FDQuery1.Parambyname('DESCRCAO').AsString :=
+    FDQuery1.Parambyname('DESCRICAO').AsString :=
       '%' + Trim(edtDescricao.Text) + '%';
+
+  if Trim(edtUnidadeMedida.Text) <> EmptyStr then
+    FDQuery1.Parambyname('UNDMEDIDA').AsString :=
+      '%' + Trim(edtUnidadeMedida.Text) + '%';
   FDQuery1.Open;
 
 end;

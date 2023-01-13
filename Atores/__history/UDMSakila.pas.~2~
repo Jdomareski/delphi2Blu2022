@@ -1,0 +1,28 @@
+unit UDMSakila;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, Data.DB, FireDAC.Phys.MySQLDef,
+  FireDAC.Stan.Intf, FireDAC.Phys, FireDAC.Phys.MySQL;
+
+type
+  TDataModule1 = class(TDataModule)
+    DataSource1: TDataSource;
+    FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DataModule1: TDataModule1;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+end.

@@ -1,0 +1,13 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 211
+  Width = 324
+  object DataSource1: TDataSource
+    Left = 40
+    Top = 32
+  end
+  object FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink
+    Left = 144
+    Top = 48
+  end
+end

@@ -741,6 +741,7 @@ object Form2: TForm2
     end
     object Fornecedores1: TMenuItem
       Caption = '&Fornecedores'
+      OnClick = Fornecedores1Click
     end
     object UnMedida1: TMenuItem
       Caption = '&Un. Medida'
@@ -748,6 +749,7 @@ object Form2: TForm2
     end
     object Pedidos1: TMenuItem
       Caption = '&Pedidos'
+      OnClick = Pedidos1Click
     end
   end
 end
