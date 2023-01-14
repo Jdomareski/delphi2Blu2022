@@ -21,12 +21,10 @@ type
     frxPDFExport1: TfrxPDFExport;
     frxDBDataset1: TfrxDBDataset;
     frxReport1: TfrxReport;
-    edtAtor: TEdit;
+    edtActor: TEdit;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
-    procedure BtExportarClick(Sender: TObject);
-    procedure BtVisualizarClick(Sender: TObject);
   private
-    procedure prepararFiltro;
+    { Private declarations }
   public
     { Public declarations }
   end;
@@ -38,47 +36,13 @@ implementation
 
 {$R *.dfm}
 
-uses UDMSakila, UAtores;
-
-procedure TfrmRelNomeAtor.BtExportarClick(Sender: TObject);
-var
-xCaminho :String;
-
-begin
-self.PrepararFiltro;
-
-xCaminho := ExtractFilePath(Application.ExeName) + 'temp';
-
-if not DirectoryExists(xCaminho) then
-ForceDirectories(xCaminho);
-
-FrxPDFExport1.filename := Format('%s\Nome_Ator.pdf', [xCaminho]);
-FrxReport1.PrepareReport;
-FrxReport1.Export(frxPDFExport1);
-end;
-
-procedure TfrmRelNomeAtor.BtVisualizarClick(Sender: TObject);
-begin
-self.PrepararFiltro;
-frxReport1.Showreport;
-end;
+uses UDMSakila;
 
 procedure TfrmRelNomeAtor.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
 Action := caFree;
 frmRelNomeAtor.Close;
 
-end;
-
-procedure TfrmRelNomeAtor.prepararFiltro;
-
-begin
-QryNomeAtor.Close;
-QryNomeAtor.Parambyname('SOBRENOME').AsString := '';
-
-  if Trim(edtAtor.Text) <> EmptyStr then
-QryNomeAtor.Parambyname('SOBRENOME').AsString := '%' + Trim(edtAtor.Text) + '%';
-QryNomeAtor.Open;
 end;
 
 end.

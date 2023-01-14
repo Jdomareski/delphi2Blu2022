@@ -2,8 +2,8 @@ object frmRelNomeAtor: TfrmRelNomeAtor
   Left = 0
   Top = 0
   Caption = 'Relat'#243'rio Por Nome Ator'
-  ClientHeight = 145
-  ClientWidth = 431
+  ClientHeight = 144
+  ClientWidth = 426
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -98,8 +98,8 @@ object frmRelNomeAtor: TfrmRelNomeAtor
         'SELECT ACTOR_ID, FIRST_NAME AS NOME, LAST_NAME AS SOBRENOME FROM' +
         ' ACTOR WHERE (LAST_NAME LIKE :SOBRENOME) OR (COALESCE(:SOBRENOME' +
         ','#39#39')='#39#39')')
-    Left = 152
-    Top = 8
+    Left = 88
+    Top = 192
     ParamData = <
       item
         Name = 'SOBRENOME'
@@ -132,15 +132,16 @@ object frmRelNomeAtor: TfrmRelNomeAtor
     PdfA = False
     PDFStandard = psNone
     PDFVersion = pv17
-    Left = 368
+    Left = 296
+    Top = 200
   end
   object frxDBDataset1: TfrxDBDataset
     UserName = 'frxDBDataset1'
     CloseDataSource = False
     DataSet = QryNomeAtor
     BCDToCurrency = False
-    Left = 232
-    Top = 8
+    Left = 160
+    Top = 192
   end
   object frxReport1: TfrxReport
     Version = '6.7'
@@ -157,7 +158,8 @@ object frmRelNomeAtor: TfrmRelNomeAtor
       'begin'
       ''
       'end.')
-    Left = 296
+    Left = 232
+    Top = 192
     Datasets = <
       item
         DataSet = frxDBDataset1

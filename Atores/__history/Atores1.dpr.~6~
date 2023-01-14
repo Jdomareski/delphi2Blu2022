@@ -6,7 +6,7 @@ uses
   UExe_1 in 'UExe_1.pas' {frmRelNomeAtor},
   UDMSakila in 'UDMSakila.pas' {DataModule1: TDataModule},
   UExe_2 in 'UExe_2.pas' {frmRelCidades},
-  UExe_3 in 'UExe_3.pas' {frmRelFilmes};
+  UExe_3 in 'UExe_3.pas' {Form2};
 
 {$R *.res}
 
@@ -15,6 +15,6 @@ begin
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TDataModule1, DataModule1);
   Application.CreateForm(TForm1, Form1);
-  Application.CreateForm(TfrmRelFilmes, frmRelFilmes);
+  Application.CreateForm(TForm2, Form2);
   Application.Run;
 end.

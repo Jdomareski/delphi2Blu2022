@@ -16,7 +16,6 @@ type
     Exerccio031: TMenuItem;
     procedure Exerccio011Click(Sender: TObject);
     procedure Exerccio021Click(Sender: TObject);
-    procedure Exerccio031Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -30,7 +29,7 @@ implementation
 
 {$R *.dfm}
 
-uses UExe_1, UExe_2, UExe_3;
+uses UExe_1, UExe_2;
 
 procedure TForm1.Exerccio011Click(Sender: TObject);
 begin
@@ -46,14 +45,6 @@ begin
   frmRelCidades := TfrmRelCidades.create (self);
 
   frmRelCidades.show;
-end;
-
-procedure TForm1.Exerccio031Click(Sender: TObject);
-begin
- if not assigned (frmRelFilmes) then
-  frmRelFilmes := TfrmRelFilmes.create (self);
-
-  frmRelFilmes.show;
 end;
 
 end.

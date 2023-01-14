@@ -38,7 +38,7 @@ implementation
 
 {$R *.dfm}
 
-uses UDMSakila, UAtores;
+uses UDMSakila;
 
 procedure TfrmRelNomeAtor.BtExportarClick(Sender: TObject);
 var
@@ -73,12 +73,12 @@ end;
 procedure TfrmRelNomeAtor.prepararFiltro;
 
 begin
-QryNomeAtor.Close;
-QryNomeAtor.Parambyname('SOBRENOME').AsString := '';
+frmRelNomeAtor.Close;
+frmRelNomeAtor.Parambyname('SOBRENOME').AsString := '';
 
   if Trim(edtAtor.Text) <> EmptyStr then
-QryNomeAtor.Parambyname('SOBRENOME').AsString := '%' + Trim(edtAtor.Text) + '%';
-QryNomeAtor.Open;
+    frmRelNomeAtor.Parambyname('SOBRENOME').AsString := '%' + Trim(edtAtor.Text) + '%';
+  frmRelNomeAtor.Open;
 end;
 
 end.

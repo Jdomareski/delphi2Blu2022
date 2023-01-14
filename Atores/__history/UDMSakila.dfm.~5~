@@ -6,18 +6,13 @@ object DataModule1: TDataModule1
     VendorLib = 
       'C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Pedidos\libmy' +
       'sql.dll'
-    Left = 144
-    Top = 8
+    Left = 216
+    Top = 32
   end
   object FDConnection1: TFDConnection
     Params.Strings = (
       'User_Name=root'
-      'Database=sakila'
-      'Password=root'
-      'Server=localhost'
       'DriverID=MySQL')
-    Connected = True
-    LoginPrompt = False
     Left = 56
     Top = 16
   end

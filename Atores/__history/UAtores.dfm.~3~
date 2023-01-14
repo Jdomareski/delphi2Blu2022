@@ -2,8 +2,8 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 123
-  ClientWidth = 257
+  ClientHeight = 78
+  ClientWidth = 120
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -21,15 +21,12 @@ object Form1: TForm1
       Caption = 'Relat'#243'rios'
       object Exerccio011: TMenuItem
         Caption = 'Exerc'#237'cio 01'
-        OnClick = Exerccio011Click
       end
       object Exerccio021: TMenuItem
         Caption = 'Exerc'#237'cio 02'
-        OnClick = Exerccio021Click
       end
       object Exerccio031: TMenuItem
         Caption = 'Exerc'#237'cio 03'
-        OnClick = Exerccio031Click
       end
     end
   end

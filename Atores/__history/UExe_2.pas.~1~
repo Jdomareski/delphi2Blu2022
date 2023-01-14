@@ -1,0 +1,30 @@
+unit UExe_2;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmCidades = class(TForm)
+    LblFiltros: TLabel;
+    LblCidades: TLabel;
+    CBBCidades: TComboBox;
+    GroupBox1: TGroupBox;
+    BtExportar: TButton;
+    BTVisualizar: TButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCidades: TfrmCidades;
+
+implementation
+
+{$R *.dfm}
+
+end.
