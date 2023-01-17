@@ -1,0 +1,87 @@
+unit Uclasse;
+
+interface
+type
+
+TCompra = Class
+
+private
+FNomeProduto : String;
+FQuantidade : Double;
+FPreco, FValorTotal : Double;
+    function GetNomeProduto: String;
+    function GetPreco: Double;
+    function GetQuantidade: Double;
+    function GetValorTotal: String;
+    procedure SetNomeProduto(const Value: String);
+    procedure SetPreco(const Value: Double);
+    procedure SetQuantidade(const Value: Double);
+    procedure SetValorTotal(const Value: String);
+
+public
+
+Function CalcDesconto : Double;
+
+Property NomeProduto : String read GetNomeProduto write SetNomeProduto;
+Property Quantidade : Double read GetQuantidade write SetQuantidade;
+Property Preco : Double read GetPreco write SetPreco;
+Property ValorTotal : String read GetValorTotal write SetValorTotal;
+
+
+End;
+
+implementation
+
+{ TCompra }
+
+uses Uclasse_1;
+
+function TCompra.CalcDesconto: Double;
+var
+xDesc : Double;
+begin
+
+
+end;
+
+function TCompra.GetNomeProduto: String;
+begin
+
+end;
+
+function TCompra.GetPreco: Double;
+begin
+
+end;
+
+function TCompra.GetQuantidade: Double;
+begin
+
+end;
+
+function TCompra.GetValorTotal: String;
+begin
+
+end;
+
+procedure TCompra.SetNomeProduto(const Value: String);
+begin
+
+end;
+
+procedure TCompra.SetPreco(const Value: Double);
+begin
+
+end;
+
+procedure TCompra.SetQuantidade(const Value: Double);
+begin
+
+end;
+
+procedure TCompra.SetValorTotal(const Value: String);
+begin
+
+end;
+
+end.

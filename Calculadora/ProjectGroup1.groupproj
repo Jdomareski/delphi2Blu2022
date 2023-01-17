@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{9519AB41-7FE5-4E7B-BC50-6DADC2CAB40D}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Calculadora1.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Project22.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Calculadora1">
+        <MSBuild Projects="Calculadora1.dproj"/>
+    </Target>
+    <Target Name="Calculadora1:Clean">
+        <MSBuild Projects="Calculadora1.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Calculadora1:Make">
+        <MSBuild Projects="Calculadora1.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Project22">
+        <MSBuild Projects="Project22.dproj"/>
+    </Target>
+    <Target Name="Project22:Clean">
+        <MSBuild Projects="Project22.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project22:Make">
+        <MSBuild Projects="Project22.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Calculadora1;Project22"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Calculadora1:Clean;Project22:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Calculadora1:Make;Project22:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

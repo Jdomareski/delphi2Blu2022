@@ -1,0 +1,18 @@
+unit UCacluladora;
+
+interface
+
+Type
+TCalculadora = Class;
+
+Private
+
+Public
+
+function somar(aNUm1, aNUm2 :Double): Double;
+
+
+
+implementation
+
+end.

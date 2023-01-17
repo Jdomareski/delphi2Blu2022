@@ -1,0 +1,11 @@
+unit UCacluladora;
+
+interface
+
+Type
+TCalculadora = (OpSomar, OpSubtrair, OpMultiplicar, OpDividir) = TClass;
+
+
+implementation
+
+end.

@@ -1,0 +1,34 @@
+unit Uclasse_1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TFrmFechamento = class(TForm)
+    LblQtd: TLabel;
+    LblVlrUnt: TLabel;
+    LblVlrSemDesc: TLabel;
+    LblDesc: TLabel;
+    LblVlrPagar: TLabel;
+    LblResult: TLabel;
+    EdtQtd: TEdit;
+    EdtVlrUnt: TEdit;
+    LblTot1: TLabel;
+    LblPctDesc: TLabel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmFechamento: TFrmFechamento;
+
+implementation
+
+{$R *.dfm}
+
+end.

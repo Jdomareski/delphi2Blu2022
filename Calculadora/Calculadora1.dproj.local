@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/01/16 18:41:58.000.506,=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/16 18:43:37.000.561,C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Calculadora\Calculadora.pas</Transaction>
+    <Transaction>2023/01/16 18:43:37.000.561,C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Calculadora\Calculadora.dfm</Transaction>
+    <Transaction>2023/01/16 18:43:48.000.732,C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Project2.dproj=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Calculadora\Calculadora1.dproj</Transaction>
+    <Transaction>2023/01/16 18:44:56.000.470,=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Calculadora\Unit2.pas</Transaction>
+    <Transaction>2023/01/16 18:45:15.000.133,C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Calculadora\Unit2.dfm=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Calculadora\Classe.dfm</Transaction>
+    <Transaction>2023/01/16 18:45:15.000.133,C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Calculadora\Unit2.pas=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Calculadora\Classe.pas</Transaction>
+    <Transaction>2023/01/16 18:46:51.000.981,C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Calculadora\UCalcl.pas=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Calculadora\Classe.pas</Transaction>
+    <Transaction>2023/01/16 18:46:51.000.981,C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Calculadora\UCalcl.dfm=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Calculadora\Classe.dfm</Transaction>
+    <Transaction>2023/01/16 18:46:56.000.962,C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Calculadora\UfrmCalculadora.dfm=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Calculadora\Calculadora.dfm</Transaction>
+    <Transaction>2023/01/16 18:46:56.000.962,C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Calculadora\UfrmCalculadora.pas=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Calculadora\Calculadora.pas</Transaction>
+    <Transaction>2023/01/16 18:50:47.000.793,=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Calculadora\Unit1.pas</Transaction>
+    <Transaction>2023/01/16 18:50:56.000.717,C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Calculadora\UCacluladora.pas=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Calculadora\Unit1.pas</Transaction>
+    <Transaction>2023/01/16 19:18:09.000.572,C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Calculadora\UCacluladora.pas=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Calculadora\UCalculadora.pas</Transaction>
+  </Transactions>
+</BorlandProject>
