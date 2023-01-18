@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/01/17 18:30:12.000.486,=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/17 18:30:23.685,=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/17 18:34:54.654,C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Generics\01 - Conhecendo o Generics\Gen01.dfm=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2023/01/17 18:34:54.654,C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Generics\01 - Conhecendo o Generics\Gen01.pas=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/17 18:55:27.218,C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Generics\01 - Conhecendo o Generics\Gen02.dproj=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
