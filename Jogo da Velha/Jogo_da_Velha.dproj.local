@@ -1,13 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2022/12/19 19:07:43.623,=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/12/19 20:14:14.802,C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Jogo da Velha\JogodaVelha.pas=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/12/19 20:14:14.802,C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Jogo da Velha\JogodaVelha.fmx=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
-    <Transaction>2022/12/19 20:14:28.403,C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Jogo da Velha\Jogo_da_Velha.dproj=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
-    <Transaction>2022/12/19 20:23:55.294,=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Jogo da Velha\Unit1.pas</Transaction>
-    <Transaction>2022/12/19 20:24:20.279,C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Jogo da Velha\UfrmPrincipal.pas=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Jogo da Velha\Unit1.pas</Transaction>
+	<Transactions>
+    <Transaction>2022/12/19 19:07:43.000.623,=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/12/19 20:14:14.000.802,C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Jogo da Velha\JogodaVelha.fmx</Transaction>
+    <Transaction>2022/12/19 20:14:14.000.802,C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Jogo da Velha\JogodaVelha.pas</Transaction>
+    <Transaction>2022/12/19 20:14:28.000.403,C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Project2.dproj=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Jogo da Velha\Jogo_da_Velha.dproj</Transaction>
+    <Transaction>2022/12/19 20:23:55.000.294,=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Jogo da Velha\Unit1.pas</Transaction>
+    <Transaction>2022/12/19 20:24:20.000.279,C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Jogo da Velha\Unit1.pas=C:\Users\mysql\Documents\GitHub\Jefferson_Dezembro\Jogo da Velha\UfrmPrincipal.pas</Transaction>
   </Transactions>
-  <ActiveMobileDevice>   <NoProfile iOSSimulator="iPhone5"/>
-  </ActiveMobileDevice>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
 </BorlandProject>

@@ -1,10 +1,12 @@
 object Form1: TForm1
   Left = 0
   Top = 0
+  BorderStyle = bsDialog
+  BorderWidth = 5
   Caption = 'Form1'
   ClientHeight = 539
   ClientWidth = 474
-  Color = clBtnFace
+  Color = clMedGray
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -5830,7 +5832,7 @@ object Form1: TForm1
   end
   object BTChamar: TButton
     Left = 391
-    Top = 416
+    Top = 447
     Width = 75
     Height = 25
     Caption = 'Chamar'
@@ -5845,5 +5847,14 @@ object Form1: TForm1
     Caption = 'Incluir'
     TabOrder = 6
     OnClick = BTIncluirClick
+  end
+  object BTIniciar: TButton
+    Left = 391
+    Top = 416
+    Width = 75
+    Height = 25
+    Caption = 'Iniciar'
+    TabOrder = 7
+    OnClick = BTIniciarClick
   end
 end

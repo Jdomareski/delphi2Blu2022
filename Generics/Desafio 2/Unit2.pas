@@ -78,6 +78,12 @@ end;
 
 { TFila }
 
+constructor TFila.create;
+begin
+  FFila := Tqueue<TPessoa>.create;
+end;
+
+
 procedure TFila.Adicionar(aPessoa: TPessoa);
 begin
   FFila.Enqueue(aPessoa);
@@ -88,22 +94,16 @@ begin
   Result := FFila.Count.ToString;
 end;
 
-
-constructor TFila.create;
-begin
-  FFila := Tqueue<TPessoa>.create;
-end;
-
 function TFila.proximo: TPessoa;
 begin
   Result := FFila.Peek
 end;
 
-
-
 function TFila.Ultimo: TPessoa;
 begin
 Result := FFila.Dequeue
 end;
+
+
 
 end.
