@@ -33,13 +33,13 @@ implementation
 
 { TCompra }
 
-uses Uclasse_1;
+
 
 function TCompra.CalcDesconto: Double;
 var
   xDesc: Double;
 begin
-  if (Fquantidade <10) then
+  if (Fquantidade <=10) then
   Result := Fquantidade * FPreco
   Else if (Fquantidade >= 11) AND (FQuantidade <=50) then
   Result := (FQuantidade * FPreco) * 0.9

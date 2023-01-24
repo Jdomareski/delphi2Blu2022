@@ -1,12 +1,12 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
-        <ProjectGuid>{9519AB41-7FE5-4E7B-BC50-6DADC2CAB40D}</ProjectGuid>
+        <ProjectGuid>{2C7BC670-69BE-4551-846F-B9925F4DB883}</ProjectGuid>
     </PropertyGroup>
     <ItemGroup>
         <Projects Include="Calculadora1.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="Project22.dproj">
+        <Projects Include="Test\Calculadora1Tests.dproj">
             <Dependencies/>
         </Projects>
     </ItemGroup>
@@ -26,23 +26,23 @@
     <Target Name="Calculadora1:Make">
         <MSBuild Projects="Calculadora1.dproj" Targets="Make"/>
     </Target>
-    <Target Name="Project22">
-        <MSBuild Projects="Project22.dproj"/>
+    <Target Name="Calculadora1Tests">
+        <MSBuild Projects="Test\Calculadora1Tests.dproj"/>
     </Target>
-    <Target Name="Project22:Clean">
-        <MSBuild Projects="Project22.dproj" Targets="Clean"/>
+    <Target Name="Calculadora1Tests:Clean">
+        <MSBuild Projects="Test\Calculadora1Tests.dproj" Targets="Clean"/>
     </Target>
-    <Target Name="Project22:Make">
-        <MSBuild Projects="Project22.dproj" Targets="Make"/>
+    <Target Name="Calculadora1Tests:Make">
+        <MSBuild Projects="Test\Calculadora1Tests.dproj" Targets="Make"/>
     </Target>
     <Target Name="Build">
-        <CallTarget Targets="Calculadora1;Project22"/>
+        <CallTarget Targets="Calculadora1;Calculadora1Tests"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="Calculadora1:Clean;Project22:Clean"/>
+        <CallTarget Targets="Calculadora1:Clean;Calculadora1Tests:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="Calculadora1:Make;Project22:Make"/>
+        <CallTarget Targets="Calculadora1:Make;Calculadora1Tests:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

@@ -1,0 +1,13 @@
+unit TCalculadorServiceDefault;
+
+interface
+Type
+ICalculadorService = Interface
+['{365292ED-0B77-4CB3-91A5-D39582248568}']
+
+End;
+
+
+implementation
+
+end.

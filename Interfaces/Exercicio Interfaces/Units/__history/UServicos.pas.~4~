@@ -1,0 +1,54 @@
+unit UServicos;
+
+interface
+
+uses UcalculadorService, UCalculadorServiceDefault;
+
+Type                                        TTypeCalc = (tpSum, tpSub, tpMul, TpDiv);
+  TCalculadora = Class
+  Private
+    FNum1: Double;
+    FNum2: Double;
+    Fservico : ICalculadorService;
+
+  Public
+    function ProcessCalc(aTypeCalc : TTypeCalc) : Double;
+    Constructor Create(const aNum1, aNUm2: Double;  aServico: ICalculadorService);
+    Destructor Destroy;
+
+  End;
+
+implementation
+
+{ TCalculadora }
+
+
+destructor TCalculadora.Destroy;
+begin
+Inherited
+end;
+
+function TCalculadora.ProcessCalc(aTypeCalc: TTypeCalc): Double;
+
+begin
+case aTypeCalc of
+  tpSum: Result := FServico.Sum(FNum1, Fnum2);
+  tpSub: Result := FServico.Subtract(Fnum1, FNum2);
+  tpMul: Result := FServico.Multiply(FNum1, Fnum2);
+  TpDiv: Result := FServico.Divide(FNum1, FNum2);
+end;
+
+end;
+
+
+{ TCalculadora }
+
+constructor TCalculadora.Create(const aNum1, aNUm2: Double;
+  aServico: ICalculadorService);
+begin
+fNum1 := aNum1;
+FNUm2 := aNUm2;
+FServico := aServico;
+end;
+
+end.

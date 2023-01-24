@@ -1,0 +1,36 @@
+unit UServicos;
+
+interface
+uses UcalculadorService, UCalculadorServiceDefault;
+
+Type
+TCalculadora = Class
+  Private
+  FSoma : Double;
+  FSubtrai : Double;
+  FMultiplica : Double;
+  FDivide : Double;
+
+  Public
+  Constructor Create(const aSum, aSub, aMul, aDiv: Double);
+
+  Property Soma Double Read GetSoma Write SetSoma;
+  Property Subtrai Double Read GetSubtrai Write SetSubtrai;
+  Property Multiplica Double Read GetMultiplica Write SetMultiplica;
+  Property Divide Double Read GetDivide Write SetDivide;
+
+End;
+
+
+implementation
+
+
+
+{ TCalculadora }
+
+constructor TCalculadora.Create(const aSum, aSub, aMul, aDiv: Double);
+begin
+
+end;
+
+end.

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/01/17 18:30:12.000.486,=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/20 20:53:01.000.951,C:\Users\mysql\Downloads\GitNovo\Interfaces\Solução Sem Interfaces\SSI.dproj=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+    <Transaction>2023/01/20 20:54:38.000.461,=C:\Users\mysql\Downloads\GitNovo\Interfaces\Solução Sem Interfaces\Unit1.pas</Transaction>
+    <Transaction>2023/01/20 20:54:56.000.682,C:\Users\mysql\Downloads\GitNovo\Interfaces\Solução Sem Interfaces\Entities\UCarRental.pas=C:\Users\mysql\Downloads\GitNovo\Interfaces\Solução Sem Interfaces\Unit1.pas</Transaction>
+    <Transaction>2023/01/20 20:55:03.000.745,=C:\Users\mysql\Downloads\GitNovo\Interfaces\Solução Sem Interfaces\Unit1.pas</Transaction>
+    <Transaction>2023/01/20 20:55:16.000.152,C:\Users\mysql\Downloads\GitNovo\Interfaces\Solução Sem Interfaces\Entities\Uinvoice.pas=C:\Users\mysql\Downloads\GitNovo\Interfaces\Solução Sem Interfaces\Unit1.pas</Transaction>
+    <Transaction>2023/01/20 20:55:21.000.442,=C:\Users\mysql\Downloads\GitNovo\Interfaces\Solução Sem Interfaces\Unit1.pas</Transaction>
+    <Transaction>2023/01/20 20:55:34.000.389,C:\Users\mysql\Downloads\GitNovo\Interfaces\Solução Sem Interfaces\Entities\UVehicle.pas=C:\Users\mysql\Downloads\GitNovo\Interfaces\Solução Sem Interfaces\Unit1.pas</Transaction>
+    <Transaction>2023/01/20 20:55:41.000.296,=C:\Users\mysql\Downloads\GitNovo\Interfaces\Solução Sem Interfaces\Unit1.pas</Transaction>
+    <Transaction>2023/01/20 20:55:56.000.125,C:\Users\mysql\Downloads\GitNovo\Interfaces\Solução Sem Interfaces\Services\UBrazukTaxService.pas=C:\Users\mysql\Downloads\GitNovo\Interfaces\Solução Sem Interfaces\Unit1.pas</Transaction>
+    <Transaction>2023/01/20 20:56:06.000.899,=C:\Users\mysql\Downloads\GitNovo\Interfaces\Solução Sem Interfaces\Unit1.pas</Transaction>
+    <Transaction>2023/01/20 20:56:20.000.577,C:\Users\mysql\Downloads\GitNovo\Interfaces\Solução Sem Interfaces\Services\URentalServices.pas=C:\Users\mysql\Downloads\GitNovo\Interfaces\Solução Sem Interfaces\Unit1.pas</Transaction>
+    <Transaction>2023/01/20 21:27:16.000.635,C:\Users\mysql\Downloads\GitNovo\Interfaces\Solução Sem Interfaces\Services\UBrazikTaxService.pas=C:\Users\mysql\Downloads\GitNovo\Interfaces\Solução Sem Interfaces\Services\UBrazukTaxService.pas</Transaction>
+    <Transaction>2023/01/20 21:27:23.000.877,C:\Users\mysql\Downloads\GitNovo\Interfaces\Solução Sem Interfaces\Services\UBrazilTaxService.pas=C:\Users\mysql\Downloads\GitNovo\Interfaces\Solução Sem Interfaces\Services\UBrazikTaxService.pas</Transaction>
+    <Transaction>2023/01/23 19:04:43.000.691,=C:\Users\mysql\Downloads\GitNovo\Interfaces\Solução Com Inteface\Unit1.pas</Transaction>
+    <Transaction>2023/01/23 19:05:09.000.465,C:\Users\mysql\Downloads\GitNovo\Interfaces\Solução Com Inteface\Services\UTaxServices.pas=C:\Users\mysql\Downloads\GitNovo\Interfaces\Solução Com Inteface\Unit1.pas</Transaction>
+    <Transaction>2023/01/23 19:11:04.000.575,=C:\Users\mysql\Downloads\GitNovo\Interfaces\Solução Com Inteface\Unit1.pas</Transaction>
+    <Transaction>2023/01/23 19:11:44.000.942,C:\Users\mysql\Downloads\GitNovo\Interfaces\Solução Com Inteface\Services\UUSATaxService.pas=C:\Users\mysql\Downloads\GitNovo\Interfaces\Solução Com Inteface\Unit1.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Entities"/>
+    <File Path="Entities\UCarRental.pas"/>
+    <File Path="Entities\Uinvoice.pas"/>
+    <File Path="Entities\UVehicle.pas"/>
+    <File Path="Services"/>
+    <File Path="Services\UBrazilTaxService.pas"/>
+    <File Path="Services\URentalServices.pas"/>
+    <File Path="Services\UTaxServices.pas"/>
+    <File Path="Services\UUSATaxService.pas"/>
+  </ProjectSortOrder>
+</BorlandProject>

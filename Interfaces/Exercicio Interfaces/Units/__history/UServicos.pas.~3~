@@ -1,0 +1,85 @@
+unit UServicos;
+
+interface
+
+uses UcalculadorService, UCalculadorServiceDefault;
+
+Type
+  TCalculadora = Class
+  Private
+    FSoma: Double;
+    FSubtrai: Double;
+    FMultiplica: Double;
+    FDivide: Double;
+    function GetDivide: Double;
+    function GetMultiplica: Double;
+    function GetSoma: Double;
+    function GetSubtrai: Double;
+    procedure SetDivide(const Value: Double);
+    procedure SetMultiplica(const Value: Double);
+    procedure SetSoma(const Value: Double);
+    procedure SetSubtrai(const Value: Double);
+
+  Public
+    Constructor Create(const aSum, aSub, aMul, aDiv: Double);
+
+    Property Soma: Double Read GetSoma Write SetSoma;
+    Property Subtrai: Double Read GetSubtrai Write SetSubtrai;
+    Property Multiplica: Double Read GetMultiplica Write SetMultiplica;
+    Property Divide: Double Read GetDivide Write SetDivide;
+
+  End;
+
+implementation
+
+{ TCalculadora }
+
+constructor TCalculadora.Create(const aSum, aSub, aMul, aDiv: Double);
+begin
+FSoma := aSum;
+FSubtrai := aSub;
+FMultiplica := aMul;
+FDivide := aDiv;
+end;
+
+function TCalculadora.GetDivide: Double;
+begin
+Result := FDivide;
+end;
+
+function TCalculadora.GetMultiplica: Double;
+begin
+Result := FMultiplica;
+end;
+
+function TCalculadora.GetSoma: Double;
+begin
+Result := FSoma;
+end;
+
+function TCalculadora.GetSubtrai: Double;
+begin
+Result := FSubtrai;
+end;
+
+procedure TCalculadora.SetDivide(const Value: Double);
+begin
+FDivide := Value;
+end;
+
+procedure TCalculadora.SetMultiplica(const Value: Double);
+begin
+FMultiplica := Value;
+end;
+
+procedure TCalculadora.SetSoma(const Value: Double);
+begin
+FSoma := value;
+end;
+
+procedure TCalculadora.SetSubtrai(const Value: Double);
+begin
+FSubtrai := Value;
+end;
+
+end.

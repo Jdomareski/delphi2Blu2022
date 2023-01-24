@@ -1,0 +1,27 @@
+unit URentalServices;
+
+interface
+
+uses
+  UCarRental, UBrazilTaxService;
+
+Type
+  TRentalService = Class
+  Private
+    FPricePerDay: Double;
+    FPricePerHour: Double;
+
+    FTaxService: TBrazilTaxService;
+
+  Public
+    Constructor Create(Const APricePerDay, APricePerHour: Double;
+      aTaxService: TBrazilTaxService);
+    Destructor Destroy; Override;
+
+    Procedure ProcessInvoice(aCarRental: TCarRental);
+
+  End;
+
+Implementation
+
+end.
