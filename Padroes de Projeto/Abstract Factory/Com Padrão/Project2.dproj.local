@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/01/17 18:30:12.000.486,=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/23 19:48:19.000.469,=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/24 19:15:53.000.603,=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/24 19:31:23.000.911,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Sem Padrão\Unit1.pas=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/24 19:31:23.000.911,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Sem Padrão\Unit1.dfm=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2023/01/24 19:31:25.000.050,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Sem Padrão\Project2.dproj=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+    <Transaction>2023/01/24 19:35:07.000.410,=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Com Padrão\Unit2.pas</Transaction>
+    <Transaction>2023/01/24 19:35:32.000.302,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Com Padrão\Unit2.pas=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Com Padrão\Pattern\Factorys\UInterfaces.pas</Transaction>
+    <Transaction>2023/01/24 19:37:07.000.190,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Com Padrão\Unit1.dfm=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Com Padrão\UfrmPrincipal.dfm</Transaction>
+    <Transaction>2023/01/24 19:37:07.000.190,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Com Padrão\Unit1.pas=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Com Padrão\UfrmPrincipal.pas</Transaction>
+    <Transaction>2023/01/24 19:37:15.000.037,=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Com Padrão\Unit1.pas</Transaction>
+    <Transaction>2023/01/24 19:37:30.000.057,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Com Padrão\Unit1.pas=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Com Padrão\Pattern\Factorys\UApple.pas</Transaction>
+    <Transaction>2023/01/24 19:37:38.000.624,=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Com Padrão\Unit1.pas</Transaction>
+    <Transaction>2023/01/24 19:37:52.000.301,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Com Padrão\Unit1.pas=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Com Padrão\Pattern\Factorys\UDell.pas</Transaction>
+    <Transaction>2023/01/24 19:38:14.000.325,=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Com Padrão\Unit1.pas</Transaction>
+    <Transaction>2023/01/24 19:38:30.000.477,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Com Padrão\Unit1.pas=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Com Padrão\Pattern\Entidades\UiMac.pas</Transaction>
+    <Transaction>2023/01/24 19:38:36.000.557,=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Com Padrão\Unit1.pas</Transaction>
+    <Transaction>2023/01/24 19:38:49.000.245,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Com Padrão\Unit1.pas=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Com Padrão\Pattern\Entidades\UInspiron.pas</Transaction>
+    <Transaction>2023/01/24 19:38:57.000.962,=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Com Padrão\Unit1.pas</Transaction>
+    <Transaction>2023/01/24 19:39:15.000.720,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Com Padrão\Unit1.pas=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Com Padrão\Pattern\Entidades\UMacBook.pas</Transaction>
+    <Transaction>2023/01/24 19:39:22.000.470,=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Com Padrão\Unit1.pas</Transaction>
+    <Transaction>2023/01/24 19:39:37.000.053,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Com Padrão\Unit1.pas=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Com Padrão\Pattern\Entidades\UVostro.pas</Transaction>
+    <Transaction>2023/01/24 19:39:45.000.303,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Com Padrão\Project2.dproj=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Abstract Factory\Com Padrão\Project2.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

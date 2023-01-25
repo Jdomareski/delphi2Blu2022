@@ -1,0 +1,15 @@
+unit UiMac;
+
+interface
+Type
+TMac = TObject
+
+Private
+FTela : String;
+FMemoria : String;
+
+
+
+implementation
+
+end.
