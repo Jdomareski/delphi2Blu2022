@@ -1,0 +1,34 @@
+unit Receiver;
+
+interface
+
+Type
+TReceiver = class
+  Public
+  Procedure ExtrairProcessos;
+  Procedure ExtrairProgramas;
+  Procedure ExtrairVariaveisAmbiente;
+end;
+
+implementation
+uses
+Dialogs, Messages, Windows, TlHelp32, psAPI, SysUtils, Registry, Classes;
+
+{ TReceiver }
+
+procedure TReceiver.ExtrairProcessos;
+begin
+
+end;
+
+procedure TReceiver.ExtrairProgramas;
+begin
+
+end;
+
+procedure TReceiver.ExtrairVariaveisAmbiente;
+begin
+
+end;
+
+end.

@@ -1,0 +1,22 @@
+unit UInvoker;
+
+interface
+
+uses
+System.Classes, UCommand;
+
+Type
+TInvoker = Class
+  Private
+  //Lista para armazenar os comandos
+  FComandos : TInterfaceList;
+
+  Public
+  Constructor Create;
+  Procedure Add(aComando: ICommand);
+  Procedure ExtrairInformacoes;
+End;
+
+implementation
+
+end.

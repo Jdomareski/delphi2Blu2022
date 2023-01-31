@@ -1,0 +1,37 @@
+unit UTarget;
+
+interface
+
+uses
+UInterfaceViaCEP, System.Classes;
+
+type
+  TComunicator = class
+
+  private
+    FWebServiceViaCep: IWebServiceVIaCEP;
+
+  Public
+    Constructor Create(aWebServiceViaCep: IWebServiceVIaCEP);
+    Destructor Destroy; override;
+
+    Function ConsultarEndereco(Const acep: String): TStringList;
+  end;
+
+implementation
+
+Function TComunicator.ConsultarEndereco(const acep: string): TStringList;
+var
+  xdados: TStringList;
+
+begin
+FWebserviceViaCep.ConsultarEnderecoWebService(acep);
+
+xdados := TStringList.create;
+xdados.values['Logradouro'] := FWebServiceVIaCep.ObterLogradouro;
+xdados.values['Bairro'] := Fwebserviceviacep.ObterBairro;
+xdados.values['Cidade'] := Fwebserviceviacep.ObterCidade;
+
+end;
+
+end.

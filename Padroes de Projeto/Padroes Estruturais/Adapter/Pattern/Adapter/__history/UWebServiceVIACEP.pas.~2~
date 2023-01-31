@@ -1,0 +1,25 @@
+unit UWebServiceVIACEP;
+
+interface
+
+uses xml.XMLIntf, xml.XMLDoc, UInterfaceViaCep;
+
+type
+TWebServiceViaCep = Class(TinterfacedObject, IwebServiceViaCep)
+  private
+  FXMLDocument : IXMLDocument;
+
+  Public
+  Constructor create;
+  destructor destroy; override;
+  Procedure ConsultarEnderecoWebService(Const acep : String);
+  Function ObterLogradouro: String;
+  Function ObterBairro: String;
+  Function ObterCidade: String;
+
+End;
+
+implementation
+uses system.SysUtils, system.Variants;
+
+end.

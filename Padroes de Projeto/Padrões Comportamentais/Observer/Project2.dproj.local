@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/01/17 18:30:12.000.486,=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/23 19:48:19.000.469,=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/30 20:23:47.000.835,=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/30 20:24:05.000.111,=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/01/30 20:24:26.000.206,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Pattern\USubject.pas=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/01/30 20:24:41.000.064,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\UfrmPrincipal.pas=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/30 20:24:41.000.064,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\UfrmPrincipal.dfm=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2023/01/30 20:28:44.000.908,=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/30 20:28:55.000.280,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Pattern\UNOtificacao.pas=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/30 20:30:08.000.467,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Project2.dproj=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+    <Transaction>2023/01/30 20:32:23.000.276,=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Unit1.pas</Transaction>
+    <Transaction>2023/01/30 20:32:39.000.168,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Pattern\UObserver.pas=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Unit1.pas</Transaction>
+    <Transaction>2023/01/30 20:34:54.000.301,=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Unit1.pas</Transaction>
+    <Transaction>2023/01/30 20:36:16.000.612,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Unit1.pas=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Pattern\UConcreteObserver_Log.pas</Transaction>
+    <Transaction>2023/01/30 20:36:16.000.612,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Unit1.dfm=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Pattern\UConcreteObserver_Log.dfm</Transaction>
+    <Transaction>2023/01/30 21:03:52.000.769,=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Unit1.pas</Transaction>
+    <Transaction>2023/01/30 21:04:18.000.402,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Unit1.pas=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Pattern\UConcreteObserver_Saldo.pas</Transaction>
+    <Transaction>2023/01/30 21:04:18.000.402,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Unit1.dfm=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Pattern\UConcreteObserver_Saldo.dfm</Transaction>
+    <Transaction>2023/01/30 21:22:32.000.047,=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Unit1.pas</Transaction>
+    <Transaction>2023/01/30 21:39:59.000.641,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Unit1.dfm=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Pattern\UConcreteObserver_Historico.dfm</Transaction>
+    <Transaction>2023/01/30 21:39:59.000.641,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Unit1.pas=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Pattern\UConcreteObserver_Historico.pas</Transaction>
+    <Transaction>2023/01/30 21:41:18.000.651,=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Unit2.pas</Transaction>
+    <Transaction>2023/01/30 21:41:34.000.913,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Unit2.dfm=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Pattern\UConcretesubject.dfm</Transaction>
+    <Transaction>2023/01/30 21:41:34.000.913,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Unit2.pas=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Pattern\UConcretesubject.pas</Transaction>
+    <Transaction>2023/01/30 21:45:06.000.826,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Pattern\UConcretesubject.pas=</Transaction>
+    <Transaction>2023/01/30 21:45:15.000.286,=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Unit1.pas</Transaction>
+    <Transaction>2023/01/30 21:56:43.000.071,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Unit1.pas=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Pattern\UConcretesubject.pas</Transaction>
+    <Transaction>2023/01/30 21:56:43.000.071,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Unit1.dfm=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padrões Comportamentais\Observer\Pattern\UConcretesubject.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

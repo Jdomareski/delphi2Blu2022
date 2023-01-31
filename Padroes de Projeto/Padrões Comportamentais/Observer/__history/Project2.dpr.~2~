@@ -1,0 +1,17 @@
+program Project2;
+
+uses
+  Vcl.Forms,
+  UfrmPrincipal in 'UfrmPrincipal.pas' {Form1},
+  USubject in 'Pattern\USubject.pas',
+  UNOtificacao in 'Pattern\UNOtificacao.pas',
+  UObserver in 'Pattern\UObserver.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

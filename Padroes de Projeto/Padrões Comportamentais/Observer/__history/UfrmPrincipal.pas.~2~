@@ -1,0 +1,29 @@
+unit UfrmPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, UConcretesubject,
+  UConcreteObserver_Saldo, UConcreteObserver_Historico, UConcreteObserver_Log;
+
+type
+  TUfrmPrincipal2 = class(TForm)
+    FraLog1: TFraLog;
+    FraHistorico1: TFraHistorico;
+    FraSaldo1: TFraSaldo;
+    FraCadastro1: TFraCadastro;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  UfrmPrincipal2: TUfrmPrincipal2;
+
+implementation
+
+{$R *.dfm}
+
+end.

@@ -1,0 +1,58 @@
+unit UConcreteObserver_Saldo;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.Variants, System.Classes,
+  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, UNOtificacao,
+  UObserver;
+
+type
+  TFraSaldo = class(TFrame)
+    Label1: TLabel;
+    LblCreditos: TLabel;
+    LblDebitos: TLabel;
+    LblSaldo: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+  private
+    { Private declarations }
+    Fcreditos, FDebitos : Real;
+  public
+    { Public declarations }
+    Procedure Atualizar(aNotificacao: TNotificacao);
+  end;
+
+implementation
+
+uses
+  System.SysUtils;
+
+{$R *.dfm}
+
+{ TFraSaldo }
+
+procedure TFraSaldo.Atualizar(aNotificacao: TNotificacao);
+var
+xSaldo : Real;
+begin
+// Soma o valor à variavel conforme o tpo de operação
+
+if aNotificacao.Operacao = 'Crédito' then
+FCreditos := FCreditos + aNotificacao.Valor
+
+Else if anotificacao.Operacao = 'Débito' then
+fDebitos := aNotificacao.Valor + FDebitos;
+
+//Calcula o Saldo
+
+xSaldo := FCreditos - FDebitos;
+
+LblCreditos.Caption := FormatFloat('###,##0.00', FCreditos);
+LblDebitos.Caption := FormatFloat('###,##0.00', FCreditos);
+LblSaldo.Caption := FormatFloat('###,##0.00', FCreditos);
+
+end;
+
+end.

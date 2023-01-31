@@ -1,0 +1,108 @@
+unit Receiver;
+
+interface
+
+Type
+  TReceiver = class
+  Public
+    Procedure ExtrairProcessos;
+    Procedure ExtrairProgramas;
+    Procedure ExtrairVariaveisAmbiente;
+  end;
+
+implementation
+
+uses
+  Dialogs, Messages, Windows, TlHelp32, psAPI, SysUtils, Registry, Classes;
+
+{ TReceiver }
+
+procedure TReceiver.ExtrairProcessos;
+var
+  xHandle: THandle;
+  xProcessEntry: TProcessEntry32;
+  xListaProcessos: TStringList;
+begin
+  // Método responsavel por extrair a lista de processos em execução.
+
+  xHandle := Createtoolhelp32snapshot(TH32CS_SnapProcess, 0);
+  xListaProcessos := TStringList.Create;
+
+  try
+    xProcessEntry.dwSize := Sizeof(TProcessEntry32);
+    Process32Next(xHandle, xProcessEntry);
+    // Percorre os processos que estão em execução.
+    // Adicionando-os na variavel lista processos.
+    Repeat
+      xListaProcessos.Add(xProcessEntry.szExeFile);
+
+    Until not Process32Next(xHandle, xProcessEntry);
+
+    // Grava a lista de processos no arquivo processos.txt
+
+    xListaProcessos.SaveToFile(GetCurrentDir + ' \Processos.txt');
+
+  finally
+    CloseHandle(xHandle);
+    FreeAndNil(xListaProcessos);
+
+  end;
+end;
+
+procedure TReceiver.ExtrairProgramas;
+Const
+CHAVE_REGISTRO = '\Softaware\Microsoft\Windows\CurrentVersion\Uninstall\';
+
+var
+xRegistro : TRegistry;
+xContador : Integer;
+xListaCHaves : TStringList;
+xListaProgramas : TStringList;
+
+begin
+// Método responsavel por extrair a lista de programas instalados
+//Obs a aplicação deve se executada como administrador.
+
+xRegistro := Tregistry.Create;
+xListaChaves := TStringList.Create;
+xListaProgramas := TstringList.Create;
+
+try
+  // Obtem a lista de chaves existentes no caminho do registro que armazena
+  // as informações dos programas instalados
+
+  xRegistro.RootKey := HKEY_LOCAL_MACHINE;
+  xRegistro.OpenKey(CHAVE_REGISTRO, False);
+  xRegistro.GetKeyNames(xListaChaves);
+  xRegistro.CloseKey;
+
+  //Percorre a lista de chaves para acessar o valor do atributo "DisplayName"
+
+  for xContador := 0 to Pred(xListaChaves.Count) do
+    begin
+      xRegistro.RootKey := HKEY_LOCAL_MACHINE;
+      xRegistro.OpenKey(CHAVE_REGISTRO + xListaChaves[xContador], False);
+
+      if xRegistro.ReadString('DisplayName') <> EmptyStr then
+      //Adiciona o nome do programa na variavel ListaProgramas
+      xListaProgramas.Add(xRegistro.ReadString('DisplayName'));
+      xRegistro.CloseKey;
+    end;
+    //Grava a lista de processos no arquivo "Programas.txt'
+    xListaProgramas.SaveToFile(GetCurrentDir + '\Programas.txt');
+finally
+//Libera os objetos da memória
+
+FreeAndNil (xListaProgramas);
+FreeAndNil (xListaChaves);
+FreeAndNil (xRegistro);
+
+end;
+end;
+
+procedure TReceiver.ExtrairVariaveisAmbiente;
+begin
+
+end;
+
+end.

@@ -1,0 +1,41 @@
+unit UPrazoMensal;
+
+interface
+uses UTipoPrazo;
+type
+  TPrazoMensal = class(TInterfacedObject, ITipoPrazo)
+    private
+      FValorTotal: Real;
+    public
+      function ConsultarDescricao: String;
+      function ConsultarJuros: String;
+      function ConsultarProjecao(const aValor: Real; const aQtdParcelas: Integer): String;
+      function ConsultarTotal: String;
+  end;
+
+implementation
+
+{ TPrazoMensal }
+
+function TPrazoMensal.ConsultarDescricao: String;
+begin
+
+end;
+
+function TPrazoMensal.ConsultarJuros: String;
+begin
+
+end;
+
+function TPrazoMensal.ConsultarProjecao(const aValor: Real;
+  const aQtdParcelas: Integer): String;
+begin
+
+end;
+
+function TPrazoMensal.ConsultarTotal: String;
+begin
+
+end;
+
+end.

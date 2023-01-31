@@ -1,0 +1,62 @@
+unit Receiver;
+
+interface
+
+Type
+  TReceiver = class
+  Public
+    Procedure ExtrairProcessos;
+    Procedure ExtrairProgramas;
+    Procedure ExtrairVariaveisAmbiente;
+  end;
+
+implementation
+
+uses
+  Dialogs, Messages, Windows, TlHelp32, psAPI, SysUtils, Registry, Classes;
+
+{ TReceiver }
+
+procedure TReceiver.ExtrairProcessos;
+var
+  xHandle: THandle;
+  xProcessEntry: TProcessEntry32;
+  xListaProcessos: TStringList;
+begin
+  // Método responsavel por extrair a lista de processos em execução.
+
+  xHandle := Createtoolhelp32snapshot(TH32CS_SnapProcess, 0);
+  xListaProcessos := TStringList.Create;
+
+  try
+    xProcessEntry.dwSize := Sizeof(TProcessEntry32);
+    Process32Next(xHandle, xProcessEntry);
+    // Percorre os processos que estão em execução.
+    // Adicionando-os na variavel lista processos.
+    Repeat
+      xListaProcessos.Add(xProcessEntry.szExeFile);
+
+    Until not Process32Next(xHandle, xProcessEntry);
+
+    // Grava a lista de processos no arquivo processos.txt
+
+    xListaProcessos.SaveToFile(GetCurrentDir + ' \Processos.txt');
+
+  finally
+    CloseHandle(xHandle);
+    FreeAndNil(xListaProcessos);
+
+  end;
+end;
+
+procedure TReceiver.ExtrairProgramas;
+begin
+
+end;
+
+procedure TReceiver.ExtrairVariaveisAmbiente;
+begin
+
+end;
+
+end.

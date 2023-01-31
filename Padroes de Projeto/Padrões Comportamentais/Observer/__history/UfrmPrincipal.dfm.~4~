@@ -1,0 +1,95 @@
+object UfrmPrincipal2: TUfrmPrincipal2
+  Left = 0
+  Top = 0
+  Caption = 'Principal'
+  ClientHeight = 516
+  ClientWidth = 634
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  inline FraLog1: TFraLog
+    Left = 326
+    Top = 335
+    Width = 300
+    Height = 180
+    TabOrder = 0
+    ExplicitLeft = 326
+    ExplicitTop = 335
+    ExplicitHeight = 180
+    inherited Label1: TLabel
+      Left = 80
+      ExplicitLeft = 80
+    end
+    inherited Memo1: TMemo
+      Height = 150
+      ExplicitHeight = 150
+    end
+  end
+  inline FraHistorico1: TFraHistorico
+    Left = 326
+    Top = 152
+    Width = 300
+    Height = 180
+    TabOrder = 1
+    ExplicitLeft = 326
+    ExplicitTop = 152
+    ExplicitHeight = 180
+  end
+  inline FraSaldo1: TFraSaldo
+    Left = 329
+    Top = -4
+    Width = 300
+    Height = 140
+    TabOrder = 2
+    ExplicitLeft = 329
+    ExplicitTop = -4
+    ExplicitHeight = 140
+  end
+  inline FraCadastro1: TFraCadastro
+    Left = 0
+    Top = 0
+    Width = 300
+    Height = 510
+    TabOrder = 3
+    ExplicitWidth = 300
+    ExplicitHeight = 510
+    inherited Shape1: TShape
+      Left = 207
+      ExplicitLeft = 207
+    end
+    inherited BtnGravar: TButton
+      Left = 222
+      Top = 72
+      Width = 60
+      Height = 25
+      Font.Height = -13
+      ParentFont = False
+      ExplicitLeft = 222
+      ExplicitTop = 72
+      ExplicitWidth = 60
+      ExplicitHeight = 25
+    end
+    inherited CmbOperacao: TComboBox
+      Width = 125
+      ExplicitWidth = 125
+    end
+    inherited CmbCategoria: TComboBox
+      Width = 125
+      ExplicitWidth = 125
+    end
+    inherited EdtValor: TEdit
+      Width = 126
+      ExplicitWidth = 126
+    end
+    inherited DBGrid1: TDBGrid
+      Width = 280
+    end
+  end
+end

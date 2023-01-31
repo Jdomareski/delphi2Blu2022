@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/01/17 18:30:12.000.486,=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/23 19:48:19.000.469,=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/25 20:47:35.000.223,=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/25 20:47:54.000.966,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padroes Estruturais\Adapter\Adapter.pas=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/25 20:47:54.000.966,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padroes Estruturais\Adapter\Adapter.dfm=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2023/01/25 20:47:57.000.707,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padroes Estruturais\Adapter\Project2.dproj=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+    <Transaction>2023/01/25 20:53:09.000.251,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padroes Estruturais\Adapter\UfrmPrincipal.pas=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padroes Estruturais\Adapter\Adapter.pas</Transaction>
+    <Transaction>2023/01/25 20:53:09.000.251,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padroes Estruturais\Adapter\UfrmPrincipal.dfm=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padroes Estruturais\Adapter\Adapter.dfm</Transaction>
+    <Transaction>2023/01/25 20:57:38.000.565,=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padroes Estruturais\Adapter\Pattern\Adapter\UWebServiceCorreios.pas</Transaction>
+    <Transaction>2023/01/25 20:58:25.000.550,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padroes Estruturais\Adapter\Pattern\Adapter\UWebServiceCorreios.pas=</Transaction>
+    <Transaction>2023/01/25 20:58:52.000.533,=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padroes Estruturais\Adapter\Pattern\Adapter\UWebServiceCorreios.pas</Transaction>
+    <Transaction>2023/01/25 20:59:11.000.238,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padroes Estruturais\Adapter\Pattern\Adapter\UWebServiceCorreios.pas=</Transaction>
+    <Transaction>2023/01/25 21:00:11.000.755,=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padroes Estruturais\Adapter\Pattern\Adapter\UWebServiceCorreios.pas</Transaction>
+    <Transaction>2023/01/25 21:00:48.000.772,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padroes Estruturais\Adapter\Pattern\Adapter\UWebServiceCorreios.pas=</Transaction>
+    <Transaction>2023/01/25 21:00:55.000.370,=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padroes Estruturais\Adapter\Pattern\Adapter\UWebServiceCorreios.pas</Transaction>
+    <Transaction>2023/01/25 21:01:15.000.509,=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padroes Estruturais\Adapter\Unit1.pas</Transaction>
+    <Transaction>2023/01/25 21:01:37.000.932,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padroes Estruturais\Adapter\Unit1.pas=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padroes Estruturais\Adapter\Pattern\Adapter\UInterfaceViaCEP.pas</Transaction>
+    <Transaction>2023/01/25 21:04:27.000.155,=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padroes Estruturais\Adapter\Unit1.pas</Transaction>
+    <Transaction>2023/01/25 21:04:44.000.962,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padroes Estruturais\Adapter\Unit1.pas=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padroes Estruturais\Adapter\Pattern\Adapter\UTarget.pas</Transaction>
+    <Transaction>2023/01/25 21:18:18.948,=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padroes Estruturais\Adapter\Unit1.pas</Transaction>
+    <Transaction>2023/01/25 21:18:40.171,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padroes Estruturais\Adapter\Pattern\Adapter\UWebServiceVIACEP.pas=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padroes Estruturais\Adapter\Unit1.pas</Transaction>
+    <Transaction>2023/01/25 21:45:42.363,=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padroes Estruturais\Adapter\Unit1.pas</Transaction>
+    <Transaction>2023/01/25 21:46:01.596,C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padroes Estruturais\Adapter\Pattern\Adapter\UAdaptee.pas=C:\Users\mysql\Downloads\GitNovo\Padroes de Projeto\Padroes Estruturais\Adapter\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
