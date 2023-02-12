@@ -1,0 +1,36 @@
+unit UOperacoes;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TMeuarquivo = class
+  Private
+    Fstream: TFileStream;
+  Public
+    Constructor Create(Const Arquivo: String);
+    Destructor Destroy; Override;
+
+  end;
+
+implementation
+
+{ TMeuarquivo }
+
+constructor TMeuarquivo.Create(const Arquivo: String);
+begin
+  inherited Create;
+  Fstream := TFileStream.Create('Arquivo.txt', Fmcreate);
+end;
+
+destructor TMeuarquivo.Destroy;
+begin
+  Fstream.Free;
+  inherited;
+end;
+
+end.

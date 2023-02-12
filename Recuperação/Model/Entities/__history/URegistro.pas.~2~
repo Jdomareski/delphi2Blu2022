@@ -1,0 +1,13 @@
+unit URegistro;
+
+interface
+
+uses UIFuncServices;
+type
+TRegistro = class(TInterfacedObject, IFuncServices)
+
+end;
+
+implementation
+
+end.

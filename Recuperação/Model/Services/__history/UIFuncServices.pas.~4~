@@ -1,0 +1,16 @@
+unit UIFuncServices;
+
+interface
+type
+IFuncServices = Interface
+['{684D15FC-205E-4D7D-9115-908E59865C07}']
+function GetNome: string;
+function getSalario: Double;
+function GetSobrenome: string;
+procedure SetNome(const Value: string);
+procedure setSalario(const Value: Double);
+procedure SetSobrenome(const Value: string);
+End;
+implementation
+
+end.

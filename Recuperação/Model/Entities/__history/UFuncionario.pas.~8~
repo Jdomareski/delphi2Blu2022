@@ -1,0 +1,76 @@
+unit UFuncionario;
+
+interface
+
+uses
+  UIFuncServices, System.SysUtils;
+
+type
+ TFuncionario = class //(TInterfacedObject, IFuncServices)
+  Private
+  Fnome, Fsobrenome : String;
+  Fsalario : Double;
+
+    function GetNome: string;
+    function getSalario: Double;
+    function GetSobrenome: string;
+    procedure SetNome(const Value: string);
+    procedure setSalario(const Value: Double);
+    procedure SetSobrenome(const Value: string);
+
+  Public
+  Constructor Create(Const aNome, aSobrenome: string; asalario : double);
+  property Nome: string read GetNome Write SetNome;
+  property Sobrenome: string read GetSobrenome write SetSobrenome;
+  property salario: Double read getSalario write setSalario;
+
+ end;
+
+
+implementation
+
+
+{ TFuncionario }
+
+
+
+
+constructor TFuncionario.Create(const aNome, aSobrenome: string;
+  asalario: double);
+begin
+Fnome := aNome;
+fSobrenome := aSobrenome;
+Fsalario := asalario;
+end;
+
+function TFuncionario.GetNome: string;
+begin
+Result := FNome;
+end;
+
+function TFuncionario.getSalario: Double;
+begin
+Result := FSalario;
+end;
+
+function TFuncionario.GetSobrenome: string;
+begin
+Result := FSobrenome;
+end;
+
+procedure TFuncionario.SetNome(const Value: string);
+begin
+Fnome := value
+end;
+
+procedure TFuncionario.setSalario(const Value: Double);
+begin
+Fsalario := value
+end;
+
+procedure TFuncionario.SetSobrenome(const Value: string);
+begin
+FSobrenome := value
+end;
+
+end.

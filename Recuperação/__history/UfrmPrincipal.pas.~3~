@@ -1,0 +1,40 @@
+unit UfrmPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, UOperacoes;
+
+type
+  TFrmPrincipal = class(TForm)
+    LblTit1: TLabel;
+    EdtNome: TEdit;
+    EdtSobre: TEdit;
+    EdtSalario: TEdit;
+    LblNome: TLabel;
+    LblSobre: TLabel;
+    LblSalario: TLabel;
+    BtnAdd: TButton;
+    BtnListar: TButton;
+    MMSaida: TMemo;
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmPrincipal: TFrmPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrmPrincipal.FormCreate(Sender: TObject);
+begin
+TmeuArquivo.Create('Arquivo.txt');
+end;
+
+end.

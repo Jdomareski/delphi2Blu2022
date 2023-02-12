@@ -1,0 +1,17 @@
+unit UFuncionario;
+
+interface
+
+uses
+  UIFuncServices;
+
+type
+ TFuncionario = class(TInterfacedObject, IFuncServices)
+
+ end;
+
+
+implementation
+
+
+end.
