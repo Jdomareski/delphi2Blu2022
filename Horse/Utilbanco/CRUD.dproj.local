@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/01/17 18:30:12.000.486,=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/23 19:48:19.000.469,=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/02/01 19:28:10.000.268,=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/02/03 19:43:52.000.876,=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/02/10 18:45:55.000.816,=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/02/13 19:47:41.000.564,C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Project2.dproj=C:\Users\mysql\Downloads\GitNovo\Horse\Utilbanco\Project2.dproj</Transaction>
+    <Transaction>2023/02/13 19:48:55.000.360,C:\Users\mysql\Downloads\GitNovo\Horse\Utilbanco\Project2.dproj=C:\Users\mysql\Downloads\GitNovo\Horse\Utilbanco\UUtil.banco.dproj</Transaction>
+    <Transaction>2023/02/13 19:49:15.000.548,C:\Users\mysql\Downloads\GitNovo\Horse\Utilbanco\UUtil.banco.dproj=C:\Users\mysql\Downloads\GitNovo\Horse\Utilbanco\CRUD.dproj</Transaction>
+    <Transaction>2023/02/13 19:49:43.000.102,=C:\Users\mysql\Downloads\GitNovo\Horse\Utilbanco\Unit1.pas</Transaction>
+    <Transaction>2023/02/13 19:50:15.000.420,C:\Users\mysql\Downloads\GitNovo\Horse\Utilbanco\Unit1.pas=C:\Users\mysql\Downloads\GitNovo\Horse\Utilbanco\Model\Utils\Uutil.banco.pas</Transaction>
+    <Transaction>2023/02/13 20:52:11.000.560,=C:\Users\mysql\Downloads\GitNovo\Horse\Utilbanco\Unit1.pas</Transaction>
+    <Transaction>2023/02/13 20:52:31.000.569,C:\Users\mysql\Downloads\GitNovo\Horse\Utilbanco\Unit1.pas=C:\Users\mysql\Downloads\GitNovo\Horse\Utilbanco\Model\DAO\Udao.intf.pas</Transaction>
+    <Transaction>2023/02/13 21:00:05.000.427,=C:\Users\mysql\Downloads\GitNovo\Horse\Utilbanco\Unit1.pas</Transaction>
+    <Transaction>2023/02/13 21:00:23.000.969,C:\Users\mysql\Downloads\GitNovo\Horse\Utilbanco\Unit1.pas=C:\Users\mysql\Downloads\GitNovo\Horse\Utilbanco\Model\DAO\ODAO.Produtos.pas</Transaction>
+    <Transaction>2023/02/13 21:19:56.000.741,=C:\Users\mysql\Downloads\GitNovo\Horse\Utilbanco\Unit1.pas</Transaction>
+    <Transaction>2023/02/13 21:20:18.000.333,C:\Users\mysql\Downloads\GitNovo\Horse\Utilbanco\Unit1.pas=C:\Users\mysql\Downloads\GitNovo\Horse\Utilbanco\Model\Controllers\UController.Produtos.pas</Transaction>
+  </Transactions>
+</BorlandProject>

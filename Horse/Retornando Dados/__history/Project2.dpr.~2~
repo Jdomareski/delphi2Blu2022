@@ -1,0 +1,84 @@
+program Project2;
+
+{$APPTYPE CONSOLE}
+
+uses
+  Horse,
+  horse.jhonson,
+  Horse.query,
+  firedac.comp.Client,
+  firedac.stan.Def,
+  firedac.stan.Async,
+  data.db,
+  System.SysUtils,
+  Firedac.phys.MySQL;
+
+begin
+Thorse.use(jhonson);
+Thorse.use(Query); //middleware do query deve vir sempre depois do jhonson
+
+//usando dados em memoria.
+
+
+  THorse.Get('/ping',
+    procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
+    var
+    xmemtable : TfdMemTable;
+    begin
+    xmemtable := Tfdmemtable.create(nil);
+    xmemtable.Fielddefs.add('código', ftinterger, 0, False);
+    xmemtable.Fielddefs.add('nome', ftstring, 100, False);
+
+    xmemtable.Logchanges := false;
+    xmemtable.cacheupdates := true;
+
+    xMemtable.close;
+    xmemtable.createdataset;
+    xmemtable.open;
+
+    xmemtable.AppendRecord ([1, 'Ping']);
+    xmemtable.AppendRecord ([2, 'Pong']);
+    xmemtable.applyUpdates;
+
+    res.send<TfdMemtable>(xMemtable);
+    end);
+
+    //lendo dados do banco sakilla (actors)
+
+    Thorse.get('/List',
+    procedure (Req: THorseRequest; res: THorseResponse; Next: TProc)
+    var
+    xconexao : TfdConnection;
+    xDriver : TfdPhysMySqlDriverLink.Create(nil);
+    xQuery : TfdQuery.Create(nil);
+
+    //Driver de conexão do SQL
+
+    xdriver.vendorLib := ExtractFilePath(Paramstr(0) + 'Libmysql.dll';
+
+    //parametros de configuracao do banco
+
+    xconexao.drivername := 'Mysql';
+    xconexao.LoginPrompt := False;
+    xconexao.Params.Add('Database=Sakila');
+    xconexao.Params.Add('User_Name=Root');
+    xconexao.Params.Add('Password=root');
+    xconexao.Params.Add('Server=Localhost');
+    xconexao.Params.Add('DriverID=Mysql');
+    xconexao.Open;
+
+    //query
+
+    xquery.connection := xconexao;
+    xquery.open('Select * from Actor');
+
+    res.send<TfdQuery>(xQuery);
+    end);
+
+    THorse.Listem(9000,
+    Procedure (Horse: Thorse)
+    begin
+      Writeln('Server is running on port' + IntToStr(Horse.Port));
+    end;
+
+end.

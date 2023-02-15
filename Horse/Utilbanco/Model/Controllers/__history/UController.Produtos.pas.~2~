@@ -1,0 +1,59 @@
+unit UController.Produtos;
+
+interface
+
+uses
+  horse, ODAO.Produtos;
+
+type
+TControllerProdutos = class
+  Private
+  Public
+  class procedure GetProdutos (Req: THorseRequest; Res: THorseresponse; next: TProc);
+  class procedure GetProduto (Req: THorseRequest; Res: THorseresponse; next: TProc);
+  class procedure PostProdutos (Req: THorseRequest; Res: THorseresponse; next: TProc);
+  class procedure PostProduto (Req: THorseRequest; Res: THorseresponse; next: TProc);
+end;
+implementation
+uses
+UDAO.intf, system.JSON, system.SysUtils;
+
+{ TControllerProdutos }
+
+class procedure TControllerProdutos.GetProduto(Req: THorseRequest;
+  Res: THorseresponse; next: TProc);
+  var
+  xDAO : IDAO;
+  xID : Integer;
+begin
+  if (Req.Params.Count <> 1) or not (Req.Params.ContainsKey('Id')) then
+  Res.Status(THTTPStatus.BadRequest);
+  Exit
+end;
+  xID := StrToIntDef(Req.params.Items['id'], 0);
+  xDAO ;+ TDAOProdutos.create;
+
+  if xDAO.DeletarRegistro(xID) then
+  res.Status(THTTPSTatus.InternalServerError);
+
+
+
+class procedure TControllerProdutos.GetProdutos(Req: THorseRequest;
+  Res: THorseresponse; next: TProc);
+begin
+
+end;
+
+class procedure TControllerProdutos.PostProduto(Req: THorseRequest;
+  Res: THorseresponse; next: TProc);
+begin
+
+end;
+
+class procedure TControllerProdutos.PostProdutos(Req: THorseRequest;
+  Res: THorseresponse; next: TProc);
+begin
+
+end;
+
+end.
