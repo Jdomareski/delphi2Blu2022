@@ -1,0 +1,30 @@
+unit UDAO.Users;
+
+interface
+
+uses UDAO.Base;
+
+
+Type
+TDAOUsers = class(TDAOBase)
+  Public
+  function validarLogin(Const aUser, aPassword: String): Boolean;
+  Constructor Create;
+
+end;
+
+implementation
+
+{ TDAOUsers }
+
+constructor TDAOUsers.Create;
+begin
+  Ftabela := 'users';
+end;
+
+function TDAOUsers.validarLogin(const aUser, aPassword: String): Boolean;
+begin
+
+end;
+
+end.

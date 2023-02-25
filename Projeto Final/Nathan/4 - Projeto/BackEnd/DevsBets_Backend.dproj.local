@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/12/16 18:40:47.000.837,=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/20 20:52:00.000.294,=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/02/07 18:32:01.000.767,=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/02/14 20:01:06.000.703,=C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/02/15 19:39:40.000.833,C:\Users\mysql\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\DevsBets_Backend.dproj</Transaction>
+    <Transaction>2023/02/15 19:40:01.000.062,=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas</Transaction>
+    <Transaction>2023/02/15 19:40:18.000.322,C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\model\entities\UEntity.Users.pas</Transaction>
+    <Transaction>2023/02/15 19:59:48.000.598,=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas</Transaction>
+    <Transaction>2023/02/15 19:59:59.000.897,C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\model\entities\UEntity.Logins.pas</Transaction>
+    <Transaction>2023/02/15 20:07:18.000.827,=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas</Transaction>
+    <Transaction>2023/02/15 20:07:30.000.333,C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\model\entities\UEntity.Teams.pas</Transaction>
+    <Transaction>2023/02/15 20:17:07.000.860,=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas</Transaction>
+    <Transaction>2023/02/15 20:17:19.000.718,C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\model\entities\UEntity.Matchs.pas</Transaction>
+    <Transaction>2023/02/15 20:30:40.000.159,=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas</Transaction>
+    <Transaction>2023/02/15 20:30:52.000.722,C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\model\entities\UEntity.Bets.pas</Transaction>
+    <Transaction>2023/02/15 20:42:09.000.569,=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas</Transaction>
+    <Transaction>2023/02/15 20:42:21.000.070,C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\model\dao\UDAO.Intf.pas</Transaction>
+    <Transaction>2023/02/15 21:04:05.000.824,=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas</Transaction>
+    <Transaction>2023/02/15 21:04:18.000.163,C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\model\dao\UDAO.Users.pas</Transaction>
+    <Transaction>2023/02/15 21:08:32.000.647,=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas</Transaction>
+    <Transaction>2023/02/15 21:08:46.000.674,C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\model\utils\UUtil.Banco.pas</Transaction>
+    <Transaction>2023/02/15 21:12:49.000.322,C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\model\utils\UUtil.Banco.pas=</Transaction>
+    <Transaction>2023/02/15 21:12:56.000.285,=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\model\utils\UUtil.Banco.pas</Transaction>
+    <Transaction>2023/02/15 21:13:57.000.889,C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\model\utils\UUtil.Banco.pas=</Transaction>
+    <Transaction>2023/02/15 21:14:04.000.356,=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\model\utils\UUtil.Banco.pas</Transaction>
+    <Transaction>2023/02/15 21:49:38.000.912,C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\model\dao\UDAO.Users.pas=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\model\dao\UDAO.pas</Transaction>
+    <Transaction>2023/02/15 21:50:50.000.938,C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\model\dao\UDAO.Base=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\model\dao\UDAO.Base.Base</Transaction>
+    <Transaction>2023/02/15 21:56:13.000.639,=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas</Transaction>
+    <Transaction>2023/02/15 21:56:44.000.484,C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\model\dao\UDAO.Users.pas</Transaction>
+    <Transaction>2023/02/17 18:49:51.000.444,=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas</Transaction>
+    <Transaction>2023/02/17 18:50:03.000.289,C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\model\dao\UDAO.Teams.pas</Transaction>
+    <Transaction>2023/02/17 18:52:31.000.979,=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas</Transaction>
+    <Transaction>2023/02/17 18:52:41.000.303,C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\model\dao\UDAO.Matchs.pas</Transaction>
+    <Transaction>2023/02/17 18:53:26.000.995,=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas</Transaction>
+    <Transaction>2023/02/17 18:53:40.000.878,C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\model\dao\UDAO.Bets.pas</Transaction>
+    <Transaction>2023/02/17 18:54:47.000.022,=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas</Transaction>
+    <Transaction>2023/02/17 18:55:04.000.345,C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\model\controllers\UController.Base.pas</Transaction>
+    <Transaction>2023/02/17 19:09:58.000.421,=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas</Transaction>
+    <Transaction>2023/02/17 19:10:10.000.034,C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\model\controllers\UController.User.pas</Transaction>
+    <Transaction>2023/02/17 19:33:25.000.980,=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas</Transaction>
+    <Transaction>2023/02/17 19:33:52.000.669,C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\model\controllers\UController.Bet.pas=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas</Transaction>
+    <Transaction>2023/02/17 19:37:52.000.304,=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas</Transaction>
+    <Transaction>2023/02/17 19:38:12.000.107,C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\model\controllers\UController.Teams.pas=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas</Transaction>
+    <Transaction>2023/02/17 19:47:38.000.683,=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas</Transaction>
+    <Transaction>2023/02/17 19:48:50.000.514,C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\model\controllers\UController.Match.pas=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas</Transaction>
+    <Transaction>2023/02/17 19:51:35.000.905,=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas</Transaction>
+    <Transaction>2023/02/17 19:51:44.000.695,C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\model\controllers\UController.Login.pas=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\Unit1.pas</Transaction>
+    <Transaction>2023/02/17 19:55:38.000.551,C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\model\controllers\UController.Team.pas=C:\Users\mysql\Documents\Delphi2Blu2022\11 - Projeto\4 - Projeto\BackEnd\model\controllers\UController.Teams.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="model"/>
+    <File Path="model\controllers"/>
+    <File Path="model\controllers\UController.Base.pas"/>
+    <File Path="model\controllers\UController.Bet.pas"/>
+    <File Path="model\controllers\UController.User.pas"/>
+    <File Path="model\controllers\UController.Team.pas"/>
+    <File Path="model\controllers\UController.Match.pas"/>
+    <File Path="model\controllers\UController.Login.pas"/>
+    <File Path="model\dao"/>
+    <File Path="model\dao\UDAO.Base.pas"/>
+    <File Path="model\dao\UDAO.Bets.pas"/>
+    <File Path="model\dao\UDAO.Intf.pas"/>
+    <File Path="model\dao\UDAO.Matchs.pas"/>
+    <File Path="model\dao\UDAO.Teams.pas"/>
+    <File Path="model\dao\UDAO.Users.pas"/>
+    <File Path="model\entities"/>
+    <File Path="model\entities\UEntity.Bets.pas"/>
+    <File Path="model\entities\UEntity.Logins.pas"/>
+    <File Path="model\entities\UEntity.Matchs.pas"/>
+    <File Path="model\entities\UEntity.Teams.pas"/>
+    <File Path="model\entities\UEntity.Users.pas"/>
+    <File Path="model\utils"/>
+    <File Path="model\utils\UUtil.Banco.pas"/>
+  </ProjectSortOrder>
+</BorlandProject>

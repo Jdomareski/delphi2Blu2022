@@ -1,0 +1,20 @@
+unit Uservice.user;
+
+interface
+
+uses
+  uEntity.Users, Uservice.base;
+
+type
+  TserviceUser = class(TserviceBase);
+
+Private
+  FUser: TUser;
+
+public
+
+  constructor create; overload;
+
+implementation
+
+end.

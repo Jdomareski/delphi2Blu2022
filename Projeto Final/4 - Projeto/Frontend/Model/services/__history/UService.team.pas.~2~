@@ -1,0 +1,40 @@
+unit UService.team;
+
+interface
+
+uses
+  UEntity.Teams,
+  UService.base,
+  Generics.collection;
+
+type
+TService.team = class(TServiceBase)
+
+  Private FTeam: TTeam;
+FTeams:
+TObjectList<TTeam>;
+
+Function GetTeams: TObjectList<TTeam>;
+
+public
+  Constructor create;
+  overload;
+  constructor create(ateam: TTeam);
+  overload;
+  desctructor destroy;
+  override;
+
+  function obterregistro(Const aId: Integer): TObject;
+  override;
+
+  Property Teams: TObjectList<TTeam> read get Teams;
+
+  end;
+
+implementation
+
+Uses
+  System.SysUtils, System.JSON, UUTils.constants,
+  dataset Serialize
+
+end.

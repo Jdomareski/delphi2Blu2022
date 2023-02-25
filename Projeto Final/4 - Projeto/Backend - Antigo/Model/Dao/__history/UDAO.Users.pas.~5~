@@ -1,0 +1,100 @@
+unit UDAO.Users;
+
+interface
+
+uses
+
+  System.JSON,
+  Dataset.Serialize, UDAO.Intf;
+
+// UDAO.Intf;
+Type
+  TDAOUsers = class(TInterfacedObject, IDAO)
+    Function ObterRegistros: TJSONArray;
+    Function ProcurarPorId(Const aIdentificador: Integer): TJSONObject;
+    Function AdicionarRegistro(aRegistro: TJSONObject): Boolean;
+    Function DeletarRegistro(Const aIdentificador: Integer): Boolean;
+
+    Function ValidarLogin(Const aUser, aPassword: String): Boolean;
+  end;
+
+implementation
+
+uses
+  FireDAC.Comp.Client,
+  System.SysUtils,
+  UUTil.Banco;
+
+const
+  TABELA = 'users';
+
+  { TDAOUsers }
+
+function TDAOUsers.AdicionarRegistro(aRegistro: TJSONObject): Boolean;
+begin
+  try
+    Result := TUtilBanco.AdicionarRegistro(TABELA, aRegistro.ToJSON);
+  except
+    on e: Exception do
+      raise Exception.Create('Erro ao adicionar registro: ' + e.Message);
+  end:
+  end;
+
+  function TDAOUsers.DeletarRegistro(const aIdentificador: Integer): Boolean;
+  begin
+  try
+  Result := TUtilBanco.RemoverRegistro(TABELA, aIdentificador);
+
+  Except
+    on e: Exception do
+      raise Exception.Create('Erro ao Remover registro: ' + e.Message);
+
+
+  end;
+
+  end;
+
+  function TDAOUsers.ObterRegistros: TJSONArray;
+  begin
+  try
+  Result := TUtilBanco.ExecutarConsulta(Format('Select * From %s', [TABELA]));
+
+  Except
+    on e: Exception do
+      raise Exception.Create('Erro ao Obetr registros: ' + e.Message);
+
+
+  end;
+  end;
+
+  function TDAOUsers.ProcurarPorId(const aIdentificador: Integer): TJSONObject;
+var
+xJSONArray : TJSONARray;
+  begin
+  try
+  xJSONArray := TUtilBanco.ExecutarConsulta(Format('SELECT * FROM %s WHERE ID = %d',
+  [TABELA, aIdentificador]));
+
+  if xJSONArray.Count = 0 then
+  begin
+    Result := TJSONObject.Create;
+    xJSONArray.Free;
+    Exit;
+  end;
+
+  Result := TJSONObject.ParseJSONValue(TEncoding.ASCII.GetBytes(xJSONArray[0].ToJSON), 0) as TJSONObject;
+
+  except
+  On e: Exception do
+  raise Exception.Create('Erro ao obter registros: ' + e.Message);
+
+  end;
+
+  end;
+
+  function TDAOUsers.ValidarLogin(const aUser, aPassword: String): Boolean;
+  begin
+
+  end;
+
+end.

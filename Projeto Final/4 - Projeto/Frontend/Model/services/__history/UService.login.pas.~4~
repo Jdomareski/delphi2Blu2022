@@ -1,0 +1,89 @@
+unit UService.login;
+
+interface
+
+uses
+  UEntity.Logins, UService.base;
+
+type
+  TServiceLogin = class(TserviceBase)
+  private
+    FLogin: TLogin;
+
+    Procedure salvarToken;
+    Procedure UsuarioAutenticado;
+
+  Public
+    Constructor Create(aLogin: TLogin);
+    Destructor Destroy; override;
+
+    Procedure Registrar; override;
+    procedure listar; override;
+    procedure Excluir; override;
+
+    function ObterRegistro(Const aId: Integer) : TOBject; override;
+
+    Procedure Autenticar;
+
+  end;
+
+implementation
+uses
+REST.Authenticator.Basic, REST.Types,
+System.JSON, UUTils.constants, system.SysUtils,
+system.Classes, UService.Intf, UService.user, UEntity.Users,
+UService.user.Authenticated, JOSE.Core.JWT,
+JOSE.core.Builder;
+
+{ TServiceLogin }
+
+procedure TServiceLogin.Autenticar;
+begin
+
+end;
+
+constructor TServiceLogin.Create(aLogin: TLogin);
+begin
+
+end;
+
+destructor TServiceLogin.Destroy;
+begin
+
+  inherited;
+end;
+
+procedure TServiceLogin.Excluir;
+begin
+  inherited;
+
+end;
+
+procedure TServiceLogin.listar;
+begin
+  inherited;
+
+end;
+
+function TServiceLogin.ObterRegistro(const aId: Integer): TOBject;
+begin
+
+end;
+
+procedure TServiceLogin.Registrar;
+begin
+  inherited;
+
+end;
+
+procedure TServiceLogin.salvarToken;
+begin
+
+end;
+
+procedure TServiceLogin.UsuarioAutenticado;
+begin
+
+end;
+
+end.

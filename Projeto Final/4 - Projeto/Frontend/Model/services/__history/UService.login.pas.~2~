@@ -1,0 +1,24 @@
+unit UService.login;
+
+interface
+
+uses
+  UEntity.Logins, UService.base;
+
+type
+  TServiceLogin = class(TserviceBase)
+  private
+    FLogin: TLogin;
+
+    Procedure salvarToken;
+    Procedure UsuarioAutenticado;
+
+  Public
+    Constructor Create(aLogin: TLogin);
+    Destructor Destroy; override;
+
+  end;
+
+implementation
+
+end.
