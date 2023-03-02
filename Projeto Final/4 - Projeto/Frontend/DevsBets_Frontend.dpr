@@ -19,7 +19,16 @@ uses
   UService.User.Authenticated in 'Model\services\UService.User.Authenticated.pas',
   UfrmHome in 'Model\views\UfrmHome.pas' {frmHome},
   UUTils.Enums in 'Model\utils\UUTils.Enums.pas',
-  UService.team in 'Model\services\UService.team.pas';
+  UService.team in 'Model\services\UService.team.pas',
+  UService.Bet in 'Model\services\UService.Bet.pas',
+  UService.Match in 'Model\services\UService.Match.pas',
+  UUtils.Functions in 'Model\utils\UUtils.Functions.pas',
+  UfraTeam in 'Model\views\UfraTeam.pas' {fraTeam: TFrame},
+  UfraTeam.Registry in 'Model\views\UfraTeam.Registry.pas' {fraTeamRegistry: TFrame},
+  UfraMatch in 'Model\views\UfraMatch.pas' {fraMatch: TFrame},
+  UfraMatch.Registry in 'Model\views\UfraMatch.Registry.pas' {fraMatchRegistry: TFrame},
+  UfraBet in 'Model\views\UfraBet.pas' {fraBet: TFrame},
+  UfraBet.Registry in 'Model\views\UfraBet.Registry.pas' {fraBetRegistry: TFrame};
 
 {$R *.res}
 

@@ -1,0 +1,78 @@
+unit UfraBet;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
+  FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls,
+  FMX.ListView.Types, FMX.ListView.Appearances, FMX.ListView.Adapters.Base,
+  FMX.Controls.Presentation, FMX.ListView, FMX.Objects, FMX.Layouts,
+  UEntity.Bets;
+
+type
+  TfraBet = class(TFrame)
+    RectPrincipal: TRectangle;
+    LytPrincipal: TLayout;
+    ImgLogo: TImage;
+    LytPartidas: TLayout;
+    RectToolbar: TRectangle;
+    LstPartidas: TListView;
+    RectNovo: TRectangle;
+    Label1: TLabel;
+    RectExcluir: TRectangle;
+    Label2: TLabel;
+  private
+    { Private declarations }
+    Procedure CarregarRegistros;
+    Procedure AbrirBetRegistry;
+    procedure PrepararListView(aBet: TBet);
+    Procedure ExcluirRegistros;
+  public
+    { Public declarations }
+    Constructor Create(aOwner: Tcomponent); override;
+  end;
+
+  var
+  fraBet: TfraBet;
+
+implementation
+
+{$R *.fmx}
+
+uses UfraMatch, UService.Bet, Uservice.Intf,
+  UService.User.Authenticated,UfraBet.Registry;
+
+
+{ TfraBet }
+
+procedure TfraBet.AbrirBetRegistry;
+begin
+
+end;
+
+procedure TfraBet.CarregarRegistros;
+begin
+
+end;
+
+constructor TfraBet.Create(aOwner: Tcomponent);
+begin
+  inherited;
+
+end;
+
+procedure TfraBet.ExcluirRegistros;
+begin
+
+end;
+
+procedure TfraBet.PrepararListView(aBet: TBet);
+var
+  xItem: TlistViewItem;
+  xMatch: TMatch;
+begin
+  xItem
+
+end;
+
+end.

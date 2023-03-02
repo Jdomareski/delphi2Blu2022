@@ -1,0 +1,37 @@
+unit UfraBet.Registry;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
+  FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls,
+  FMX.ListView.Types, FMX.ListView.Appearances, FMX.ListView.Adapters.Base,
+  FMX.ListView, FMX.Edit, FMX.Controls.Presentation, FMX.Objects, FMX.Layouts;
+
+type
+  TfraBetRegistry = class(TFrame)
+    RectPrincipal: TRectangle;
+    LytPrincipal: TLayout;
+    ImgLogo: TImage;
+    LstBotoes: TLayout;
+    RectSalvar: TRectangle;
+    Label1: TLabel;
+    RectTimeA: TRectangle;
+    EdtResultTeamA: TEdit;
+    RectTimeB: TRectangle;
+    EdtResultTeamB: TEdit;
+    LblX: TLabel;
+    RecVoltar: TRectangle;
+    Label3: TLabel;
+    LstPartidas: TListView;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+implementation
+
+{$R *.fmx}
+
+end.

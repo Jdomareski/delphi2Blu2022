@@ -76,9 +76,9 @@ FRESTRequest.Client := FRESTClient;
 FRESTRequest.Response := FRESTResponse;
 FRESTRequest.params.Clear;
 
-FRESTRequest.Params.AddHeader('Autorization',
+FRESTRequest.Params.AddHeader('Authorization',
             format('Bearer %s', [FToken]));
-FRESTRequest.Params.ParameterByName('Autorization').Options := [poDoNotEncode];
+FRESTRequest.Params.ParameterByName('Authorization').Options := [poDoNotEncode];
 end;
 
 destructor Tservicebase.Destroy;

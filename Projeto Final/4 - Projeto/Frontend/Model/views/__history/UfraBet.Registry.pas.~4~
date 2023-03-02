@@ -1,0 +1,139 @@
+unit UfraBet.Registry;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
+  FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls,
+  FMX.ListView.Types, FMX.ListView.Appearances, FMX.ListView.Adapters.Base,
+  FMX.ListView, FMX.Edit, FMX.Controls.Presentation, FMX.Objects, FMX.Layouts,UEntity.Matchs ;
+
+type
+  TfraBetRegistry = class(TFrame)
+    RectPrincipal: TRectangle;
+    LytPrincipal: TLayout;
+    ImgLogo: TImage;
+    LstBotoes: TLayout;
+    RectSalvar: TRectangle;
+    Label1: TLabel;
+    RectTimeA: TRectangle;
+    EdtResultTeamA: TEdit;
+    RectTimeB: TRectangle;
+    EdtResultTeamB: TEdit;
+    LblX: TLabel;
+    RecVoltar: TRectangle;
+    Label3: TLabel;
+    LstPartidas: TListView;
+    procedure RectSalvarClick(Sender: TObject);
+    procedure RecVoltarClick(Sender: TObject);
+  private
+    { Private declarations }
+    Procedure VoltarTela;
+    Procedure CarregarMatchs;
+    Procedure Regsitrar;
+    Procedure PreencherMetchs(Const aMatch: TMatch);
+  public
+    { Public declarations }
+    Constructor Create(aOwner: Tcomponent); Override;
+  end;
+
+  var
+  fraBetRegistry: TfrabetRegistry;
+implementation
+
+{$R *.fmx}
+
+uses UEntity.Bets, UfraBet, UService.Bet, UService.Match, UService.team,
+  UService.User.Authenticated, Uservice.Intf;
+
+{ TfraBetRegistry }
+
+procedure TfraBetRegistry.CarregarMatchs;
+var
+  xServiceMatch : IService;
+  xMatch: TMatch;
+begin
+  lstPartidas.Items.Clear;
+
+  xServiceMatch := TServiceMatch.Create;
+  xServiceMatch.Listar;
+
+  for xMatch in TServiceMatch(xServiceMatch).Matchs do
+  self.PreencherMetchs((xMatch));
+
+end;
+
+constructor TfraBetRegistry.Create(aOwner: Tcomponent);
+begin
+  inherited Create(aOwner);
+  Self.CarregarMatchs;
+
+end;
+
+procedure TfraBetRegistry.PreencherMetchs(const aMatch: TMatch);
+var
+  xItem: TListViewItem;
+const
+  PARTIDA = '%s X %s - %s às %s';
+begin
+  xItem := lstPartidas.Items.Add;
+  xItem.Tag := aMatch.Id;
+
+  TListItemText(xItem.Objects.FindDrawable('txtPartida')).Text :=
+  format(PARTIDA, [aMatch.TeamA.Name,
+                  aMatch.TeamB.Name,
+                  DateToStr(aMatch.Date),
+                  TimeToStr(aMatch.Hour)]);
+end;
+
+procedure TfraBetRegistry.RectSalvarClick(Sender: TObject);
+begin
+Self.Regsitrar;
+end;
+
+procedure TfraBetRegistry.RecVoltarClick(Sender: TObject);
+begin
+self.VoltarTela;
+end;
+
+procedure TfraBetRegistry.Regsitrar;
+var
+  xServiceBet : IService;
+  xBet : TBet;
+  xMatch: TMatch;
+  xUserAuthenticated : TUserAuthenticated;
+begin
+  if lstPartidas.ItemIndex < 0 then
+  raise Exception.Create('Selecione uma partida');
+  if trim(edtResultTeamA.Text) = EmptyStr then
+  raise Exception.Create('Informar o placar do time A');
+  if trim(edtResultTeamB.Text) = EmptyStr then
+  raise Exception.Create('Informar o placar do time B');
+
+  xMatch := TMatch.Create(lstPartidas.Items[lstPartidas.ItemIndex].Tag);
+  xUserauthenticated := TUserauthenticated.GetIstance;
+
+  xBet := TBet.Create(
+  xMatch,
+  StrToIntDef(trim(edtResultTeamA.Text), 0 ),
+  StrToIntDef(trim(edtResultTeamB.Text), 0 ),
+  xUserauthenticated.User);
+
+  xServiceBet := TServiceBet.Create(xBet);
+  xServiceBet.Registrar;
+  Self.VoltarTela;
+end;
+
+procedure TfraBetRegistry.VoltarTela;
+begin
+  if not assigned(FraBet) then
+  FraBet := TFrabet.Create(Application);
+
+  FraBet.Align := TAlignLayout.Center;
+
+  Self.Parent.AddObject(FraBet);
+  FreeAndNil(FraBetRegistry);
+
+end;
+
+end.

@@ -1,0 +1,73 @@
+unit UfraTeam;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
+  FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls,
+  FMX.Objects, FMX.ListView.Types, FMX.ListView.Appearances,
+  FMX.ListView.Adapters.Base, FMX.ListView, FMX.Layouts,
+  FMX.Controls.Presentation, UEntity.Teams ;
+
+type
+  TfraTeam = class(TFrame)
+    RectPrincipal: TRectangle;
+    RectToolbar: TRectangle;
+    RectExcluir: TRectangle;
+    Label1: TLabel;
+    RectNovo: TRectangle;
+    Label2: TLabel;
+    LytPrincipal: TLayout;
+    ImgLogo: TImage;
+    LstTimes: TListView;
+  private
+    { Private declarations }
+    Procedure AbrirTeamRegistry;
+    Procedure CarregarRegistros;
+    Procedure ExcluirRegistros;
+    Procedure PreencherTeams(aTeam: TTeam);
+  public
+    { Public declarations }
+    Constructor Create(aOwner: TComponent); override;
+
+  var
+    fraTeam: TfraTeam;
+  end;
+
+implementation
+
+{$R *.fmx}
+
+uses UfraTeam.Registry, Uservice.Intf, UService.team;
+
+
+
+{ TfraTeam }
+
+procedure TfraTeam.AbrirTeamRegistry;
+begin
+
+end;
+
+procedure TfraTeam.CarregarRegistros;
+begin
+
+end;
+
+constructor TfraTeam.Create(aOwner: TComponent);
+begin
+  inherited;
+
+end;
+
+procedure TfraTeam.ExcluirRegistros;
+begin
+
+end;
+
+procedure TfraTeam.PreencherTeams(aTeam: TTeam);
+begin
+
+end;
+
+end.
